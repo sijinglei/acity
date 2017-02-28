@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>未意为枝叶招展|我的网站</title>
+<meta name="description" content=" 她不断地帮助不能生育、将死之人生孩子“祛魅”（disenchantment）一词 源于马克斯?韦伯所说的“世界的祛魅又译“世界的解咒” 最初的意思是将宗教中的神秘" />
+<meta name="keywords" content="意为,枝叶,招展,不断,帮助,能生育,将死,人生,孩子,祛魅" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://xyjj.913zsw.com/Admin/Images/a/dybxg/" title="传奇黑屏补丁官方下载">传奇黑屏补丁官方下载</a></li><li><a href="http://www.lygsyw.com/include/data/a/dumpscvv/" title="传奇1.76客户端下载">传奇1.76客户端下载</a></li><li><a href="http://qzcsgg.com/api/addons/a/egitimreyonu/" title="传奇sf外挂下载">传奇sf外挂下载</a></li><li><a href="http://forex8.com/api/connect/a/easycleaninformatique/" title="中变热血传奇私服">中变热血传奇私服</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dynaency/" title="热血传奇装备偏移补丁">热血传奇装备偏移补丁</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebacktoeden/" title="虎庙传奇">虎庙传奇</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/eastaltonfloristtoday/" title="今日新开传奇发布网">今日新开传奇发布网</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdkiosksmaintenance/" title="金牛传奇">金牛传奇</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edirectmailing/" title="传奇私服通用登陆器">传奇私服通用登陆器</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dx5000/" title="决战sf网">决战sf网</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/educationincrisis/" title="天堂1私服发布网">天堂1私服发布网</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/educatingforprosperity/" title="万劫三破">万劫三破</a></li><li><a href="http://fzlanting.com/admin/class/a/effaireselite/" title="今日新开传奇私服网">今日新开传奇私服网</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/edwardianringdesign/" title="今天新开的传奇私服">今天新开的传奇私服</a></li><li><a href="http://forex8.com/api/connect/a/easydumpofsc/" title="新开1.76复古传奇">新开1.76复古传奇</a></li><li><a href="http://www.ftzmled.com/images/pic/a/easymullinax/" title="传奇似服1.76精品">传奇似服1.76精品</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/edwardcables/" title="三国群英转私服">三国群英转私服</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/efsfela/" title="今日新开网通传奇">今日新开网通传奇</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/e91cafe/" title="传奇私服客户端下载">传奇私服客户端下载</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwilawyersminneapolis/" title="变态传奇网页游戏">变态传奇网页游戏</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开变态传奇sf相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20159255.html" target="_blank" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投稿</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20158751.html" target="_blank" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20157620.html" target="_blank" title="吴荪甫作为一个有着浓郁的浪漫色彩的悲剧形象">吴荪甫作为一个有着浓郁的浪漫色彩的悲剧形象</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20157280.html" target="_blank" title="一边是身体需要更多营养丰富的食物">一边是身体需要更多营养丰富的食物</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20157140.html" target="_blank" title="否则留在西装上的汗渍会腐蚀面料">否则留在西装上的汗渍会腐蚀面料</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20155584.html" target="_blank" title="未意为枝叶招展">未意为枝叶招展</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20154452.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20154398.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20153145.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20151032.html" target="_blank" title="南丰蜜桔贮藏期间如防腐保鲜措施不当">南丰蜜桔贮藏期间如防腐保鲜措施不当</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://lzbjzs.com/apply/shfr/a/edwardianantiquerings/" title="合击sf网站">合击sf网站</a></h3>
+<ul>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardianantiquerings/201511902.html" title="在越南某一偏远省份进行研究">在越南某一偏远省份进行研究</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardianantiquerings/201511285.html" title="与传统医学模式相比">与传统医学模式相比</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardianantiquerings/20159778.html" title="作为教师应当对于小学生的自主学习给予必要的引导">作为教师应当对于小学生的自主学习给予必要</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardianantiquerings/20158910.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardianantiquerings/20158217.html" title="插图中的数据点大小适宜">插图中的数据点大小适宜</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/" title="轻变传奇">轻变传奇</a></h3>
+<ul>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20157836.html" title="目的了解深圳市宝安区西乡街道孕产妇保健的现状">目的了解深圳市宝安区西乡街道孕产妇保健的</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20156634.html" title="本着落实国家十二五《教育规划纲要》">本着落实国家十二五《教育规划纲要》</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20156211.html" title="武术的价值取决于武术本身的特点和社会需要">武术的价值取决于武术本身的特点和社会需要</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20155813.html" title="心理学与经济学之间的越界行为">心理学与经济学之间的越界行为</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20155167.html" title="一个人的归因方式会激发他的动机">一个人的归因方式会激发他的动机</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开变态传奇sf- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>未意为枝叶招展</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 14:45</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5584&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5584">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       她不断地帮助不能生育、将死之人生孩子“祛魅”（disenchantment）一词       源于马克斯?韦伯所说的“世界的祛魅又译“世界的解咒”       最初的意思是将宗教中的神秘</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;她不断地帮助不能生育、将死之人生孩子<p>“祛魅”（disenchantment）一词<BR>&nbsp; &nbsp; &nbsp; &nbsp;源于马克斯?韦伯所说的“世界的祛魅又译“世界的解咒”<BR>&nbsp; &nbsp; &nbsp; &nbsp;最初的意思是将宗教中的神秘面纱揭开<BR>&nbsp; &nbsp; &nbsp; &nbsp;“把魔力从世界中排除出去韦伯将其具体解释为“拒绝将圣餐中将象征着自己的血和肉的酒和面包分给门徒<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样他们就能在自己殉道以后得到拯救<BR>&nbsp; &nbsp; &nbsp; &nbsp;拒绝这种宗教说教也是一种祛魅” </p><p>迟子建在《额尔古纳河右岸》中勾勒了一幅人与自然和谐相处的童话世界鄂温克人坚持自己万物皆有灵的生活理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;信仰神明、敬畏自然这与部分“返魅”的思想不谋而合适当的节制人类无限膨胀的物欲<BR>&nbsp; &nbsp; &nbsp; &nbsp;精神有所皈依<BR>&nbsp; &nbsp; &nbsp; &nbsp;精神有所畏惧<BR>&nbsp; &nbsp; &nbsp; &nbsp;与可持续发展观念有某种相通之处<BR>&nbsp; &nbsp; &nbsp; &nbsp;这对人类重塑精神家园具有某种启示 </p><p>谈到死亡<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能绕开迟子建在丈夫去世后完成的一部长篇《越过云层的晴朗》<BR>&nbsp; &nbsp; &nbsp; &nbsp;这部小说讲述了“祛魅”后的社会<BR>&nbsp; &nbsp; &nbsp; &nbsp;人们没有信仰<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会变迁给各个人物命运带来的种种不测没有了敬畏<BR>&nbsp; &nbsp; &nbsp; &nbsp;女儿出卖了父亲<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了获得救赎<BR>&nbsp; &nbsp; &nbsp; &nbsp;以求维持一个家庭的存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终女孩死于难产；医生将自己隐藏于深山老林<BR>&nbsp; &nbsp; &nbsp; &nbsp;给人做整形手术为生<BR>&nbsp; &nbsp; &nbsp; &nbsp;但只是改变人的外貌<BR>&nbsp; &nbsp; &nbsp; &nbsp;而无法拯救人的内心<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终医生被精神病人用猎枪杀死<BR>&nbsp; &nbsp; &nbsp; &nbsp;没人为其讨回公道“祛魅”后的世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;死亡是令人害怕恐惧的冷冰事情 </p><p>“祛魅”后的世界将人类的信仰打破<BR>&nbsp; &nbsp; &nbsp; &nbsp;人的精神陷入了无限的虚空之中渐渐的<BR>&nbsp; &nbsp; &nbsp; &nbsp;人发现了许多科学无法解决的问题</p><p>“祛魅”给人无畏的勇气<BR>&nbsp; &nbsp; &nbsp; &nbsp;却也给人带到更大的虚无<BR>&nbsp; &nbsp; &nbsp; &nbsp;填补这种精神空虚就是“返魅”因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;在《额尔古纳河右岸》中<BR>&nbsp; &nbsp; &nbsp; &nbsp;迟子建酣畅淋漓地抒写了“返魅”给人灵魂的依偎灵魂有所依附<BR>&nbsp; &nbsp; &nbsp; &nbsp;精神有所敬畏<BR>&nbsp; &nbsp; &nbsp; &nbsp;人在面临死亡会有一种平静与归宿感伊芙琳在自己老去的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;开始吃花瓣为生<BR>&nbsp; &nbsp; &nbsp; &nbsp;似乎是要荡涤尽自己的污浊<BR>&nbsp; &nbsp; &nbsp; &nbsp;她平静地离开了<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有喧闹与惆怅生与死本身就是一种替代<BR>&nbsp; &nbsp; &nbsp; &nbsp;小达西出生了；安道尔死了<BR>&nbsp; &nbsp; &nbsp; &nbsp;安草儿继续着安道尔的愚痴；马伊堪死了<BR>&nbsp; &nbsp; &nbsp; &nbsp;留下西班继续陪着拉吉米等<BR>&nbsp; &nbsp; &nbsp; &nbsp;这一系列的生与死构成了平衡关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;同样也是自然规律的和谐状态 </p><p>寻找精神家园<BR>&nbsp; &nbsp; &nbsp; &nbsp;力求人与自然的和谐为表达这个主题<BR>&nbsp; &nbsp; &nbsp; &nbsp;感恩自然、一切皆有灵在这部小说中同样充沛无论山川、林木在小说中皆有神灵庇佑<BR>&nbsp; &nbsp; &nbsp; &nbsp;玛鲁神、山神<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至较大的猎物熊等<BR>&nbsp; &nbsp; &nbsp; &nbsp;鄂温克人都怀有敬畏<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是大型猎物一定要经过祭祀才可以吃在这片被神统治着的区域<BR>&nbsp; &nbsp; &nbsp; &nbsp;古老的鄂温克族过着渔猎的生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;以打猎、放养驯鹿为生<BR>&nbsp; &nbsp; &nbsp; &nbsp;男人从事打猎<BR>&nbsp; &nbsp; &nbsp; &nbsp;女人、小孩对猎物进行处理、给驯鹿挤奶<BR>&nbsp; &nbsp; &nbsp; &nbsp;然而鄂温克人打猎不杀幼崽<BR>&nbsp; &nbsp; &nbsp; &nbsp;烧火只烧失去生命力的树木他们的生活强调一种和谐的生活方式</p><p>子建自己谈到的<BR>&nbsp; &nbsp; &nbsp; &nbsp;“大自然是这世界上真正不朽的东西它有呼吸<BR>&nbsp; &nbsp; &nbsp; &nbsp;往往会使你与它产生共鸣” </p><p>猎民们到山下的激流乡过定居生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;而不是可以看到月亮、听到风声的希楞柱；驯鹿开始圈养<BR>&nbsp; &nbsp; &nbsp; &nbsp;而不是自由的寻找食物<BR>&nbsp; &nbsp; &nbsp; &nbsp;它们开始丧失了灵性；有病看医生而不是祈求萨满等<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是文明的侵入<BR>&nbsp; &nbsp; &nbsp; &nbsp;“祛魅”思想的开始但奇怪的是<BR>&nbsp; &nbsp; &nbsp; &nbsp;在屋子里睡觉使猎民患上了失眠症；驯鹿开始绝食；现代医学也救治不了小达西夫妇的不孕不育于是<BR>&nbsp; &nbsp; &nbsp; &nbsp;鄂温克人重新回归山林、萨满<BR>&nbsp; &nbsp; &nbsp; &nbsp;“返魅”悄无声息的进行着<BR>&nbsp; &nbsp; &nbsp; &nbsp;“祛魅”被“返魅”战胜 </p><p>导致各种各样灾难性的后果”魅<BR>&nbsp; &nbsp; &nbsp; &nbsp;在新华字典中的解释是：形声字从鬼<BR>&nbsp; &nbsp; &nbsp; &nbsp;未亦声“未”意为“枝叶招展<BR>&nbsp; &nbsp; &nbsp; &nbsp;引申为“外貌讨人喜欢”“鬼”指阴间的人“鬼”与“未”联合起来表示“外貌讨人喜欢的鬼”本义：貌美的鬼汉语中魅字本身就充满了神秘感和未知性<BR>&nbsp; &nbsp; &nbsp; &nbsp;没人知道鬼长什么样<BR>&nbsp; &nbsp; &nbsp; &nbsp;这在无形中给人巨大的想象空间英语中没有单独“魅”这个词<BR>&nbsp; &nbsp; &nbsp; &nbsp;与之相对应的“enchantment”当“魅力”讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;很长一段时间内“魅”将人类的想象力无限放大<BR>&nbsp; &nbsp; &nbsp; &nbsp;人们将无法解释的现象都归结为魅的范畴<BR>&nbsp; &nbsp; &nbsp; &nbsp;即宗教充满了魅的色彩然而<BR>&nbsp; &nbsp; &nbsp; &nbsp;当宗教的神权统治束缚了人类的发展时<BR>&nbsp; &nbsp; &nbsp; &nbsp;“祛魅”诞生本文认为“祛魅”是特定历史时期话语权争夺的一种手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;“祛魅”作为一种消解话语权的理论存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;其主要目的是打破宗教神权的统治<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而发展社会科学<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立新的社会秩序然而<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会科学发展到一定程度<BR>&nbsp; &nbsp; &nbsp; &nbsp;人类的精神困境并未得到解决例如<BR>&nbsp; &nbsp; &nbsp; &nbsp;要到哪里去的终极思考始终困扰着人类因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;“返魅”潮流复苏“返魅”是“部分恢复自然的神奇性、神圣性和潜在的审美性”<BR>&nbsp; &nbsp; &nbsp; &nbsp;使人对自然有一定的敬畏心理<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立一种和谐的人与自然的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;而非人统治自然的霸权理念 </p><p>美国当代哲学家大卫?雷?格里芬提倡部分的“返魅”（reenchantment）他说：“自然被看做是僵死的东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;它是由无生气的物体构成的<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有生命的神性在里面这种</p><p> 迟子建在谈到他的《伪满洲国》的时候说<BR>&nbsp; &nbsp; &nbsp; &nbsp;萨满能在跳神时让病入膏肓的人起死回生等<BR>&nbsp; &nbsp; &nbsp; &nbsp;大自然中有很多我们还未探知的奥秘<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此不能把萨满的存在看成一种“虚妄”而到了《额尔古纳河右岸》中<BR>&nbsp; &nbsp; &nbsp; &nbsp;迟子建把这种对于死亡坦然的态度描绘到了极致<BR>&nbsp; &nbsp; &nbsp; &nbsp;“他们在面临着瘟疫、死亡中所体现的那种镇定、从容和义无反顾<BR>&nbsp; &nbsp; &nbsp; &nbsp;是这支以放养驯鹿为生的鄂温克人身上最典型的特征写他们的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;想象肯定是苍白的<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为从我掌握的资料来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们本身的经历就是一段连着一段的传奇” </p><p>”迟子建的 “根”正是基于建立一种和谐的、不随波逐流的社会理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种理念作为一股清晰的力量<BR>&nbsp; &n<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/14453W242-0.jpg" width="600px" height="400px" />bsp; &nbsp; &nbsp;充斥着中国文坛上的主流话语迟子建笔下恬静的故乡<BR>&nbsp; &nbsp; &nbsp; &nbsp;展现着另一股北国冰封的景象那里的人们<BR>&nbsp; &nbsp; &nbsp; &nbsp;仿佛生活在童话世界中<BR>&nbsp; &nbsp; &nbsp; &nbsp;用浪漫的视觉来观察这个寒冷的世界她笔端流淌的不仅仅是北方独有的风光<BR>&nbsp; &nbsp; &nbsp; &nbsp;更是在旷野的东北<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个地域下的人类的生活状态<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及这种适合地域性的人与自然的和谐 </p><p>新中国成立以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽管面临着“祛魅”的意识形态氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个个“神”被科技之剑摧毁<BR>&nbsp; &nbsp; &nbsp; &nbsp;被工业文明取代然而<BR>&nbsp; &nbsp; &nbsp; &nbsp;无论是九寨沟的神奇风光<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是神农架的野人传说<BR>&nbsp; &nbsp; &nbsp; &nbsp;亦或者沈从文故居的湘北风光<BR>&nbsp; &nbsp; &nbsp; &nbsp;拥挤的人流彰显“魅”的魅力对于神秘<BR>&nbsp; &nbsp; &nbsp; &nbsp;原始风貌、异域情调的社会形态的偏好<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于“返魅”的追求仍然构成了文学的一个重要主题 </p><p>【xzbu】郑重<p>面对当前的大千世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;在带给人们更大满足的同时又带来了更大的物质与精神的空虚<BR>&nbsp; &nbsp; &nbsp; &nbsp;这个“得”与“失”的循环<BR>&nbsp; &nbsp; &nbsp; &nbsp;构建了“祛魅”与“返魅”的逻辑<BR>&nbsp; &nbsp; &nbsp; &nbsp;在这个逻辑中<BR>&nbsp; &nbsp; &nbsp; &nbsp;迟子建在“生”与“死”、“知”与“未知”、“放纵”与“敬畏”中<BR>&nbsp; &nbsp; &nbsp; &nbsp;揭示了人与自然的和谐状态人类在“祛魅”中<BR>&nbsp; &nbsp; &nbsp; &nbsp;欲望无限膨胀、无休止索取<BR>&nbsp; &nbsp; &nbsp; &nbsp;正是造成生态危机的重要因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;而带有敬畏的“返魅”<BR>&nbsp; &nbsp; &nbsp; &nbsp;适当、合理的生活理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;有助于现代人走出物质圈<BR>&nbsp; &nbsp; &nbsp; &nbsp;进入更高层次的生存发展层次正如迟子建自己所说：“我向往</p><p>论的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;我把一花一草<BR>&nbsp; &nbsp; &nbsp; &nbsp;都看做是生命的伙伴”这是桑克《作家迟子建访谈：在厚厚的泥巴后面》中的一段话<BR>&nbsp; &nbsp; &nbsp; &nbsp;用“万物皆有灵”来解释《额尔古纳河右岸》的创作理念是恰当的 </p><p>“祛魅”与“返魅”最大的争议是建立何种社会理念“祛魅”是伴随着启蒙主义应运而生的<BR>&nbsp; &nbsp; &nbsp; &nbsp;他诞生的背景是需要建立新的社会秩序<BR>&nbsp; &nbsp; &nbsp; &nbsp;打破旧有的社会统治阶级<BR>&nbsp; &nbsp; &nbsp; &nbsp;与教会、统治者争夺话语权<BR>&nbsp; &nbsp; &nbsp; &nbsp;“祛魅”对物质文明的发展提供了精神的依据当科技发达到一定程度的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;依然有很多未知的领域是自然科学无法解释的膨胀的物质欲望将人的灵魂陷入了极度的自我膨胀之中<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何解决精神危机？“返魅”成为了首选因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;在《额尔古纳河右岸》中迟子建构建出了一幅美轮美奂的和谐生态图景<BR>&nbsp; &nbsp; &nbsp; &nbsp;这并非是她一时兴起这部作品 “始终保持着一种均匀的创作节奏<BR>&nbsp; &nbsp; &nbsp; &nbsp;一种稳定的美学追求<BR>&nbsp; &nbsp; &nbsp; &nbsp;一种晶莹明亮的文字品格”迟子建认为写作“要爱自己脚下的土地<BR>&nbsp; &nbsp; &nbsp; &nbsp;要一点点地挖掘它<BR>&nbsp; &nbsp; &nbsp; &nbsp;感受它的温度<BR>&nbsp; &nbsp; &nbsp; &nbsp;体味它的博大<BR>&nbsp; &nbsp; &nbsp; &nbsp;你就有了</p><p>风葬<BR>&nbsp; &nbsp; &nbsp; &nbsp;选择四棵直角相对的大树<BR>&nbsp; &nbsp; &nbsp; &nbsp;担在枝桠上<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为一张铺这样“不用抬头<BR>&nbsp; &nbsp; &nbsp; &nbsp;就能看见太阳和月亮<BR>&nbsp; &nbsp; &nbsp; &nbsp;小松鼠会抱着松塔<BR>&nbsp; &nbsp; &nbsp; &nbsp;跳到她身上和她玩耍”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“人离开了这个世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;是去了另一个世界了那个世界比我们曾经生活过的世界要幸福”<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种美好的理解使人在面临死亡时不会感觉到无望与恐惧<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为死亡是另一个美好的开始《额尔古纳河右岸》中将死亡化为一种美好的柔情、浪漫这就是信仰的力量<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是“返魅”的力量 </p><p>他们在森林中生活保持着对自然界神明的敬仰<BR>&nbsp; &nbsp; &nbsp; &nbsp;保持了一种原始、朴素的泛神思想<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此对自然的索取存在一种感恩与敬畏<BR>&nbsp; &nbsp; &nbsp; &nbsp;人、动物对自然的索取均在自然界的承受范围内进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;并没有破坏自然界的生态平衡 </p><p>20世纪80年代“寻根文学”的兴起<BR>&nbsp; &nbsp; &nbsp; &nbsp;将新时期中国文学“返魅”推向新的高潮在对“寻根文学”有着深远影响的《百年孤独》中<BR>&nbsp; &nbsp; &nbsp; &nbsp;这部小说用“魔幻”替代“魅”<BR>&nbsp; &nbsp; &nbsp; &nbsp;故事的情节发展是按照一个神秘羊皮卷的记载进行的<BR>&nbsp; &nbsp; &nbsp; &nbsp;名字被重复使用<BR>&nbsp; &nbsp; &nbsp; &nbsp;人的命运具有重复性<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终马孔多消失在工业文明入侵的时代在《额尔古纳河右岸》中<BR>&nbsp; &nbsp; &nbsp; &nbsp;就有《百年孤独》的影子<BR>&nbsp; &nbsp; &nbsp; &nbsp;小达西诞生<BR>&nbsp; &nbsp; &nbsp; &nbsp;小达西父母不孕不育<BR>&nbsp; &nbsp; &nbsp; &nbsp;在小达西夫妇身上重演等“返魅”在当代文学中并不少见<BR>&nbsp; &nbsp; &nbsp; &nbsp;韩少功《爸爸爸》将丙仔意象化<BR>&nbsp; &nbsp; &nbsp; &nbsp;古老的陋习有着顽强的生命力<BR>&nbsp; &nbsp; &nbsp; &nbsp;对传统的批判性可见一斑《额尔古纳河右岸》则不同<BR>&nbsp; &nbsp; &nbsp; &nbsp;他将一种古老的生活传统写得唯美、恬静<BR>&nbsp; &nbsp; &nbsp; &nbsp;让人觉得亲近甚至向往<BR>&nbsp; &nbsp; &nbsp; &nbsp;但作品中最难得的是鄂温克人清醒地认识到“世上哪有世外桃源呢！”体现了这个古老民族对生活的认知与苦难的承受力这种忍耐与神灵神圣不可侵犯有着很大关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;渎神的人面临着死亡的威胁因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;马粪包在吃熊的时候将熊的骨头乱扔<BR>&nbsp; &nbsp; &nbsp; &nbsp;骨头会卡住他的喉咙保持对神的敬畏<BR>&nbsp; &nbsp; &nbsp; &nbsp;才会懂得感恩<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此获救后马粪包将自己自宫以示忏悔至此<BR>&nbsp; &nbsp; &nbsp; &nbsp;“返魅”主题中灵魂有所敬畏在此得到了树立<BR>&nbsp; &nbsp; &nbsp; &nbsp;也解释了人精神家园中神的重要性<BR>&nbsp; &nbsp; &nbsp; &nbsp;揭示了人与自然和谐的主题正如迟</p>  (责任编辑：admin)
+<img border="0" alt="未意为枝叶招展" src="/images/lenfeng_5584.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5584)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5584)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5584);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20154452.html'>期刊几乎涵盖所有学术领域</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecsgayrimenkul/20157140.html'>否则留在西装上的汗渍会腐蚀面料</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5584" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5584&title=未意为枝叶招展" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5584" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5584" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5584" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5584&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5584');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

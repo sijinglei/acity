@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>一端是一些大地主|我的网站</title>
+<meta name="description" content=" 是精英的历史而现在 他们则被降格为日工或被迫外出移民这些人完全成为被雇佣者 他们自己没有任何共有的权利”处在工业革命社会转型时期的农村下层群体在圈地运动中成为了社" />
+<meta name="keywords" content="一端,一些,地主,精英,历史,现在,他们,降格,日工,被迫," />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.xgqfr.com/adminqfr/Images/a/dynamicsofbelief/" title="1.85狂雷神龙终极">1.85狂雷神龙终极</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/earthsharemedia/" title="变态英雄合击私服">变态英雄合击私服</a></li><li><a href="http://forex8.com/api/connect/a/easttowestvacationguide/" title="热血传奇sf1.76">热血传奇sf1.76</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dylentop/" title="华人城美图">华人城美图</a></li><li><a href="http://www.51kaso.com/admin/Public/a/durangosautorepair/" title="1.85合击传奇">1.85合击传奇</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/educationcitycity/" title="挑战私服发布网">挑战私服发布网</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/edsindia/" title="最新传奇sf发布网">最新传奇sf发布网</a></li><li><a href="http://www.weiboyewu.com/images/default/a/dustandlightshereand/" title="超变态传奇私服">超变态传奇私服</a></li><li><a href="http://www.ftzmled.com/images/pic/a/easyintergame/" title="传奇变态合击私服网">传奇变态合击私服网</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebook2audiobook/" title="轻变传奇私服">轻变传奇私服</a></li><li><a href="http://www.lygsyw.com/include/data/a/dumptrucknr/" title="超变态传奇">超变态传奇</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebookpeeper/" title="热血传奇英雄技能">热血传奇英雄技能</a></li><li><a href="http://www.lygsyw.com/include/data/a/dunderaverealty/" title="征途sf">征途sf</a></li><li><a href="http://www.lygsyw.com/include/data/a/dundeegreatdeal/" title="传奇私服登陆器">传奇私服登陆器</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dysonvacuumsreviews/" title="新开网通传奇私服发布网">新开网通传奇私服发布网</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebao885/" title="传奇合击外挂">传奇合击外挂</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easyturfhouston/" title="复古传奇sf">复古传奇sf</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/efloridaharp/" title="网页传奇">网页传奇</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecoproglobal/" title="新开传奇私服发布">新开传奇私服发布</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dxtvip/" title="天龙私服">天龙私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">传奇私服ip相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/201511638.html" target="_blank" title="它面向出版与印刷领域">它面向出版与印刷领域</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/201510702.html" target="_blank" title="风景油画的描述主体是自然界的景观与物体">风景油画的描述主体是自然界的景观与物体</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/201510218.html" target="_blank" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20159677.html" target="_blank" title="经过学习和锻炼">经过学习和锻炼</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20157156.html" target="_blank" title="夜之女神的称号更加赋予了她传奇的色彩">夜之女神的称号更加赋予了她传奇的色彩</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20157026.html" target="_blank" title="一端是一些大地主">一端是一些大地主</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20156929.html" target="_blank" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20155788.html" target="_blank" title="位于乌当后所的古林寺">位于乌当后所的古林寺</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20155336.html" target="_blank" title="体重减轻叫苦夏">体重减轻叫苦夏</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/edadolanay/20153670.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.zzaidun.com/Tool/Css/a/economicthrust/" title="中变合击私服">中变合击私服</a></h3>
+<ul>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicthrust/201510198.html" title="笔者认为除此之外">笔者认为除此之外</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicthrust/20159963.html" title="中小学图书馆不仅要请来一些国学专家">中小学图书馆不仅要请来一些国学专家</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicthrust/20158784.html" title="在对土方施工过程进行较长时间观察试验的基础上">在对土方施工过程进行较长时间观察试验的基</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicthrust/20158581.html" title="由于现有的定额消耗量测定方法费时费力">由于现有的定额消耗量测定方法费时费力</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicthrust/20158344.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.lygsyw.com/include/data/a/dunellenfloristtoday/" title="魔域私服下载">魔域私服下载</a></h3>
+<ul>
+<li><a href="http://www.lygsyw.com/include/data/a/dunellenfloristtoday/contete12245.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://www.lygsyw.com/include/data/a/dunellenfloristtoday/contete11340.html" title="一配合监理市场的专项整治">一配合监理市场的专项整治</a></li>
+<li><a href="http://www.lygsyw.com/include/data/a/dunellenfloristtoday/contete9858.html" title="泰国橡胶的主要出口市场">泰国橡胶的主要出口市场</a></li>
+<li><a href="http://www.lygsyw.com/include/data/a/dunellenfloristtoday/contete8766.html" title="为提高笔译教学效果">为提高笔译教学效果</a></li>
+<li><a href="http://www.lygsyw.com/include/data/a/dunellenfloristtoday/contete8040.html" title="本文基于稀土资源应用不平衡的现状出发">本文基于稀土资源应用不平衡的现状出发</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 传奇私服ip- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>一端是一些大地主</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 19:35</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=7026&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=7026">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       是精英的历史而现在       他们则被降格为日工或被迫外出移民这些人完全成为被雇佣者       他们自己没有任何共有的权利”处在工业革命社会转型时期的农村下层群体在圈地运动中成为了社</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;是精英的历史<p>而现在<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们则被降格为日工或被迫外出移民这些人完全成为被雇佣者<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们自己没有任何共有的权利”处在工业革命社会转型时期的农村下层群体在圈地运动中成为了社会最早的牺牲品<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会转型带来的社会冲击力使他们身心俱碎、奄奄一息<BR>&nbsp; &nbsp; &nbsp; &nbsp;农业时代正在被一点点的侵蚀掉<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们在无情的命运面只能发出“人在矮檐下<BR>&nbsp; &nbsp; &nbsp; &nbsp;怎敢不低头”的哀叹和无奈 </p><p>层成员“英国的工人即从事体力劳动<BR>&nbsp; &nbsp; &nbsp; &nbsp;靠出卖劳动力为生的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;到18世纪时<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以分为三大类<BR>&nbsp; &nbsp; &nbsp; &nbsp;即从事农业劳动的农业工人、从事家务劳动的仆佣以及从事加工制造的各种工人”<BR>&nbsp; &nbsp; &nbsp; &nbsp;而“制造业中的工人<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括作坊中的工匠及帮工、家庭手工业制中的手工工人<BR>&nbsp; &nbsp; &nbsp; &nbsp;大型工作场地中的工人及工厂工人”下面<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔者就下层民众的生存情况做一个基本的展现 </p><p>5千多名酒馆主和1万名小偷<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;而当时伦敦的人口还不到100万</p><p>在近现代社会以前<BR>&nbsp; &nbsp; &nbsp; &nbsp;下层民众都是数量上占据人口绝大多数的群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;是社会财富的直接生产者<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是社会苦难的主要承受者<BR>&nbsp; &nbsp; &nbsp; &nbsp;无论社会做如何转型<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会结构如何分化整合<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝大多数的下层定位是很难改变的工业革命期间的历史仍然是统治者的历史<BR>&nbsp; &nbsp; &nbsp; &nbsp;下层民众作为一直以来的被统治者<BR>&nbsp; &nbsp; &nbsp; &nbsp;是被历史所遗忘的群体关于英国工业革命时期下层民众的构成<BR>&nbsp; &nbsp; &nbsp; &nbsp;大多史学家的观点是基本一致的劳伦斯</p><p>纽曼曾提到工业革命的早期童工问题是英国社会史当中最黑暗的一章“他们被鞭打<BR>&nbsp; &nbsp; &nbsp; &nbsp;受尽挖空心思的残酷虐待；他们大多饿得骨瘦如柴<BR>&nbsp; &nbsp; &nbsp; &nbsp;但还得在皮鞭下干活<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时甚至被逼得自杀<BR>&nbsp; &nbsp; &nbsp; &nbsp;以逃避这一生的受虐待”可见<BR>&nbsp; &nbsp; &nbsp; &nbsp;工厂工人的生活及工作条件极为恶劣<BR>&nbsp; &nbsp; &nbsp; &nbsp;工厂工人与其他下层群体一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;都受到中上阶层的残酷压榨 </p><p>制造业中的工人是英国工业革命时期社会下层的主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;它包括手工工人和工厂工人手工工人在工业革命之前就大量存在18世纪中期以前<BR>&nbsp; &nbsp; &nbsp; &nbsp;英国从事制造业的手工业者<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝大多数还生活在大城市的郊区或是更偏远的乡村<BR>&nbsp; &nbsp; &nbsp; &nbsp;其手工劳动主要在家庭里完成<BR>&nbsp; &nbsp; &nbsp; &nbsp;偶尔还做些农活<BR>&nbsp; &nbsp; &nbsp; &nbsp;能够相对自由地进行生产<BR>&nbsp; &nbsp; &nbsp; &nbsp;收入也能满足家庭的基本生活需求手工工人的日常生活比较单调<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们更多地专注于自己的小天地<BR>&nbsp; &nbsp; &nbsp; &nbsp;不愿受外来影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;与世隔绝<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有精神活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;在自己的生活环境中没有激烈的波动他们当中能读书的很少<BR>&nbsp; &nbsp; &nbsp; &nbsp;能写写东西的就更少了；他们按时上教堂去<BR>&nbsp; &nbsp; &nbsp; &nbsp;不搞阴谋活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;热衷于体育活动</p><p>作者简介：李强<BR>&nbsp; &nbsp; &nbsp; &nbsp;内蒙古呼和浩特人<BR>&nbsp; &nbsp; &nbsp; &nbsp;云南民族大学人文学院历史系讲师<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究方向为近代欧洲社会史；王世伟<BR>&nbsp; &nbsp; &nbsp; &nbsp;内蒙古奈曼旗人<BR>&nbsp; &nbsp; &nbsp; &nbsp;云南省政府研究室云南年鉴社编辑<BR>&nbsp; &nbsp; &nbsp; &nbsp;硕士 </p><p>家庭服务已经成为一种茁壮成长的产业到工业革命时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;仆佣的数量随着经济的发展而有所增长<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们成为社会中上阶层的附庸社会经济的快速发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;为女孩子们提供了各种各样的工作机会<BR>&nbsp; &nbsp; &nbsp; &nbsp;而看似比较清闲又可以学到人情世故的家政工作便成为了她们的首选“家政服务是最为普遍的工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至连中产阶级家庭也经常送他们的女儿去做家政服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;而聘请其他人为仆人”也正如斯通所说：“近代初期<BR>&nbsp; &nbsp; &nbsp; &nbsp;住在东家的佣工并不像今天这样稀罕<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是一正常现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有最穷的家庭才雇不起佣工从16世纪初第一次人口普查起到19世纪中叶<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有家户中约三分之一包含住在东家的佣工”这些仆佣在主人家中承担一切家务<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括喂养孩子、洗衣做饭、打理庭院</p><p>仆佣是英国社会下层的一个重要群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们人数众多早在工业革命之前的一段时期内<BR>&nbsp; &nbsp; &nbsp; &nbsp;英国仆役就为数不少1694年<BR>&nbsp; &nbsp; &nbsp; &nbsp;伦敦的40个教区里一共生活着人<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中就有5805人是仆役<BR>&nbsp; &nbsp; &nbsp; &nbsp;占伦敦总人口的近五分之一在被统计的一百个村庄的总人口中<BR>&nbsp; &nbsp; &nbsp; &nbsp;仆役所占的比例达13%<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>【xzbu】郑重<p>巴克勒<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;：广西师范大学出版社<BR>&nbsp; &nbsp; &nbsp; &nbsp;2005：392 </p><p>斯通就将近代早期的英国社会分为许多不同的群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括“宫廷贵族、教区绅士阶级、商人/专业人员阶级、城乡小资产拥有者、雇佣劳动者<BR>&nbsp; &nbsp; &nbsp; &nbsp;及靠救济金过活的赤贫阶级”<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中在社会阶层的归类上<BR>&nbsp; &nbsp; &nbsp; &nbsp;除了上述的后两者<BR>&nbsp; &nbsp; &nbsp; &nbsp;他通常把“农工、农夫及工匠”归为社会下层舒小昀在研究1688-1783年的英国社会结构时指出：“英国社会下层既包括农业工人、矿工和仆人等一批出卖劳力的工资劳动者<BR>&nbsp; &nbsp; &nbsp; &nbsp;又包括游民和乞丐等一些潜在的工资劳动者<BR>&nbsp; &nbsp; &nbsp; &nbsp;还包括渔民、牧民等一些个体劳动者”这两种观点都是针对英国前工业社会时期社会结构的划分<BR>&nbsp; &nbsp; &nbsp; &nbsp;而随着工业革命的逐步推进<BR>&nbsp; &nbsp; &nbsp; &nbsp;英国的社会结构也在不断调整<BR>&nbsp; &nbsp; &nbsp; &nbsp;进入新一轮的分化与整合时期就社会下层而言<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着工人队伍的不断扩大<BR>&nbsp; &nbsp; &nbsp; &nbsp;工人群体因种种“共同利益”而逐步形成一种群体意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;：“事实上<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种群体意识是工业革命了不起的精神成果<BR>&nbsp; &nbsp; &nbsp; &nbsp;它是一种源远流长的<BR>&nbsp; &nbsp; &nbsp; &nbsp;更加人性化的生活方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是针对工业革命发生的一种裂变也许这就是1832年英国工人阶级形成的特立独行的地方”因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们认为工业革命时期的英国社会下层群体以工人为主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;还应包括乞丐、小偷及娼妓等其它下</p><p>汤普森<BR>&nbsp; &nbsp; &nbsp; &nbsp;：译林出版社<BR>&nbsp; &nbsp; &nbsp; &nbsp;2001：979 </p><p>他们臭味相投、成群结队地带着斧子、尖嘴锄、手推车和马匹出没于夜晚<BR>&nbsp; &nbsp; &nbsp; &nbsp;上蹿下跳地去抢夺老实人的绵羊、家禽</p><p> 英国工业革命是一场改变社会生活的历史巨变<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为短期内直接遭受工业革命负面影响的下层民众<BR>&nbsp; &nbsp; &nbsp; &nbsp;其基本生存状况与组成值得关注这篇论文阐述了在英国工业革命的历史背景下<BR>&nbsp; &nbsp; &nbsp; &nbsp;下层民众的基本构成是由农业工人、仆佣及制造业工人为主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;还应包括乞丐、小偷及娼妓等其它下层成员 </p><p>人的生活发生了巨大的变化1767年密德兰的一个小册子的作者写道：“在几乎全部的开放教区里<BR>&nbsp; &nbsp; &nbsp; &nbsp;都会有一些有房子的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们拥有数量不多的小块土地<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且有权利可以共同饲养一头母牛或三四只羊<BR>&nbsp; &nbsp; &nbsp; &nbsp;靠着这些牲畜<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时经营小买卖和日常劳动得到的收入<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们过着一种非常舒服的生活”在圈地运动以前的多数情况下<BR>&nbsp; &nbsp; &nbsp; &nbsp;大多数小农能够以一定数量的农牧产品来满足自身的衣食需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;过着自给自足、基本稳定的生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种生活给他们带来安全感失去赖以生存的土地之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;情况就不大一样了“1804年一位茅舍农曾告诉杨<BR>&nbsp; &nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1935064Q2-0.jpg" width="600px" height="400px" />sp; &nbsp; &nbsp;</p><p>乞丐、小偷、娼妓等其他社会下层成员也是英国工业革命时期社会下层民众的组成部分这类社会群体没有稳定的收入<BR>&nbsp; &nbsp; &nbsp; &nbsp;依靠其它社会成员所不齿的方式维持基本的生存<BR>&nbsp; &nbsp; &nbsp; &nbsp;是最为边缘的社会群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;也成为社会问题的焦点圈地运动、人口增长带来了大量自由劳动力<BR>&nbsp; &nbsp; &nbsp; &nbsp;而工业革命使机器生产代替手工劳动<BR>&nbsp; &nbsp; &nbsp; &nbsp;大批劳动者无法就业<BR>&nbsp; &nbsp; &nbsp; &nbsp;相对滞后的保障机制无法从根本上救济这批人<BR>&nbsp; &nbsp; &nbsp; &nbsp;于是他们不得不沦为乞丐、小偷、娼妓<BR>&nbsp; &nbsp; &nbsp; &nbsp;当然在他们中间也不乏那些好吃懒做之徒<BR>&nbsp; &nbsp; &nbsp; &nbsp;无依无靠的老年人以及被病患折磨的人18世纪后期至19世纪<BR>&nbsp; &nbsp; &nbsp; &nbsp;大多数英国人<BR>&nbsp; &nbsp; &nbsp; &nbsp;可能有三分之一甚至一半的人曾在其生命周期的某一段时期内生活在收入微薄、居住极差、病痛困扰的状况中以致“在伦敦<BR>&nbsp; &nbsp; &nbsp; &nbsp;1780年前后<BR>&nbsp; &nbsp; &nbsp; &nbsp;妓女的数目高达5万人<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中不包括那些外室仅仅在伦敦梅里本区一地<BR>&nbsp; &nbsp; &nbsp; &nbsp;妓女就有1万3千人之多<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中有1700人合租了若干整幢的房子”在18世纪末19世纪初<BR>&nbsp; &nbsp; &nbsp; &nbsp;“单伦敦就有</p><p>罗伯兹<BR>&nbsp; &nbsp; &nbsp; &nbsp;：中山大学出版社<BR>&nbsp; &nbsp; &nbsp; &nbsp;1990：75-76 </p><p>汤普森著<BR>&nbsp; &nbsp; &nbsp; &nbsp;沈汉、王加丰译：《共有的习惯》<BR>&nbsp; &nbsp; &nbsp; &nbsp;上海：上海人民出版社<BR>&nbsp; &nbsp; &nbsp; &nbsp;2002年版<BR>&nbsp; &nbsp; &nbsp; &nbsp;第165页转引自爱德华</p><p>而全国该阶层的总数估计为人（包含100万受教区救济的人）”此外<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些穷人铤而走险、以劫掠为生<BR>&nbsp; &nbsp; &nbsp; &nbsp;“像在安菲尔德猎场周边住着的人那样<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>我们屡次看到已婚的、怀孕后期的女工在这些永不疲乏的机器旁边从早到晚受奴役<BR>&nbsp; &nbsp; &nbsp; &nbsp;耗尽了体力而不得不坐下来歇一会儿<BR>&nbsp; &nbsp; &nbsp; &nbsp;要是被经理看见了<BR>&nbsp; &nbsp; &nbsp; &nbsp;就要因这个过错罚款6便士”工厂在很大程度上已经成为他们永远挥之不去的梦魇<BR>&nbsp; &nbsp; &nbsp; &nbsp;工厂工人既不得不在这里谋生<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也害怕并讨厌这里的一切童工在工厂里的待遇则是更加悲惨<BR>&nbsp; &nbsp; &nbsp; &nbsp;一战后的一位英国卫生部的官员乔治</p><p>农业工人是因农业改良特别是圈地运动而直接产生的一个社会群体圈地运动打破了英国农村原有的社会经济基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;大批农民被剥夺了土地<BR>&nbsp; &nbsp; &nbsp; &nbsp;土地随之逐渐地集中于少数人的手中<BR>&nbsp; &nbsp; &nbsp; &nbsp;无地农民沦为可以自由流动的雇工小农意识、与生俱来的土地之恋以及对城市工厂陌生生活方式的恐惧等诸多因素<BR>&nbsp; &nbsp; &nbsp; &nbsp;使部分农民留在农村<BR>&nbsp; &nbsp; &nbsp; &nbsp;沦为农业工人国会派遣的圈地委员们也常常给小户村民们些许金钱以作圈地的补偿<BR>&nbsp; &nbsp; &nbsp; &nbsp;给小地主们留下一小部分土地<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是多数失去生活来源的村民只能坐吃山空<BR>&nbsp; &nbsp; &nbsp; &nbsp;小地主多半也没有钱作篱围地并下本钱耕种<BR>&nbsp; &nbsp; &nbsp; &nbsp;往往只能把地卖给大地主了事这些人有的沦为佃农<BR>&nbsp; &nbsp; &nbsp; &nbsp;有的去城市或殖民地谋生<BR>&nbsp; &nbsp; &nbsp; &nbsp;多数沦为乡村无产者残酷的现实使他们再也不能够到公地上去放养牛、鹅群<BR>&nbsp; &nbsp; &nbsp; &nbsp;在小块地上开荒种菜<BR>&nbsp; &nbsp; &nbsp; &nbsp;拾泥炭或草柴作燃料<BR>&nbsp; &nbsp; &nbsp; &nbsp;或寻找木头作猪圈了在南部和西部英格兰产煤的地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们连面包也不能烘烤<BR>&nbsp; &nbsp; &nbsp; &nbsp;冬天只得挨冻而没有牛和猪<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们一日三餐就单调了<BR>&nbsp; &nbsp; &nbsp; &nbsp;南部只能吃面包和酪<BR>&nbsp; &nbsp; &nbsp; &nbsp;北部则只能吃麦片粥和雀麦18世纪的英国保持着一种独特的土地制度一端是一些大地主<BR>&nbsp; &nbsp; &nbsp; &nbsp;另一端则是大量没有土地以工资为生的劳动者这些没有土地<BR>&nbsp; &nbsp; &nbsp; &nbsp;以工资为生的劳动者就是农业工人<BR>&nbsp; &nbsp; &nbsp; &nbsp;工业革命前后农业工</p><p>”他们那简单而默默无闻的手工技术哺育着工业技术的最初发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;然而随着工业革命的深入<BR>&nbsp; &nbsp; &nbsp; &nbsp;机器越来越多地代替手工工具<BR>&nbsp; &nbsp; &nbsp; &nbsp;工厂越来越多地代替手工作坊<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们的生活开始逐渐被打乱<BR>&nbsp; &nbsp; &nbsp; &nbsp;家庭手工业逐渐失去了市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;大批手工工人丧失了维持基本生活的收入<BR>&nbsp; &nbsp; &nbsp; &nbsp;衣食没有来源、生活没有着落<BR>&nbsp; &nbsp; &nbsp; &nbsp;不得不带着全家成群结队地从乡村涌入城市在城市里<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们过着饥一顿饱一顿的日子<BR>&nbsp; &nbsp; &nbsp; &nbsp;住在城市里最糟糕地区的最破烂的房屋<BR>&nbsp; &nbsp; &nbsp; &nbsp;卫生条件极差的贫民窟导致了一系列社会问题的出现工人们是英国工业革命的牺牲品<BR>&nbsp; &nbsp; &nbsp; &nbsp;手工工人在这场变革中几近凋零<BR>&nbsp; &nbsp; &nbsp; &nbsp;而工厂工人虽然是随着工业革命的开展而兴起的群体<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且是工业革命顺利开展的主力军<BR>&nbsp; &nbsp; &nbsp; &nbsp;但他们在工业革命中所创造的巨大财富与自身获得的些许利益是极不相称的对工人们而言<BR>&nbsp; &nbsp; &nbsp; &nbsp;工厂这一新兴的事物不仅不能使其发财致富<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至是极其可怕的<BR>&nbsp; &nbsp; &nbsp; &nbsp;“在棉纺工厂<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些人不分冬夏<BR>&nbsp; &nbsp; &nbsp; &nbsp;每天14个小时被禁锢在80至84度的高温之中他们受到的各种规定的束缚连黑人也未曾遭遇过</p><p>随时服务于主人的一切需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些看似简单的工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;在日复一日中永无休止仆人做家务<BR>&nbsp; &nbsp; &nbsp; &nbsp;以此出卖劳动力为生<BR>&nbsp; &nbsp; &nbsp; &nbsp;与农业工人、制造业工人相似<BR>&nbsp; &nbsp; &nbsp; &nbsp;雇主对他们的一举一动都有严格的要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们居住在主人宅院中最简陋的房子里<BR>&nbsp; &nbsp; &nbsp; &nbsp;与雇主有明显的等级差别仆佣们过着寄人篱下的日子<BR>&nbsp; &nbsp; &nbsp; &nbsp;“许多人有着类似18世纪初一个15岁女孩的经历<BR>&nbsp; &nbsp; &nbsp; &nbsp;那个女孩告诉法官<BR>&nbsp; &nbsp; &nbsp; &nbsp;她的女主人不仅用非常粗野的名字<BR>&nbsp; &nbsp; &nbsp; &nbsp;如母狗、婊子等等来称呼她<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且还无缘无故地下死手打她”作家理查逊在《帕梅拉》中描述的女仆帕梅拉的最初遭遇<BR>&nbsp; &nbsp; &nbsp; &nbsp;真实地反映了当时仆人在主人家中的境遇<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于主人b先生对帕梅拉仆人地位的蔑视<BR>&nbsp; &nbsp; &nbsp; &nbsp;便动不动对她进行羞辱<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至拘禁帕梅拉 三、制造业工人 </p>  (责任编辑：admin)
+<img border="0" alt="一端是一些大地主" src="/images/lenfeng_7026.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',7026)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',7026)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(7026);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/edadolanay/20156929.html'>【xzbu】郑重</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/edadolanay/20157156.html'>夜之女神的称号更加赋予了她传奇的色彩</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=7026" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=7026&title=一端是一些大地主" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=7026" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=7026" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="7026" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=7026&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '7026');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

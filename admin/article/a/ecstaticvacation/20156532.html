@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>尼采不是简单地将透视法看成一种艺术手法|我的网站</title>
+<meta name="description" content=" 今天人们对透视法的研究 摘要：透视法作为文艺复兴时期的一种绘画方法 虽然随着艺术的发展逐渐被边缘化 但是尼采对这个概念的隐喻使用 却使它在哲学上焕发了新的光彩 " />
+<meta name="keywords" content="尼采,不是,简单,透视,看成,一种,艺术,手法,今天,人们," />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.jcjhlw.com/images/qq/a/ebmmart/" title="找合击sf">找合击sf</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/" title="采集系统">采集系统</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebtpmarketing/" title="私服热血">私服热血</a></li><li><a href="http://www.weiboyewu.com/images/default/a/durtyderby/" title="玉兔传奇">玉兔传奇</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastendcheesecake/" title="超级变态传世私服">超级变态传世私服</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edjofsanity/" title="传奇3私服网站">传奇3私服网站</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edelweisstelecom/" title="传奇新开私服">传奇新开私服</a></li><li><a href="http://www.yizuocity.com/admin/article/a/eculdesac/" title="传奇地图补丁">传奇地图补丁</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebusinessmarketingexperts/" title="网通传奇sf">网通传奇sf</a></li><li><a href="http://www.hljtb.org/images/hpv/a/ecashare7/" title="传奇私服英雄合击版">传奇私服英雄合击版</a></li><li><a href="http://www.51kaso.com/admin/Public/a/durhamconcretecontractors/" title="anquye.com">anquye.com</a></li><li><a href="http://www.lygsyw.com/include/data/a/" title="少林">少林</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdcdduplicator/" title="网际快车">网际快车</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/earnbynetworking/" title="99私服">99私服</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecopursystems/" title="新开私服传奇">新开私服传奇</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dx3g/" title="盛大传奇登陆器下载">盛大传奇登陆器下载</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebookfreesharingpayyou/" title="网通新开传奇">网通新开传奇</a></li><li><a href="http://fzlanting.com/admin/class/a/efathperfumes/" title="赤壁sf">赤壁sf</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecosavage/" title="最新传奇合击私服">最新传奇合击私服</a></li><li><a href="http://www.ahshtz.com/api/about/a/ecmobileservices/" title="传奇私服内挂">传奇私服内挂</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开 传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/201510184.html" target="_blank" title="由于中考的压力">由于中考的压力</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156708.html" target="_blank" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156532.html" target="_blank" title="尼采不是简单地将透视法看成一种艺术手法">尼采不是简单地将透视法看成一种艺术手法</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156379.html" target="_blank" title="由于中国-东盟自由贸易区的启动">由于中国-东盟自由贸易区的启动</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20155492.html" target="_blank" title="在面对学科研修诸多困境的情况下">在面对学科研修诸多困境的情况下</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20152084.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://lzbjzs.com/apply/shfr/a/educationatworld/" title="梦幻国度私服">梦幻国度私服</a></h3>
+<ul>
+<li><a href="http://lzbjzs.com/apply/shfr/a/educationatworld/201511947.html" title="每一篇文章在教学前都有可以设计一些目标问题">每一篇文章在教学前都有可以设计一些目标问</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/educationatworld/201511820.html" title="本刊将竭诚为国内外大气和海洋科学领域的科学家服务">本刊将竭诚为国内外大气和海洋科学领域的科</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/educationatworld/201511387.html" title="很多研究者利用品种的间种混种和套种">很多研究者利用品种的间种混种和套种</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/educationatworld/20157212.html" title="我们得益于改革开放的时代">我们得益于改革开放的时代</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/educationatworld/20153753.html" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.mrkeer.com.cn/images/ygy/a/dwellinglist/" title="机战sf网">机战sf网</a></h3>
+<ul>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwellinglist/contete11681.html" title="摘要内容包括目的结果和结论">摘要内容包括目的结果和结论</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwellinglist/contete9973.html" title="分析与解答此题属对实验结论的评估">分析与解答此题属对实验结论的评估</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwellinglist/contete9596.html" title="凡是使用阿拉伯数字且很得体的地方">凡是使用阿拉伯数字且很得体的地方</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwellinglist/contete9013.html" title="图表中字符和数据应准确无误">图表中字符和数据应准确无误</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwellinglist/contete8258.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开 传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>尼采不是简单地将透视法看成一种艺术手法</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 17:59</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=6532&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=6532">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>: 今天人们对透视法的研究 摘要：透视法作为文艺复兴时期的一种绘画方法       虽然随着艺术的发展逐渐被边缘化       但是尼采对这个概念的隐喻使用       却使它在哲学上焕发了新的光彩  </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                             </p><p>今天人们对透视法的研究<p> 摘要：透视法作为文艺复兴时期的一种绘画方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;虽然随着艺术的发展逐渐被边缘化<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是尼采对这个概念的隐喻使用<BR>&nbsp; &nbsp; &nbsp; &nbsp;却使它在哲学上焕发了新的光彩<BR>&nbsp; &nbsp; &nbsp; &nbsp;20世纪对尼采的透视主义的热烈讨论就是一个明证尼采不是简单地将透视法看成一种艺术手法<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是着重其隐喻意义<BR>&nbsp; &nbsp; &nbsp; &nbsp;认为它是生命解释世界的“光学”原理<BR>&nbsp; &nbsp; &nbsp; &nbsp;生命的基本条件 </p><p>尼采经常表示<BR>&nbsp; &nbsp; &nbsp; &nbsp;他的“艺术”概念应当理解为“艺术家的意义”埃斯库洛斯、荷马、文艺复兴时期的艺术家以及其继承者莎士比亚和歌德等人<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是尼采所颂扬的伟大艺术家在《快乐的科学》中的一则“向艺术家学习什么？”的标题下<BR>&nbsp; &nbsp; &nbsp; &nbsp;尼采说：“与事物拉开距离<BR>&nbsp; &nbsp; &nbsp; &nbsp;直到看不见它们的程度<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果我们还想看到它们<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们的眼睛可以补看；或者变换角度观看<BR>&nbsp; &nbsp; &nbsp; &nbsp;将之裁剪并放到框架中；或者使之部分地相互遮蔽<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便我们使用建筑上的透视法；或者用有色玻璃观看<BR>&nbsp; &nbsp; &nbsp; &nbsp;在夕阳的余晖中观看<BR>&nbsp; &nbsp; &nbsp; &nbsp;或者赋予事物一层不完全透明的表层凡此种种<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们都应当向艺术家学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且争取在其他事情上比他们更聪明因为这种微妙的力量通常随着艺术的中止和生活的开始而终止；但是我们想成为我们生活的诗人</p><p>从词源学上看<BR>&nbsp; &nbsp; &nbsp; &nbsp;“透视”概念来自于中世纪拉丁语的“perspectiva”<BR>&nbsp; &nbsp; &nbsp; &nbsp;指“光学”（optics）它是由动词“看”（specere）加上介词“通过”组成<BR>&nbsp; &nbsp; &nbsp; &nbsp;意思是“看穿”在文艺复兴时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;这个词被用于表达一种绘画技法<BR>&nbsp; &nbsp; &nbsp; &nbsp;即通常所谓的“透视法” </p><p>所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;与早期的王权象征的单眼透视相比<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种新的社会组织实现了另一种视觉权力的形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要个体始终可以被看到<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么谁在看也就无关紧要了 </p><p>文艺复兴时期的透视法<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于透视点的选择非常关键并且<BR>&nbsp; &nbsp; &nbsp; &nbsp;艺术家还把单点透视看作是描绘空间的合乎自然规则的方法这种对特殊视点的要求在西方思想中是独特的<BR>&nbsp; &nbsp; &nbsp; &nbsp;西方世界科学的优越性在这里可以窥见一斑 </p><p>【xzbu】郑重<p>到了18世纪晚期和19世纪的早期<BR>&nbsp; &nbsp; &nbsp; &nbsp;透视法被应用于一种新的社会组织方式上<BR>&nbsp; &nbsp; &nbsp; &nbsp;以身体控制为核心这种控制同样是通过站在某个监视点上实现的这就是福柯（michel foucault）所说的“规训社会”比如18世纪边沁（jeremy bentham）设计的“圆形监狱”在圆形监狱的中心塔上的监视者通过可见性把被监视者尽收眼底<BR>&nbsp; &nbsp; &nbsp; &nbsp;而被监视者却无法看到监视者和其他牢友这说明了透视法有利于现代的一种理想的社会控制模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种控制被广泛应用到军营、工厂和监狱等场所“这是一种关于复杂的关系权力的物理学这种权力不是在国王身上而是在能够用这些关系加以区分的肉体中达到最大的强度在理论上<BR>&nbsp; &nbsp; &nbsp; &nbsp;边沁确定了另一种分析社会肌体及遍布社会的权力关系的做法从实践角度<BR>&nbsp; &nbsp; &nbsp; &nbsp;他规定了征服各种肉体和力量的做法<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种做法应该在实践君主统治术的同时增加了权力的效用”</p><p>尼采上述对透视法的隐喻使用<BR>&nbsp; &nbsp; &nbsp; &nbsp;产生了一种重要的哲学思想<BR>&nbsp; &nbsp; &nbsp; &nbsp;即透视主义我们所意识到的世界必然是经过我们的透视法改变的世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;即是我们在镜子中看到的世界这个世界是我们的兴趣、利益和生活方式的投射<BR>&nbsp; &nbsp; &nbsp; &nbsp;不是世界本身尼采经常将这个世界看成是一个幻觉、欺骗、艺术的世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是对于我们而言的世界<BR>&nbsp; &nbsp; &nbsp; &nbsp;是我们自身条件投射的世界像形而上学、科学都属于这个世界<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1K922B11-0.jpg" width="600px" height="400px" />上的幻觉<BR>&nbsp; &nbsp; &nbsp; &nbsp;即属于我们的“透视</p><p>透视艺术与创造这种艺术的艺术家相比<BR>&nbsp; &nbsp; &nbsp; &nbsp;显然后者更重要<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为我们需要像艺术家对待艺术那样来对待生活所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;当尼采在其他地方讨论透视法的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;他更多情况下不是专指这门技艺<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是隐喻用法<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如他经常说“生命的透视法”、“生命的光学”、“生命的透视</p><p>这里的意思是<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们对世界的认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;正如在镜子中反映的一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;都不是事物本身<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是被我们改变了的事物<BR>&nbsp; &nbsp; &nbsp; &nbsp;“移植”、“曲解”和“视域表面的目的论”等属于透视法的一切<BR>&nbsp; &nbsp; &nbsp; &nbsp;决定了我们不是如其说是地反映事物 </p><p>我们应当向艺术家学习各种看事物的方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;透视法也是我们要学习的但是<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种学习目的是要将艺术应用于我们的生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;做生活的诗人<BR>&nbsp; &nbsp; &nbsp; &nbsp;还注意到其权力效用<BR>&nbsp; &nbsp; &nbsp; &nbsp;认为透视点的选择<BR>&nbsp; &nbsp; &nbsp; &nbsp;要紧的不是几何学的精确性<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是传达“视觉权力”的能力透视法只不过是画家藉以获取并表现视觉权力的一种手段而已就是阿尔贝蒂在他的《论图像》中<BR>&nbsp; &nbsp; &nbsp; &nbsp;也把从眼睛到图像的直线描述为光线之“王”在文艺复兴时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;国王是各城邦国家的统治者<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是艺术的委托人17世纪<BR>&nbsp; &nbsp; &nbsp; &nbsp;透视法被运用于法国的皇家宫苑凡尔赛宫<BR>&nbsp; &nbsp; &nbsp; &nbsp;国王路易十四的宝座就坐落在这条线上<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样就惟有他一人拥有最佳的视点位置“在文艺复兴时期和早期现代的宫廷文化中<BR>&nbsp; &nbsp; &nbsp; &nbsp;理想的观看者和实际的观看者经常是同一个人</p><p>光学”等这些隐喻都表达了一个意思<BR>&nbsp; &nbsp; &nbsp; &nbsp;即一切生命都根据自我中心来确定远近关系不仅存在着一个透视中心即生命自身<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且还存在一个透视范围<BR>&nbsp; &nbsp; &nbsp; &nbsp;即视域尼采将上述透视中心和透视范围结合起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是他所谓的生命的透视法这种透视法被他看成是一切生命的基本条件“你应当学会一切价值判断中的透视法</p><p>你应当学会理解一切是非中的必要的非正义、与生命不可分割的非正义<BR>&nbsp; &nbsp; &nbsp; &nbsp;理解甚至连生命本身也是以透视法及其非正义为条件的”</p><p>尼采关于透视主义的一段总结的话这样说：“世界的价值存在于我们的解释中（也许在别的什么地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;可能有不同于纯粹人类解释的其他解释）；迄今为止的解释都是透视主义的估价<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们凭借它在生命中<BR>&nbsp; &nbsp; &nbsp; &nbsp;即在求强力、求生长的意志中自我保存；人的每一提高都导致对较狭隘的解释的克服；每一达到的强化和力的扩展都开辟了新的透视<BR>&nbsp; &nbsp; &nbsp; &nbsp;唤起了对新的视域的信念<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>在尼采的思想视野中<BR>&nbsp; &nbsp; &nbsp; &nbsp;文艺复兴代表了一个伟大的时代<BR>&nbsp; &nbsp; &nbsp; &nbsp;他认为在文艺复兴时期古典主义的理想和一切高贵的价值观得到了光辉灿烂的复兴尼采将文艺复兴看成是上个千年的黄金时代<BR>&nbsp; &nbsp; &nbsp; &nbsp;对文艺复兴的赞颂<BR>&nbsp; &nbsp; &nbsp; &nbsp;当然是因为它是古典艺术的复兴 </p>  (责任编辑：admin)
+<img border="0" alt="尼采不是简单地将透视法看成一种艺术手法" src="/images/lenfeng_6532.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',6532)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',6532)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(6532);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156379.html'>由于中国-东盟自由贸易区的启动</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156708.html'>本刊对文稿有修改权</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=6532" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=6532&title=尼采不是简单地将透视法看成一种艺术手法" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=6532" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=6532" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="6532" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=6532&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '6532');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

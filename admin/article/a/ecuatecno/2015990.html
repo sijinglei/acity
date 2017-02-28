@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>平常人们都在自觉与不自觉地接受着校园文化的熏陶|我的网站</title>
+<meta name="description" content=" 表彰先进弘扬正气校园文化是以学生为主体 以课外文化活动为主要内容 以校园为主要空间 以校园精神为主要特征的一种群体文化职业学校开展校园文化建设对于提高" />
+<meta name="keywords" content="平常,人们,都在,自觉,接受,校园文化,熏陶,表彰,先进,弘" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.zyzginfo.com/images/lurd/a/ealeyfamilyreunion/" title="合击传奇私服发布网">合击传奇私服发布网</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/earthrisespace/" title="1.85传奇加速器">1.85传奇加速器</a></li><li><a href="http://www.weiboyewu.com/images/default/a/dutytheirs/" title="老虎机">老虎机</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecolifelawncare/" title="最新传奇世界私服">最新传奇世界私服</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dyestonegap/" title="传奇老客户端">传奇老客户端</a></li><li><a href="http://www.cowinvc.com/data/admin/a/eatnowph/" title="刚开一秒传奇">刚开一秒传奇</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdtoipadhd/" title="仿逐鹿中原传奇网站">仿逐鹿中原传奇网站</a></li><li><a href="http://wjwlcm.com/data/attachments/a/ezleads/" title="传奇外传官网下载">传奇外传官网下载</a></li><li><a href="http://fzlanting.com/admin/class/a/efesmt2/" title="超级变态传奇私服网">超级变态传奇私服网</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easyturfhouston/" title="复古传奇sf">复古传奇sf</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebonylovin/" title="合击sf发布网">合击sf发布网</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastonandhardy/" title="合计传奇">合计传奇</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebayecourse/" title="传奇私服版本">传奇私服版本</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/ea00/" title="变态私服">变态私服</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastofindiashop/" title="1.76金币传奇">1.76金币传奇</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwightyoakamlyrics/" title="盛大客户端十周年">盛大客户端十周年</a></li><li><a href="http://www.lygsyw.com/include/data/a/dundeeconeyisland/" title="盛大热血传奇官网">盛大热血传奇官网</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eagleheartinvestments/" title="传奇世界私服发布网">传奇世界私服发布网</a></li><li><a href="http://www.darenaika.com/images/lurd/a/easternblockmusic/" title="最新变态传奇">最新变态传奇</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easywebbies/" title="赤月怎么走">赤月怎么走</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">房网通登陆相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201512207.html" target="_blank" title="VEGF的表达调控受多种因素的影响">VEGF的表达调控受多种因素的影响</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201511862.html" target="_blank" title="本刊论文均有中英文摘要">本刊论文均有中英文摘要</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201511060.html" target="_blank" title="以往的高光谱或多光谱图像分类与识别">以往的高光谱或多光谱图像分类与识别</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201510156.html" target="_blank" title="我住的房子周边">我住的房子周边</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201510126.html" target="_blank" title="应用主动降噪技术降低东风一款中型商用车车内噪声">应用主动降噪技术降低东风一款中型商用车车内</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20159924.html" target="_blank" title="这是世纪老人季羡林说过的话">这是世纪老人季羡林说过的话</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20158569.html" target="_blank" title="摘要必须拥有与论文同等量的主要信息">摘要必须拥有与论文同等量的主要信息</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20157768.html" target="_blank" title="三年级的习 当前">三年级的习 当前</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20157046.html" target="_blank" title="为了留住绿色">为了留住绿色</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20155614.html" target="_blank" title="传统的教学过程往往以教师为主">传统的教学过程往往以教师为主</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/" title="武魂私服">武魂私服</a></h3>
+<ul>
+<li><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/201511517.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/201511054.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/201510215.html" title="高职院的发展一般都依托于一定的产业">高职院的发展一般都依托于一定的产业</a></li>
+<li><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/20159964.html" title="例如：在呈现时">例如：在呈现时</a></li>
+<li><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/20159591.html" title="随着社会的发展和经济体制改革的深入">随着社会的发展和经济体制改革的深入</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.hljtb.org/images/hpv/a/eccsupply/" title="私服开区一条龙">私服开区一条龙</a></h3>
+<ul>
+<li><a href="http://www.hljtb.org/images/hpv/a/eccsupply/qq12052.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.hljtb.org/images/hpv/a/eccsupply/qq10256.html" title="管理人员的自身素质">管理人员的自身素质</a></li>
+<li><a href="http://www.hljtb.org/images/hpv/a/eccsupply/qq10211.html" title="针对这些问题进行分析">针对这些问题进行分析</a></li>
+<li><a href="http://www.hljtb.org/images/hpv/a/eccsupply/qq9298.html" title="但究竟有多少">但究竟有多少</a></li>
+<li><a href="http://www.hljtb.org/images/hpv/a/eccsupply/qq8722.html" title="诸多研究表明">诸多研究表明</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 房网通登陆- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>平常人们都在自觉与不自觉地接受着校园文化的熏陶</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-18 17:52</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=990&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=990">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       表彰先进弘扬正气校园文化是以学生为主体       以课外文化活动为主要内容       以校园为主要空间       以校园精神为主要特征的一种群体文化职业学校开展校园文化建设对于提高</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;表彰先进弘扬正气<p>校园文化是以学生为主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;以课外文化活动为主要内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;以校园为主要空间<BR>&nbsp; &nbsp; &nbsp; &nbsp;以校园精神为主要特征的一种群体文化职业学校开展校园文化建设对于提高师生员工的凝聚力<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养良好的校风<BR>&nbsp; &nbsp; &nbsp; &nbsp;培育高素质技能型专门人才起着重要的作用1986年共青团上海市学校部召开了&ldquo;校园文化理论研讨会&rdquo;<BR>&nbsp; &nbsp; &nbsp; &nbsp;拉开了校园文化建设的序幕<BR>&nbsp; &nbsp; &nbsp; &nbsp;随之许多学校对校园文化建设展开了深入的实践研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;取得了明显的成效</p><p>学校历经九十余年办学历程<BR>&nbsp; &nbsp; &nbsp; &nbsp;由一所普通职业学校跻身为全国重点中等职业学校<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而成长为高等职业技术学校学校在坚持中不断发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成校园文化建设的重要部分通过编撰校志<BR>&nbsp; &nbsp; &nbsp; &nbsp;记录创造学校历史的常人轶事<BR>&nbsp; &nbsp; &nbsp; &nbsp;吸取历史经验教训<BR>&nbsp; &nbsp; &nbsp; &nbsp;以利将来持续发展</p><p>将校园文化建设与教师的成长融为一体<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过校园文化建设引导和培养教师的职业精神与人文素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;把校园文化建设与教师的学习、工作与生活相结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;养教师的精、神<BR>&nbsp; &nbsp; &nbsp; &nbsp;育教师的技、德学校成立青年教师学术沙龙<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展以&ldquo;青年教师职业身份认同&rdquo;、&ldquo;青少年叛逆行为心理分析及教育对策&rdquo;为主题的学术沙龙活动；组织专兼职青年教师设计展示个人《职业生涯规划》；举行青年教师师德宣誓、优秀教师表彰、&ldquo;金秋读书节&rdquo;征文交流等活动形成浓郁学术氛围、励学敦行</p><p>按照&ldquo;校园文化立足整体和谐美、绿化环境表达人与自然美、室内布置营造视觉艺术美、人际交往弘扬文明向上美&rdquo;的理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;校园文化建设着眼于学校总体布局的和谐统一<BR>&nbsp; &nbsp; &nbsp; &nbsp;着眼于与专业文化学科建设相结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;着眼于环境文化对师生的熏陶和感染</p><p>学校具有长期的办学历史<BR>&nbsp; &nbsp; &nbsp; &nbsp;有着丰厚的文化底蕴和人文情愫<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过校园文化建设活动的开展<BR>&nbsp; &nbsp; &nbsp; &nbsp;汲取精华、传承光大<BR>&nbsp; &nbsp; &nbsp; &nbsp;体现学校悠久的历史文化与创建和谐校园的融合<BR>&nbsp; &nbsp; &nbsp; &nbsp;体现学校的办学理念、风格和氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;使校园文化建设既有历史内涵<BR>&nbsp; &nbsp; &nbsp; &nbsp;又充满时代气息</p><p>论文网8200余万篇毕业论文、各种论文格式和论文范文以及9千多种期刊杂志的论文征稿及论文投稿信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;是论文写作、论文投稿和论文发表的论文参考网站<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是科研人员论文检测和发表论文的理想平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;</p><p>学校成立校园文化建设组织机构<BR>&nbsp; &nbsp; &nbsp; &nbsp;制定&ldquo;校园文化建设活动方案&rdquo;<BR>&nbsp; &nbsp; &nbsp; &nbsp; 明确活动要求和目标任务<BR>&nbsp; &nbsp; &nbsp; &nbsp;以保持、发扬学校人文精神所形成的巨大精神力量和心理环境</p><p>校园文化建设活动所呈现的精神追求<BR>&nbsp; &nbsp; &nbsp; &nbsp;对学生是一种激励、期望要引导学生自觉接受校园文化的熏陶<BR>&nbsp; &nbsp; &nbsp; &nbsp;认同校园文化中包含的发展目标、团队意识和价值理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;达到启迪心智、陶冶心灵的效果</p><p>校园文化是一种影响力很强的精神规范<BR>&nbsp; &nbsp; &nbsp; &nbsp;它规范着学校和师生员工的工作与学习行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;对学校的教育教学起着导向作用校园文化中蕴含着教育目的<BR>&nbsp; &nbsp; &nbsp; &nbsp;在潜移默化地影响、同化校园中的每一个人平常人们都在自觉与不自觉地接受着校园文化的熏陶<BR>&nbsp; &nbsp; &nbsp; &nbsp;对学生的价值取向、思想品德的形成以及生活方式的选择有着重要的影响校园文化所形成的校园氛围体现了学校每个成员的价值观、集体荣誉感和精神面貌通过校园文化建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;在校园内形成良好的文化环境与精神氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;有利于老师和学生将价值取向及行为取向引导到学校确定的目标上</p><p>我校于2006年10月借助新校区落成的契机<BR>&nbsp; &nbsp; &nbsp; &nbsp;启动了&ldquo;与学校一路同行、让文化启迪心灵&rdquo;为主题的校园文化建设活动对进一步提高学校管理水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;传承历史文化、弘扬学校精神、营造育人环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;起到了积极的推动作用在活动中<BR>&nbsp; &nbsp; &nbsp; &nbsp;全校师生积极响应、共同参与<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分发挥了全体师生在校园文化建设中的主体作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;依托学校深厚文化积淀的教育资源优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;提炼学校优良传统及个性化的办学理念<BR>&nbsp; &nbsp; &nbsp; &nbsp;使校园文化建设成为推进学校和谐发展的重要载体</p><p>校园文化建设是德育教育的主要阵地<BR>&nbsp; &nbsp; &nbsp; &nbsp;是培育学生健康人格、良好品行的有效手段学校组织颂英烈活动、医学生宣誓和入团宣誓仪式<BR>&nbsp; &nbsp; &nbsp; &nbsp;传承职业道德文化；举行国旗下讲话、养成教育<BR>&nbsp; &nbsp; &nbsp; &nbsp;激励学生热爱祖国、热爱校园；进行&ldquo;感动校园触动我心&rdquo;学生自我教育系列活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;使学生学会用心感受生活中的美<BR>&nbsp; &nbsp; &nbsp; &nbsp;体会平凡中的感动；举办 &ldquo;金秋读书节&rdquo;购书、名著欣赏等活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;陶冶学生情操通过主题鲜明的系列教育活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;积极引导学生对自然、人生的认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;对理想的美好追求<BR>&nbsp; &nbsp; &nbsp; &nbsp;将一份职业精神、责任爱心传递给学生</p><p>校园文化丰富多彩<BR>&nbsp; &nbsp; &nbsp; &nbsp;为师生员工提供了巨大的文化空间和活动背景<BR>&nbsp; &nbsp; &nbsp; &nbsp;对师生员工的生活信念、道德理想与行为规则有着强大的感召力<BR>&nbsp; &nbsp; &nbsp; &nbsp;以此形成精神振奋、开拓进取的良好风气职业学校校园文化作为校园内价值系统的精华<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为实现学校发展目标的一种潜在力量<BR>&nbsp; &nbsp; &nbsp; &nbsp;对师生员工的工作、学习起着巨大的激励作用同时校园文化具有良好的约束作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;促使师生员工自觉遵守学校各项制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;维护学校形象</p><p>学校对办学理念、视觉识别标准进行全面统一设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;使学校精神与文化底蕴形象化、直观化<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成学校特有的品牌文化学校面向全校师生征集&ldquo;徽标、教风、学风&rdquo;<BR>&nbsp; &nbsp; &nbsp; &nbsp;在醒目位置建造校训石、校风墙<BR>&nbsp; &nbsp; &nbsp; &nbsp;渲染学校文化的核心精神</p><p>学校利用建校八十八周年、升格为高等职业技术学校契机<BR>&nbsp; &nbsp; &nbsp; &nbsp;举行庆典活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展《走过八十八年》征文<BR>&nbsp; &nbsp; &nbsp; &nbsp;《光阴的故事》老照片征集<BR>&nbsp; &nbsp; &nbsp; &nbsp;设计制作《走过八十八年》画册及大型展版<BR>&nbsp; &nbsp; &nbsp; &nbs<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141018/1K215L17-0.jpg" width="600px" height="400px" />p;拍摄校庆宣传片《传承博爱再铸辉煌》<BR>&nbsp; &nbsp; &nbsp; &nbsp;对学校历史文化进行回顾、提升<BR>&nbsp; &nbsp; &nbsp; &nbsp;为校园文化建设活动提供更大的创设空间<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分展示学校历史文化风采<BR>&nbsp; &nbsp; &nbsp; &nbsp;彰显办学理念</p><p>在校园文化建设过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们始终认为<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校文化不仅仅是文化传承与文化创新的统一<BR>&nbsp; &nbsp; &nbsp; &nbsp;更是表层形式与深层内涵的统一、文化个性与文化规范的统一、多元文化与主流文化的统一随着时代的发展和社会的需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校文化建设的探索永无止境我们要进一步推进校园文化建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进学校各项工作又好又快地发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;为提升办学品质、构建和谐校园积极努力</p><p>围绕学科建设与课程改革<BR>&nbsp; &nbsp; &nbsp; &nbsp;将校园文化建设与课程资源建设融为一体<BR>&nbsp; &nbsp; &nbsp; &nbsp;凸显学校传统文化、办学特色和优势学科学校举办护理人力资源开发与建设等多项专题研讨会<BR>&nbsp; &nbsp; &nbsp; &nbsp;组织开设职业生涯规划、交友之道等学术讲座<BR>&nbsp; &nbsp; &nbsp; &nbsp;提升专业文化素养 </p><p>论文导读：职业学校开展校园文化建设对于提高师生员工的凝聚力<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养良好的校风<BR>&nbsp; &nbsp; &nbsp; &nbsp;培育高素质技能型专门人才起着重要的作用1986年共青团上海市学校部召开了&ldquo;校园文化理论研讨会&rdquo;<BR>&nbsp; &nbsp; &nbsp; &nbsp;拉开了校园文化建设的序幕<BR>&nbsp; &nbsp; &nbsp; &nbsp;随之许多学校对校园文化建设展开了深入的实践研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;取得了明显的成效</p><p>将德育教育的理念变成一种精神形式溶于校园文化通过价值观念、道德观念和群体意识的培养<BR>&nbsp; &nbsp; &nbsp; &nbsp;使全体师生员工对学校产生认同感<BR>&nbsp; &nbsp; &nbsp; &nbsp;使学校真正成为一个有机整体<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有凝聚力和向心力<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成团结和谐的氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成良好的校风、学风</p><p>职业学校开展校园文化建设需要学校领导高度重视<BR>&nbsp; &nbsp; &nbsp; &nbsp;全员共同参与<BR>&nbsp; &nbsp; &nbsp; &nbsp;将校园文化建设融入学校的各项工作之中</p><p>结合《职业生涯规划》课程的教学<BR>&nbsp; &nbsp; &nbsp; &nbsp;让学生自己规划职业生涯<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用&ldquo;职业生涯规划演讲比赛&rdquo;等方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;让学生呈现对美好未来追求的向往之心<BR>&nbsp; &nbsp; &nbsp; &nbsp;体现文化气质、人文情怀与职业精神；开展暑期社会实践活动、优秀实习生报告会、青年志愿者活动周等<BR>&nbsp; &nbsp; &nbsp; &nbsp;使学生明确今后的工作职责</p><p>班级文化建设中首先抓班主任队伍建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展班主任素质拓展训练<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高班主任的综合能力和管理水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;激励班主任用爱心、责任心与学生架起沟通的桥梁<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进班级形成良好的班风二是充分发挥各班级的主观能动性<BR>&nbsp; &nbsp; &nbsp; &nbsp;营造浓厚的班级文化氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;各班都有目标明确、励志奋进的班风<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展各具特色的主题班会 </p><p>本着&ldquo;激扬青春活力<BR>&nbsp; &nbsp; &nbsp; &nbsp;丰富校园文化<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务学生大众&rdquo;的宗旨<BR>&nbsp; &nbsp; &nbsp; &nbsp;组建篮球社、英语沙龙社等四大类二十七个学生社团组织<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展丰富的学生课余生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养学生的能力特长、拓展校园文化建设平台</p><p>举办秋季田径运动会、男子篮球赛<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养学生团结协作、竞争向上的意识；开展&ldquo;校园十佳歌手大赛&rdquo;<BR>&nbsp; &nbsp; &nbsp; &nbsp;点燃青春激情<BR>&nbsp; &nbsp; &nbsp; &nbsp;展现亮丽风采；组织&ldquo;放飞梦想<BR>&nbsp; &nbsp; &nbsp; &nbsp;守护生命&rdquo;纪念一二&middot;九运动文艺汇演<BR>&nbsp; &nbsp; &nbsp; &nbsp;激发爱国热情；通过这些校园文化建设的重要载体<BR>&nbsp; &nbsp; &nbsp; &nbsp;弘扬学校传统<BR>&nbsp; &nbsp; &nbsp; &nbsp;丰富校园生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;展示学生风采</p><p>本着典雅秀致、简洁经济的原则<BR>&nbsp; &nbsp; &nbsp; &nbsp;对校园环境进行整体规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;加大校园文化环境建设投入首先注重校园绿化工程建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;使绿化面积达学校面积的37%绿化工程充分体现人与自然的和谐亲近<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成常绿与落叶树种结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;乔、藤互相补充<BR>&nbsp; &nbsp; &nbsp; &nbsp;以自然植物绿茵草地为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;辅以石板小径、休闲小站<BR>&nbsp; &nbsp; &nbsp; &nbsp;点面结合其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;环境氛围注重体现学校精神<BR>&nbsp; &nbsp; &nbsp; &nbsp;力求校园文化达到无处不在<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校大门摆放&ldquo;用爱和知识守护生命&rdquo;的校训石；学校主厅正面布置醒目的徽标和&ldquo;民主和谐、踏实进取&rdquo;的校风<BR>&nbsp; &nbsp; &nbsp; &nbsp;背面是&ldquo;医学生誓词&rdquo;；办公区域<BR>&nbsp; &nbsp; &nbsp; &nbsp;走廊上镌刻教风&ldquo;厚德博学 敬业爱生&rdquo;；在学生宿舍楼梯过道、教学大楼走廊墙壁、图书馆阅览室等处张贴图文并茂的励志格言、名家名言；办公大楼墙壁<BR>&nbsp; &nbsp; &nbsp; &nbsp;悬挂反映学校历史文化、主题活动的各类照片<BR>&nbsp; &nbsp; &nbsp; &nbsp;再现学校的成长发展第三<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校实训中心改造时注重营造专业文化氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;将专业特色、学校历史等用照片、文字等多种形式进行展现诠释<BR>&nbsp; &nbsp; &nbsp; &nbsp;将校训的理念渗透到每一处；将规章制度、礼仪风范等<BR>&nbsp; &nbsp; &nbsp; &nbsp;置于室内</p>  (责任编辑：admin)
+<img border="0" alt="平常人们都在自觉与不自觉地接受着校园文化的熏陶" src="/images/lenfeng_990.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',990)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',990)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(990);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuatecno/2015696.html'>测试问卷仍采用李克特五级量表</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuatecno/20151650.html'>司法独立的相对性被包含在政治权力和诉讼结构中</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=990" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=990&title=平常人们都在自觉与不自觉地接受着校园文化的熏陶" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=990" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=990" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="990" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=990&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '990');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

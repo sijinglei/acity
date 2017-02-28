@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>在初步领会了一些书法艺术与紫砂壶造型的关系后|我的网站</title>
+<meta name="description" content="蒋蓉的壶艺创作经验与中国画家到野外、到生活中去写生是何等的相似任何艺术 只有认真与精心才能出佳作、出传世之作 这就是紫砂艺术和中国传统书法、绘画的相通相联的关系 在初步领会了一" />
+<meta name="keywords" content="初步,会了,一些,书法艺术,紫砂壶,造型,关系,蒋蓉,壶艺," />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.darenaika.com/images/lurd/a/eastcobbrootcanal/" title="sf175">sf175</a></li><li><a href="http://forex8.com/api/connect/a/easy2fondue/" title="中等变态传奇sf">中等变态传奇sf</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebooksuperwebsite/" title="电信私服">电信私服</a></li><li><a href="http://www.fzlanting.com/admin/images/a/duyurmatik/" title="传奇商业版本下载">传奇商业版本下载</a></li><li><a href="http://www.ftzmled.com/images/pic/a/easysmallbusinessideas/" title="传奇英雄合击私服">传奇英雄合击私服</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/ekwik/" title="合击加速器">合击加速器</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/earntosuccess/" title="传奇私服1.85版">传奇私服1.85版</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/" title="生活技能">生活技能</a></li><li><a href="http://www.ftzmled.com/images/pic/a/easysavingseveryday/" title="1.76复古合击">1.76复古合击</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebmmart/" title="找合击sf">找合击sf</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eagleshisha/" title="网通传奇私服1.85">网通传奇私服1.85</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dynaency/" title="热血传奇装备偏移补丁">热血传奇装备偏移补丁</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/educationcitycity/" title="挑战私服发布网">挑战私服发布网</a></li><li><a href="http://www.weiboyewu.com/images/default/a/durtyderby/" title="玉兔传奇">玉兔传奇</a></li><li><a href="http://www.lygsyw.com/include/data/a/dungcuykhoathanhphat/" title="sf发布网站">sf发布网站</a></li><li><a href="http://fzlanting.com/admin/class/a/efegemakine/" title="超级变态私服">超级变态私服</a></li><li><a href="http://www.lygsyw.com/include/data/a/duniamasakan/" title="热血传奇SF">热血传奇SF</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dyy4/" title="网安传奇">网安传奇</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dwcr/" title="网通私服传奇">网通私服传奇</a></li><li><a href="http://www.hljtb.org/images/hpv/a/echoesreviews/" title="热血传奇私服1.80">热血传奇私服1.80</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">传奇私服刷元宝命令相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ectank/201512278.html" target="_blank" title="可是大家说本文作者所拜访的朋友是人吗？不是">可是大家说本文作者所拜访的朋友是人吗？不是</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/201511618.html" target="_blank" title="临济宗遵循禅宗的传统">临济宗遵循禅宗的传统</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/201510676.html" target="_blank" title="它能够将单一材料的机械零件转化成为复合型材料结构">它能够将单一材料的机械零件转化成为复合型材</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/201510596.html" target="_blank" title="在初步领会了一些书法艺术与紫砂壶造型的关系后">在初步领会了一些书法艺术与紫砂壶造型的关系</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/20159797.html" target="_blank" title="随着课改的深入">随着课改的深入</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/20158491.html" target="_blank" title="加强职业教育师资队伍建设">加强职业教育师资队伍建设</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/20157422.html" target="_blank" title="本文从领域的角度出发">本文从领域的角度出发</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/20157244.html" target="_blank" title="我国眼科医疗器械不断紧跟国际眼科器械的发展">我国眼科医疗器械不断紧跟国际眼科器械的发展</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/20154678.html" target="_blank" title="根据俄罗斯联邦旅游署的统计数字">根据俄罗斯联邦旅游署的统计数字</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ectank/20153830.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.zbkxsq.com/admin/image/a/ejarida/" title="老盛大传奇客户端下载">老盛大传奇客户端下载</a></h3>
+<ul>
+<li><a href="http://www.zbkxsq.com/admin/image/a/ejarida/contete11253.html" title="摘要必须拥有与论文同等量的主要信息">摘要必须拥有与论文同等量的主要信息</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/ejarida/contete11215.html" title="但为了方便商品的交换和流通">但为了方便商品的交换和流通</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/ejarida/contete11009.html" title="长汀位于闽西边陲">长汀位于闽西边陲</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/ejarida/contete10793.html" title="对环境资源的过渡使用已经严重威胁了自然环境">对环境资源的过渡使用已经严重威胁了自然环</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/ejarida/contete9015.html" title="结论:在本实验条件下">结论:在本实验条件下</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://forex8.com/api/connect/a/eastvalleyfreebies/" title="1.76复古">1.76复古</a></h3>
+<ul>
+<li><a href="http://forex8.com/api/connect/a/eastvalleyfreebies/qq10448.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://forex8.com/api/connect/a/eastvalleyfreebies/qq9411.html" title="透明国际的结论也受到了质疑">透明国际的结论也受到了质疑</a></li>
+<li><a href="http://forex8.com/api/connect/a/eastvalleyfreebies/qq9192.html" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://forex8.com/api/connect/a/eastvalleyfreebies/qq8381.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://forex8.com/api/connect/a/eastvalleyfreebies/qq8117.html" title="教师更多地去诱导帮助学生">教师更多地去诱导帮助学生</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 传奇私服刷元宝命令- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>在初步领会了一些书法艺术与紫砂壶造型的关系后</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 09:16</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10596&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10596">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:蒋蓉的壶艺创作经验与中国画家到野外、到生活中去写生是何等的相似任何艺术       只有认真与精心才能出佳作、出传世之作       这就是紫砂艺术和中国传统书法、绘画的相通相联的关系 在初步领会了一</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            蒋蓉的壶艺创作经验与中国画家到野外、到生活中去写生是何等的相似<p>任何艺术<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有认真与精心才能出佳作、出传世之作<BR>&nbsp; &nbsp; &nbsp; &nbsp;这就是紫砂艺术和中国传统书法、绘画的相通相联的关系 </p><p>在初步领会了一些书法艺术与紫砂壶造型的关系后<BR>&nbsp; &nbsp; &nbsp; &nbsp;在创作中特别注意紫砂壶身筒与壶嘴、壶把之间线条的连贯与顺畅<BR>&nbsp; &nbsp; &nbsp; &nbsp;壶身、壶嘴虽然是壶的四个部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;但他首先是一个整体<BR>&nbsp; &nbsp; &nbsp; &nbsp;整体美的要求就必须像写书法一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;一笔下来不能断<BR>&nbsp; &nbsp; &nbsp; &nbsp;要一气呵成、流畅爽快<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而在制作时特别注意上下衔接过渡的自然<BR>&nbsp; &nbsp; &nbsp; &nbsp;另外身、嘴的比例也像书法“横”、“点”、“捺</p><p>紫砂与绘画无论是从艺术本质、特征<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是从表现手段来看都有共通之处绘画艺术讲究“气韵生动”、“以形写神”、“形神兼备”<BR>&nbsp; &nbsp; &nbsp; &nbsp;讲究“骨法用笔”、“画龙点睛”<BR>&nbsp; &nbsp; &nbsp; &nbsp;着重形象的刻划和意境美的追求<BR>&nbsp; &nbsp; &nbsp; &nbsp;讲究兼工带写<BR>&nbsp; &nbsp; &nbsp; &nbsp;以浑然天成、含蓄蕴藉为品位<BR>&nbsp; &nbsp; &nbsp; &nbsp;遵循“作品妙在似与不似之间<BR>&nbsp; &nbsp; &nbsp; &nbsp;不似为欺世”的创作原则<BR>&nbsp; &nbsp; &nbsp; &nbsp;强调艺术家要深入生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;从生活中获取创作营养并反映生活绘画艺术所要求的这一切<BR>&nbsp; &nbsp; &nbsp; &nbsp;紫砂艺术无一例外地要遵循</p><p>当代大师蒋蓉在壶艺方面的创意更与中国传统花鸟画有着共通之处她说：“创作作品要吸取大自然美好事物的营养<BR>&nbsp; &nbsp; &nbsp; &nbsp;赋泥土以生命如创作“荷花茶具”就是在盛夏时细心观察<BR>&nbsp; &nbsp; &nbsp; &nbsp;采来荷花观察它的形状、色泽<BR>&nbsp; &nbsp; &nbsp; &nbsp;在模仿中注意观察形与神的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;又需神似</p><p>说起宜兴紫砂与书法、绘画<BR>&nbsp; &nbsp; &nbsp; &nbsp;就会使人联想起壶上的刻字、刻画装饰<BR>&nbsp; &nbsp; &nbsp; &nbsp;认为这就是文人参与紫砂壶艺的形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;其实文人参与紫砂的造型早就有记载<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们紫砂壶中有一款式叫“东坡提梁壶”<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是宋代苏东坡在宜兴教书时<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据紫砂材质的特点设计而成的虽然这是一则民间传说<BR>&nbsp; &nbsp; &nbsp; &nbsp;但该壶的造型端庄稳重<BR>&nbsp; &nbsp; &nbsp; &nbsp;壶身圆润饱满<BR>&nbsp; &nbsp; &nbsp; &nbsp;提梁凌空飞挂<BR>&nbsp; &nbsp; &nbsp; &nbsp;颇有苏东坡书法浑朴大度的气质和韵味我们从这个典故中可以看出<BR>&nbsp; &nbsp; &nbsp; &nbsp;但壶身上造型的线条运用、块面的组合以及壶嘴、壶把的布局搭配<BR>&nbsp; &nbsp; &nbsp; &nbsp;均和中国书法、绘画在本质上有着相似的地方</p><p>【xzbu】郑重<p>的长短要恰到好处这样的壶<BR>&nbsp; &nbsp; &nbsp; &nbsp;不论是圆器、方器放在收藏者面前<BR>&nbsp; &nbsp; &nbsp; &nbsp;就像一件书法作品那样顺眼<BR>&nbsp; &nbsp; &nbsp; &nbsp;自然会百看不厌<BR>&nbsp; &nbsp; &nbsp; &nbsp;愈赏愈美</p><p>誓<BR>&nbsp; &nbsp; &nbsp; &nbsp;情拘志惨所谓涉乐方笔<BR>&nbsp; &nbsp; &nbsp; &nbsp;言哀己叹清代刘熙载更是一语破的：“写字者<BR>&nbsp; &nbsp; &nbsp; &nbsp;写志也”、“书法<BR>&nbsp; &nbsp; &nbsp; &nbsp;如也；如其学<BR>&nbsp; &nbsp; &nbsp; &nbsp;如其志<BR>&nbsp; &nbsp; &nbsp; &nbsp;总之如其人而已”从这个意义上来讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;壶如“字”也<BR>&nbsp; &nbsp; &nbsp; &nbsp;如我们可看到当代壶艺泰斗顾景舟与中央工艺美术学院教授高庄合作的“提璧壶”<BR>&nbsp; &nbsp; &nbsp; &nbsp;以其严谨的法度、“黄金分割”的比例、清雅顺畅的线条<BR>&nbsp; &nbsp; &nbsp; &nbsp;而让人愈看愈美<BR>&nbsp; &nbsp; &nbsp; &nbsp;顾景舟壶艺的精华之处就是追求“骨法用<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0916196147-0.jpg" width="600px" height="400px" />笔”、“气韵生动”欣赏顾景舟大师的“提璧壶”尤如欣赏书法艺术中的范本<BR>&nbsp; &nbsp; &nbsp; &nbsp;《柳公权》字帖<BR>&nbsp; &nbsp; &nbsp; &nbsp;如果以拟人化的手法来表达<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以说你面前站着的就是一位古代书生<BR>&nbsp; &nbsp; &nbsp; &nbsp;一派儒雅之气</p><p>紫砂壶的造型艺术不论是光素器、圆器还是筋纹器<BR>&nbsp; &nbsp; &nbsp; &nbsp;不管是传统造型还是现代派<BR>&nbsp; &nbsp; &nbsp; &nbsp;都要有一个法度的问题这个法度<BR>&nbsp; &nbsp; &nbsp; &nbsp;某种意义上来讲和绘画一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;第一要立“意”<BR>&nbsp; &nbsp; &nbsp; &nbsp;意境高作品自然出手不凡；第二是谋篇<BR>&nbsp; &nbsp; &nbsp; &nbsp;所谓谋“篇”<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是追求整体美<BR>&nbsp; &nbsp; &nbsp; &nbsp;壶与画一样要把握好局部与全局的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;当满则满<BR>&nbsp; &nbsp; &nbsp; &nbsp;自然和谐<BR>&nbsp; &nbsp; &nbsp; &nbsp;造型上能达到这种境界<BR>&nbsp; &nbsp; &nbsp; &nbsp;作品自然美不胜收；第三要做到“认真”<BR>&nbsp; &nbsp; &nbsp; &nbsp;每一笔下去都要认真用心才会出好画</p><p>要：紫砂艺术在历史上之所以能够形成独特的艺术传统<BR>&nbsp; &nbsp; &nbsp; &nbsp;是因为文人与艺人的合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;使作品不仅工艺精湛而且还有浑厚的书卷气成熟的紫砂壶艺术风格应该就是“文人壶”的艺术风格<BR>&nbsp; &nbsp; &nbsp; &nbsp;“文人壶”必会因文人的博学而具备相当浓厚的文化气息</p><p>艺术是相通的<BR>&nbsp; &nbsp; &nbsp; &nbsp;这句话是千真万确的真理<BR>&nbsp; &nbsp; &nbsp; &nbsp;紫砂与书法、绘画有着艺术上的共通之处书法艺术讲究和强调线的表现力<BR>&nbsp; &nbsp; &nbsp; &nbsp;它在艺术特征方面与紫砂的联系初看似乎不相关<BR>&nbsp; &nbsp; &nbsp; &nbsp;实际上两者有着惊人的相似之处首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;从书法艺术的审美特征来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;它是实用性与艺术性、状物与抒情相统一的艺术它无色而具图画的灿烂、无声而有音乐的和谐<BR>&nbsp; &nbsp; &nbsp; &nbsp;来自自然形象而又远离了自然形象人们将自己的精神意蕴、审美趣味化为或纵或收、或粗或细、或刚或柔的线条<BR>&nbsp; &nbsp; &nbsp; &nbsp;并通过这些笔墨线条的枯润、浓淡的个性因素反映出人的审美经验“在造型过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;作者的感情就一直和笔力融合在一起活动着<BR>&nbsp; &nbsp; &nbsp; &nbsp;无论是长线、短线<BR>&nbsp; &nbsp; &nbsp; &nbsp;是短到极短的点和由点扩大的块<BR>&nbsp; &nbsp; &nbsp; &nbsp;都成为感情活动的痕迹”中国古代美学家对书法的这种特性早有精辟的论述汉代的扬雄在《法言》中说：“言<BR>&nbsp; &nbsp; &nbsp; &nbsp;心画也”蔡邕在《笔论》中言：“书者<BR>&nbsp; &nbsp; &nbsp; &nbsp;散也欲书先散怀抱<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后书之”<BR>&nbsp; &nbsp; &nbsp; &nbsp;唐代孙过庭认为书法艺术可以见出书法艺术家的情感<BR>&nbsp; &nbsp; &nbsp; &nbsp;即“达其情性<BR>&nbsp; &nbsp; &nbsp; &nbsp;羲之写《乐毅》则情多怫郁<BR>&nbsp; &nbsp; &nbsp; &nbsp;书《回赞》则意涉瑰奇<BR>&nbsp; &nbsp; &nbsp; &nbsp;《黄庭经》则怡怿虚无<BR>&nbsp; &nbsp; &nbsp; &nbsp;《太师箴》又纵横争折暨乎兰亭兴集<BR>&nbsp; &nbsp; &nbsp; &nbsp;思逸神超；私门诫</p>  (责任编辑：admin)
+<img border="0" alt="在初步领会了一些书法艺术与紫砂壶造型的关系后" src="/images/lenfeng_10596.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10596)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10596)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10596);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ectank/20159797.html'>随着课改的深入</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ectank/201510676.html'>它能够将单一材料的机械零件转化成为复合型材料结构</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10596" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10596&title=在初步领会了一些书法艺术与紫砂壶造型的关系后" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10596" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10596" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10596" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10596&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10596');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

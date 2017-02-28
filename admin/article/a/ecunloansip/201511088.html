@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>要充分利用网络信息平台来拓展毕业生就业空间|我的网站</title>
+<meta name="description" content="组织力量走出去高校必须加强对毕业生的就业指导和服务工作 加强对毕业生就业思想的教育 加强就业指导课体系建设要引导学生客观、辩证地认识就业形势 帮助毕业生解疑释惑 " />
+<meta name="keywords" content="充分,利用,网络,信息,平台,拓展,毕业,生就业,空间,组织" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzbcky/" title="传奇通用登陆器">传奇通用登陆器</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edgecomer/" title="海外传奇私服">海外传奇私服</a></li><li><a href="http://www.hljtb.org/images/hpv/a/echoesnet/" title="靓装传奇私服">靓装传奇私服</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecpiwateronline/" title="传奇私服1.80战神版">传奇私服1.80战神版</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dv8boutique/" title="传奇网通私服">传奇网通私服</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/easiestwaytomakeamilliondollars/" title="daneasiestwaytomakeamilliondollardan">daneasiestwaytomakeamilliondollardan</a></li><li><a href="http://www.lygsyw.com/include/data/a/dumuz/" title="传奇发布网">传奇发布网</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecommade/" title="1.80复古合击">1.80复古合击</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/" title="憎恶">憎恶</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eacreativestudio/" title="100 仿盛大热血传奇">100 仿盛大热血传奇</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dysfunctionalfamilypicnic/" title="传奇登陆器配置器下载">传奇登陆器配置器下载</a></li><li><a href="http://fzlanting.com/admin/class/a/efedijitaltabela/" title="我本沉默传奇私服">我本沉默传奇私服</a></li><li><a href="http://www.51kaso.com/admin/Public/a/" title="七煞">七煞</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebersoleelectricinc/" title="超变传奇世界私服">超变传奇世界私服</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebonyroselabel/" title="凯旋私服">凯旋私服</a></li><li><a href="http://www.ftzmled.com/images/pic/a/easypaysurveys/" title="电信传奇私服">电信传奇私服</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/earthsuits/" title="传奇私服论坛">传奇私服论坛</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/editingkeyboards/" title="新开传奇sf发布网站">新开传奇sf发布网站</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dydf68/" title="自定义英雄世界">自定义英雄世界</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecomthinking/" title="sf私服">sf私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开网通传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecunloansip/201511088.html" target="_blank" title="要充分利用网络信息平台来拓展毕业生就业空间">要充分利用网络信息平台来拓展毕业生就业空间</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecunloansip/20156578.html" target="_blank" title="但并非所有垂直系统实行批量集采都有难度">但并非所有垂直系统实行批量集采都有难度</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecunloansip/20154613.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecunloansip/20152841.html" target="_blank" title="《同煤科技》杂志是技术类煤炭科技刊物">《同煤科技》杂志是技术类煤炭科技刊物</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecunloansip/20152407.html" target="_blank" title="建立以湖北省农业厅为主导">建立以湖北省农业厅为主导</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecunloansip/20152336.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/" title="最新传奇私服发布网站">最新传奇私服发布网站</a></h3>
+<ul>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/20159442.html" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/20157419.html" title="醛固酮与心肌炎症内皮功能障碍和心肌纤维化等有关">醛固酮与心肌炎症内皮功能障碍和心肌纤维化</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/20157394.html" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/20156385.html" title="充电站符合日本CHAdeMO协会标准">充电站符合日本CHAdeMO协会标准</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/20156360.html" title="至于农夫的水质">至于农夫的水质</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.51kaso.com/admin/Public/a/durhambridalbootcamp/" title="新开网通传奇网站">新开网通传奇网站</a></h3>
+<ul>
+<li><a href="http://www.51kaso.com/admin/Public/a/durhambridalbootcamp/contete12123.html" title="已有研究虽取得了一定成果">已有研究虽取得了一定成果</a></li>
+<li><a href="http://www.51kaso.com/admin/Public/a/durhambridalbootcamp/contete10855.html" title="实验结果表明">实验结果表明</a></li>
+<li><a href="http://www.51kaso.com/admin/Public/a/durhambridalbootcamp/contete10758.html" title="韦伯的合理性理论备受关注">韦伯的合理性理论备受关注</a></li>
+<li><a href="http://www.51kaso.com/admin/Public/a/durhambridalbootcamp/contete9462.html" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.51kaso.com/admin/Public/a/durhambridalbootcamp/contete9173.html" title="进入工业文明后">进入工业文明后</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开网通传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>要充分利用网络信息平台来拓展毕业生就业空间</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 10:50</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=11088&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=11088">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:组织力量走出去高校必须加强对毕业生的就业指导和服务工作       加强对毕业生就业思想的教育       加强就业指导课体系建设要引导学生客观、辩证地认识就业形势       帮助毕业生解疑释惑  </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            组织力量走出去<p>高校必须加强对毕业生的就业指导和服务工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强对毕业生就业思想的教育<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强就业指导课体系建设要引导学生客观、辩证地认识就业形势<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助毕业生解疑释惑<BR>&nbsp; &nbsp; &nbsp; &nbsp;稳定毕业生心态要引导学生进一步转变就业观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;合理调整就业期望值<BR>&nbsp; &nbsp; &nbsp; &nbsp;积极主动地就业；要引导学生树立“行行可建功、劳动最光荣”的就业观<BR>&nbsp; &nbsp; &nbsp; &nbsp;“到西部、到祖国最需要的地方建功立业”的观念使他们树立起就业期望值必须符合社会需要的就业观<BR>&nbsp; &nbsp; &nbsp; &nbsp;要引导他们利用所学专长<BR>&nbsp; &nbsp; &nbsp; &nbsp;找准适合于自己的行业和岗位<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能用过高的就业期望值去对待现实的求职择业 </p><p>通过对安徽理工大学近三年的毕业生就业情况的研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;发现少数的用人单位接纳了学校多数的毕业生毕业生就业情况的统计结果表明近1／3的用人单位接纳了学校3／4的毕业生<BR>&nbsp; &nbsp; &nbsp; &nbsp;而其他大量的用人单位仅仅接纳了1／4的毕业生这样的用人单位应是学校就业部门重点服务对象要采取相应的工作和服务方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;依托重点单位<BR>&nbsp; &nbsp; &nbsp; &nbsp;强化就业基地建设 </p><p>第三<BR>&nbsp; &nbsp; &nbsp; &nbsp;加大对学校及毕业生资源的宣传力度<BR>&nbsp; &nbsp; &nbsp; &nbsp;让更多企业了解学校<BR>&nbsp; &nbsp; &nbsp; &nbsp;选择学校毕业生 </p><p>2008年以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于美国次贷危机的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;世界经济面发生较大变化国际金融危机正加速从虚拟经济向实体经济、从发达国家向新兴经济体和发展中国家蔓延<BR>&nbsp; &nbsp; &nbsp; &nbsp;对我国经济和就业影响更加明显我国不少行业受到较大冲击<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多企业遭遇困难<BR>&nbsp; &nbsp; &nbsp; &nbsp;势必减招甚至裁员<BR>&nbsp; &nbsp; &nbsp; &nbsp;对当前及今后一段时期的高校毕业生就业工作造成直接影响部分高校由于就业市场单一<BR>&nbsp; &nbsp; &nbsp; &nbsp;毕业生就业工作受到较大冲击为做好毕业生就业工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;高校必须重视就业市场建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立起完善、多元的毕业生就业市场体系 </p><p>第一<BR>&nbsp; &nbsp; &nbsp; &nbsp;实行全员参与毕业生就业推荐工作调动全校力量特别是职能部门、院系以及班主任、专业导师的力量积极为学生寻找就业岗位要不惜“动员千军万马<BR>&nbsp; &nbsp; &nbsp; &nbsp;走遍千山万水<BR>&nbsp; &nbsp; &nbsp; &nbsp;道尽千言万语<BR>&nbsp; &nbsp; &nbsp; &nbsp;用尽千方百计”<BR>&nbsp; &nbsp; &nbsp; &nbsp;深入各行各业挖信息、找岗位<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别要主动加强与行业协会及工商联的联系<BR>&nbsp; &nbsp; &nbsp; &nbsp;针对中小企业、民营企业和岗位需求潜力较大的行业、地区<BR>&nbsp; &nbsp; &nbsp; &nbsp;单位收集需求信息 </p><p>毕业生就业市场体系建设是一项关乎就业工作全局的重要工作高校只有建立起以重点企业、区域为依托<BR>&nbsp; &nbsp; &nbsp; &nbsp;以服务基层为毕业生就业的重点导向<BR>&nbsp; &nbsp; &nbsp; &nbsp;就业市场区域布局合理、行业背景鲜明、层次结构优化、社会需求稳定的毕业生就业市场体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么就业工作就有了保障毕业生实现充分就业就有了可能<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校的生存和发展就有了保证 </p><p>根据本校近年毕业生去向看<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多毕业生选择到沿海经济发达地区就业学校应根据实际形势和毕业生的需要<BR>&nbsp; &nbsp; &nbsp; &nbsp;加大对经济发达地区就业市场开发的力度学校要积极定期组织毕业生参加经济发达城市的各类大型招聘活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;带领毕业生主动出击在发达地区及毕业生就业相对集中的地区<BR>&nbsp; &nbsp; &nbsp; &nbsp;要考虑专人与其建立长期的、相对稳定的联系<BR>&nbsp; &nbsp; &nbsp; &nbsp;时常走访当地人事部门和用人单位<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强与当地人才部门合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立就业工作平台要加强与经济发达地市人事部门的联系<BR>&nbsp; &nbsp; &nbsp; &nbsp;和他们保持密切的合作关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;要以他们为依托<BR>&nbsp; &nbsp; &nbsp; &nbsp;来占领当地的就业市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;发挥地方人才部门的优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助推荐毕业生和提供用人单位信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;拓展学校毕业生的就业面此外学校要与周边专业背景相同、层次不同的高校形成市场联盟<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成市场合力 </p><p>2及时通报供求信息在就业工作开始之初要及时拜访<BR>&nbsp; &nbsp; &nbsp; &nbsp;介绍毕业生资源情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;及时掌握单位的用人信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;并推荐合适的人选学校与重点单位加强互动交流<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校及时向就业重点单位选拔推荐毕业生；重点单位优先向学校提供需求信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;参加学校的各种招聘活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;优先接收毕业生实习<BR>&nbsp; &nbsp; &nbsp; &nbsp;优先录用学校的毕业生以重点单位为依托<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校进一步在用人单位建立毕业生见习岗位基地<BR>&nbsp; &nbsp; &nbsp; &nbsp;组织毕业生到基地单位接受岗位锻炼<BR>&nbsp; &nbsp; &nbsp; &nbsp;丰富实际工作经验<BR>&nbsp; &nbsp; &nbsp; &nbsp;增进毕业生与用人单位的理解和交流 </p><p>学校在拓展毕业生就业有形市场的同时要高度重视利用网络技术拓展毕业生就业新市场<BR>&nbsp; &nbsp; &nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/1050092I2-0.jpg" width="600px" height="400px" />sp; &nbsp;实现有形市场与无形市场的良性互动<BR>&nbsp; &nbsp; &nbsp; &nbsp;做到两个市场并重学校要加强和推进毕业生就业信息网建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立和完善适合本校特色的高效、可靠的就业信息平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现毕业生就业工作信息查询与发布、政策咨询与指导等工作的网络化<BR>&nbsp; &nbsp; &nbsp; &nbsp;使毕业生及时获得用人单位信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;使用人单位了解毕业生情况要充分利用毕业生就业供需信息网络<BR>&nbsp; &nbsp; &nbsp; &nbsp;沟通行业间、学校与用人单位间的信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现高校毕业生就业市场、人才市场和劳动力市场相互贯通<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现网上信息资源共享<BR>&nbsp; &nbsp; &nbsp; &nbsp;更好地为毕业生和用人单位服务要充分利用网络信息平台来拓展毕业生就业空间<BR>&nbsp; &nbsp; &nbsp; &nbsp;占领网上无形市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;为用人单位和毕业生提供相互了解、相互展示的新平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助毕业生与用人单位牵线搭桥<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现毕业生与用人单位无缝对接<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高毕业生的就业质量 </p><p>【xzbu】郑重<p>不同类型的高校都有不同的办学特色<BR>&nbsp; &nbsp; &nbsp; &nbsp;办学层次、培养方向都不尽一样目前<BR>&nbsp; &nbsp; &nbsp; &nbsp;各高校在教育体制改革的大环境下都发生了翻天覆地的变化<BR>&nbsp; &nbsp; &nbsp; &nbsp;但在历史上都有各自鲜明的行业特色<BR>&nbsp; &nbsp; &nbsp; &nbsp;原有行业仍是毕业生就业的主渠道高等学校要根据本校的实际情况和专业特点<BR>&nbsp; &nbsp; &nbsp; &nbsp;以原有行业为依托<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立相对稳定、适应学校特色的不同行业<BR>&nbsp; &nbsp; &nbsp; &nbsp;开辟和巩固不同的行业市场如安徽理工大学原主要为煤炭行业和化工行业培养人才<BR>&nbsp; &nbsp; &nbsp; &nbsp;但依托地质工程、采矿工程、弹药工程、土木工程等优势专业通过不断开拓市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;毕业生的就业范围已遍布全国煤炭、有色金属、交通建设、冶金、化工、部队等行业受金融危机的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;今年化工、汽车等部分行业需求不旺<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于学校就业市场涉及行业多<BR>&nbsp; &nbsp; &nbsp; &nbsp;对本校今年整体就业工作的影响不大 </p><p>1建立就业档案<BR>&nbsp; &nbsp; &nbsp; &nbsp;内容要尽量详细随时同单位保持联系<BR>&nbsp; &nbsp; &nbsp; &nbsp;及时增进双方友谊同时对该单位与就业工作相关的人事变动应及时掌握<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便与其人事部门沟通并保持融洽关系在此基础上<BR>&nbsp; &nbsp; &nbsp; &nbsp;以会议、考察等多种渠道进行信息和关系的维系 </p><p>对高校来讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要掌握了大量准确、有效的就业信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;就能掌握就业工作的主动权<BR>&nbsp; &nbsp; &nbsp; &nbsp;就能够做好毕业生就业工作这就要求高校适应新形势<BR>&nbsp; &nbsp; &nbsp; &nbsp;树立起“立足区域、全员参与”的就业市场建设的新思路<BR>&nbsp; &nbsp; &nbsp; &nbsp;要发挥学校学科专业优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;应遵循“整体规划、全员参与、重点突破”的原则<BR>&nbsp; &nbsp; &nbsp; &nbsp;积极培养拓展毕业生就业市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立起以重点单位为点、相关行业为线、重点区域为面的点、面并举<BR>&nbsp; &nbsp; &nbsp; &nbsp;有形市场与无形市场结合的完善的、多元的就业市场体系 </p><p> 摘要：因国际金融危机影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;高校毕业生就业市场受到冲击<BR>&nbsp; &nbsp; &nbsp; &nbsp;为实现毕业生充分就业<BR>&nbsp; &nbsp; &nbsp; &nbsp;高校必须重视就业市场建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;要建立起完善的、多元的毕业生就业市场体系 </p><p>第二<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分利用校友资源校友是学校最宝贵也是最有效的资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校要加大对校友会的投入力度<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过各地校友广泛宣传学校的毕业生情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;开发就业市场利用毕业生分布全国各地、各行业的优势由校友及时向学校反馈各地、各单位就业需求情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便学校决策、研究就业工作 </p><p>3邀请用人单位参与学生的教育培养过程学校就业部门要定期或不定期举行联谊活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;邀请重点用人单位来校举办“名人讲座”、专题报告会等<BR>&nbsp; &nbsp; &nbsp; &nbsp;吸引用人单位积极参与学校的改革<BR>&nbsp; &nbsp; &nbsp; &nbsp;对教学或实践环节的举措及时通知对方(如开设了单位需要毕业生掌握的课程等)<BR>&nbsp; &nbsp; &nbsp; &nbsp;将毕业生的实习设计与用人单位实际需要紧密结合起来 </p>  (责任编辑：admin)
+<img border="0" alt="要充分利用网络信息平台来拓展毕业生就业空间" src="/images/lenfeng_11088.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',11088)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',11088)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(11088);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecunloansip/20156578.html'>但并非所有垂直系统实行批量集采都有难度</a> </li>
+                                        <li>下一篇：没有了 </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=11088" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=11088&title=要充分利用网络信息平台来拓展毕业生就业空间" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=11088" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=11088" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="11088" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=11088&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '11088');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>心理学与经济学之间的越界行为|我的网站</title>
+<meta name="description" content=" 相互研究在未来具有深远的影响心理学与经济学之间的“越界”行为 随着经济学本身的发展 其研究领域也在逐渐扩张 从而在心理学的研究产生了相同之处 " />
+<meta name="keywords" content="心理学,经济,学之,间的,越界,行为,相互,研究,未来,具有" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.ftzmled.com/images/pic/a/easyrentphoenix/" title="热血传奇客户端">热血传奇客户端</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebaydominationmoney/" title="中变靓装传奇">中变靓装传奇</a></li><li><a href="http://www.ahshtz.com/api/about/a/ecigturkey/" title="中变传奇世界sf">中变传奇世界sf</a></li><li><a href="http://www.51kaso.com/admin/Public/a/durhamconcretecontractors/" title="anquye.com">anquye.com</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/efsfela/" title="今日新开网通传奇">今日新开网通传奇</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebasiccooking2/" title="传世sf网站">传世sf网站</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/effortlessexistence/" title="传奇续章私服">传奇续章私服</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easywebbids/" title="无忧网通">无忧网通</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/egach/" title="私服登陆器">私服登陆器</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/efrontoffice/" title="传奇客户端十周年">传奇客户端十周年</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edenhabitat92/" title="传奇sf外挂">传奇sf外挂</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eaglewebdev/" title="每日新开传奇私服">每日新开传奇私服</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecountusa/" title="传奇1.85私服">传奇1.85私服</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/" title="仿盛大传奇sf">仿盛大传奇sf</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/" title="采集系统">采集系统</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dxy678/" title="大冶打拱官方下载">大冶打拱官方下载</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/editingkeyboards/" title="新开传奇sf发布网站">新开传奇sf发布网站</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebizpckg/" title="英雄传奇私服">英雄传奇私服</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/ecommade/" title="1.80复古合击">1.80复古合击</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebnzahrsy/" title="热血传奇私服发布">热血传奇私服发布</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">轻变传奇相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20157836.html" target="_blank" title="目的了解深圳市宝安区西乡街道孕产妇保健的现状">目的了解深圳市宝安区西乡街道孕产妇保健的现</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20156634.html" target="_blank" title="本着落实国家十二五《教育规划纲要》">本着落实国家十二五《教育规划纲要》</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20156211.html" target="_blank" title="武术的价值取决于武术本身的特点和社会需要">武术的价值取决于武术本身的特点和社会需要</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20155813.html" target="_blank" title="心理学与经济学之间的越界行为">心理学与经济学之间的越界行为</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20155167.html" target="_blank" title="一个人的归因方式会激发他的动机">一个人的归因方式会激发他的动机</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20152565.html" target="_blank" title="所以：环境因素对畜牧业的影响">所以：环境因素对畜牧业的影响</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20152530.html" target="_blank" title="中国论文资源库是一个论文发表服务平台">中国论文资源库是一个论文发表服务平台</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20151840.html" target="_blank" title="党的十八大作出了加快发展现代农业">党的十八大作出了加快发展现代农业</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20151635.html" target="_blank" title="然后将两者结合起来">然后将两者结合起来</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20151289.html" target="_blank" title="采用虚拟化技术">采用虚拟化技术</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.bjztjz.cn/Admin/add/a/edmontoninapod/" title="传奇私服1.76发布网">传奇私服1.76发布网</a></h3>
+<ul>
+<li><a href="http://www.bjztjz.cn/Admin/add/a/edmontoninapod/201510715.html" title="：路堤土填筑完成后">：路堤土填筑完成后</a></li>
+<li><a href="http://www.bjztjz.cn/Admin/add/a/edmontoninapod/20159953.html" title="建立二次回归">建立二次回归</a></li>
+<li><a href="http://www.bjztjz.cn/Admin/add/a/edmontoninapod/20159764.html" title="有些体育教师对知识没有吃透">有些体育教师对知识没有吃透</a></li>
+<li><a href="http://www.bjztjz.cn/Admin/add/a/edmontoninapod/20158139.html" title="插图下方应注明图序和图名">插图下方应注明图序和图名</a></li>
+<li><a href="http://www.bjztjz.cn/Admin/add/a/edmontoninapod/20157541.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.yizuocity.com/admin/article/a/ecseagle/" title="仿盛大传奇sf">仿盛大传奇sf</a></h3>
+<ul>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/20159714.html" title="目的探讨应用超声造影评价肝纤维化的价值">目的探讨应用超声造影评价肝纤维化的价值</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/20159661.html" title="书写格式为：年：（至子－－栏目）">书写格式为：年：（至子－－栏目）</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/20159365.html" title="对实验条件进行优化">对实验条件进行优化</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/20159190.html" title="维也纳继续成为该地区甚至全球排名第一">维也纳继续成为该地区甚至全球排名第一</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/20157231.html" title="在现代杂文史上">在现代杂文史上</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 轻变传奇- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>心理学与经济学之间的越界行为</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 15:32</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=5813&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=5813">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       相互研究在未来具有深远的影响心理学与经济学之间的“越界”行为       随着经济学本身的发展       其研究领域也在逐渐扩张       从而在心理学的研究产生了相同之处     </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;相互研究在未来具有深远的影响<p>心理学与经济学之间的“越界”行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着经济学本身的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;其研究领域也在逐渐扩张<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而在心理学的研究产生了相同之处<BR>&nbsp; &nbsp; &nbsp; &nbsp;并且心理学的深入研究与发展也使得心理学家门逐渐关注经济学领域的课题心理学中大量的实验方法给经济学带来了许多可以借鉴的理论基础与此同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学家研究经济学时的博弈实验对心理学家也产生了重要影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学家对心理学实验方法的改造也值得引起心理学家的注意两者之间的联系随着日益频繁交流的变得越来越紧密<BR>&nbsp; &nbsp; &nbsp; &nbsp;各种新奇的理论也越来越多 </p><p>【xzbu】郑重<p>要 】随着时代的发展、社会的变迁<BR>&nbsp; &nbsp; &nbsp; &nbsp;各行各业之间的合作也越来越紧密<BR>&nbsp; &nbsp; &nbsp; &nbsp;综合性、集团化的发展体系被越来越多的人所接受而且<BR>&nbsp; &nbsp; &nbsp; &nbsp;随着科学技术的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些以前看起来不可能存在联系的事物进行相互参照往往可能得到新的理解或体会<BR>&nbsp; &nbsp; &nbsp; &nbsp;新的理念也可能随之产生学科之间也由以前的分门别类变为相互渗透<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而产生一门或几门新的学科而经济学和心理学本身就存在一定的联系<BR>&nbsp; &nbsp; &nbsp; &nbsp;近年来随着全球经济的缓慢复苏<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学更是成为当今热议的话题和论题<BR>&nbsp; &nbsp; &nbsp; &nbsp;而与之相关的一些事物也成为现阶段研究的热门论题本文重点论述经济学与心理学之间的历史渊源以及所存在互涉关系 </p><p>随着人类对社会认识的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;发展生产力和提高生产效率成为越来越多人关注的主题<BR>&nbsp; &nbsp; &nbsp; &nbsp;“分工”和“专业化”同时也顺势而生这种现象不仅发生在物质生产领域<BR>&nbsp; &nbsp; &nbsp; &nbsp;学术研究方面也在一定程度上存在着这种现象这种现象在一定程度上是好处<BR>&nbsp; &nbsp; &nbsp; &nbsp;它在一定程度上可以使学术研究更加细致化、深入化<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而更容易研究出事物的本质但在现实生活中<BR>&nbsp; &nbsp; &nbsp; &nbsp;任何事物都不是独立存在的<BR>&nbsp; &nbsp; &nbsp; &nbsp;必然有着各方面的联系<BR>&nbsp; &nbsp; &nbsp; &nbsp;综合性、跨行业等都有可能<BR>&nbsp; &nbsp; &nbsp; &nbsp;绝对不是靠着某种单门别类的知识就可以解决因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;在经历几千年的发展之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;科学在继续深度分门别类的同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;又在向着综合性、整体性社会性方面发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;“跨学科”已经成为当今世界科技进步、生产力发展的热议话题之一伴随着经济危机之后的经济复苏现象<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学也成为现阶段研究的热门议题<BR>&nbsp; &nbsp; &nbsp; &nbsp;而自古以来就与之有联系的心理学更被更加深入的进行研究其与经济学之间的联系 </p><p>心理学与经济学之间的“越界”行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于经济学的自身不断发展和有关领域的研究也越来越深入<BR>&nbsp; &nbsp; &nbsp; &nbsp;他与心理学的研究方面产生了越来越多的相同之处<BR>&nbsp; &nbsp; &nbsp; &nbsp;心理学的深入和发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得许多心理学家的目标转移到了经济学领域方面来心理学与经济学的研究方法和理论成果给经济学带来了重大的理论革命更为重要的是功能性脑成像技术的逐渐成熟也在一定程度上加快了神经经济学的出现<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学中常用的博弈实验范式对于心理学研究有着极大的借鉴意义在一定程度上<BR>&nbsp; &nbsp; &nbsp; &nbsp;心理学的进步也为经济学带来了相当重要的变革两者相互渗透 </p><p>心理学和经济学都有着共同的起源<BR>&nbsp; &nbsp; &nbsp; &nbsp;二者产生于十七到十九世纪的英国经验主义哲学在经过休漠等人德尔经验主义的基础上发展起来的经济学被视为“正宗经济学传统”<BR>&nbsp<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1532052W2-0.jpg" width="600px" height="400px" />; &nbsp; &nbsp; &nbsp;经济学是受到英国经验主义影响后从而产生的一门学科而心理学是受到实证主义、唯物主义和经验主义的影响而产生的<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济学和心理学本身就存在着一定的联系在科学心理学建立后<BR>&nbsp; &nbsp; &nbsp; &nbsp;经验主义所感兴趣的问题形成了心理学的基本研究对象同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;在这个时期的经济学和心理学并未向后世的那样泾渭分明<BR>&nbsp; &nbsp; &nbsp; &nbsp;相当一大部分的英国经验主义的思想都对二者产生巨大的影响 </p><p>由于受到从2008年开始的金融危机的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;相当一大部分人对于的生存安全感的体会越来越淡薄因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;在这种情况下<BR>&nbsp; &nbsp; &nbsp; &nbsp;心理学家对社会稳定和增加人们信念的作用也越来越重要所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;“信心经济与心理学家的社会责任”在近日成为了中科院心理研究所主办的第三届中国心理学家大会的主题从这些情况可以看出<BR>&nbsp; &nbsp; &nbsp; &nbsp;国家对这个往大说关系国家稳定、社会繁荣<BR>&nbsp; &nbsp; &nbsp; &nbsp;往小说关系人民家庭幸福的研究越来越重视<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为这事一项关系国计民生的大事在社会主义国家<BR>&nbsp; &nbsp; &nbsp; &nbsp;国家的宗旨就是使人民安居乐业、幸福安定<BR>&nbsp; &nbsp; &nbsp; &nbsp;关系到民生的就是大事并且<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于经济快速发展和社会的稳定进步<BR>&nbsp; &nbsp; &nbsp; &nbsp;心理学越来越被国民所看重<BR>&nbsp; &nbsp; &nbsp; &nbsp;它与人民生活息息相关的消费、保险、储蓄等经济活动中涉及到的心理活动规律也越来越多、影响也越来越大、越来越深入在符合中国国情的情况下<BR>&nbsp; &nbsp; &nbsp; &nbsp;寻找具有中国特色的影响经济活动的心理机制的规律具有重要的意义（作者单位：西北民族大学经济学院） </p><p>尽管经济学与心理学互涉的研究在人们生活的方方面面起到了巨大的影<BR>&nbsp; &nbsp; &nbsp; &nbsp;给各行各业起到了参照作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;在进行研究中一些现象的分析都是建立在理论基础上的人是世界上最复杂的动物有复杂的身体结构、大脑构成等某种程度上可以说人类是复杂的聚合体<BR>&nbsp; &nbsp; &nbsp; &nbsp;不同人的成长经历会对自身产生不同的影响<BR>&nbsp; &nbsp; &nbsp; &nbsp;或许情感、为人处世的准则等在研究过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些因素的影响可能会使结果产生偏差<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而影响最终理论的产生并且<BR>&nbsp; &nbsp; &nbsp; &nbsp;世界万物不可能一成不变<BR>&nbsp; &nbsp; &nbsp; &nbsp;即使存在着一定的规律<BR>&nbsp; &nbsp; &nbsp; &nbsp;但也是在总体方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些细枝末节方面总会有所偏差<BR>&nbsp; &nbsp; &nbsp; &nbsp;以前得出来的一些理论可能对自己现阶段面对的问题起到相反的作用 </p><p>在经济学与心理学相互关系的研究之中<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多问题明显超出了自然学科科学的界限<BR>&nbsp; &nbsp; &nbsp; &nbsp;不是科学和哲学所能呈现出来的这就造成了研究方法的不足<BR>&nbsp; &nbsp; &nbsp; &nbsp;这就不是很小的个人力量所能完成的任务<BR>&nbsp; &nbsp; &nbsp; &nbsp;需要大量人力、物力和大量的时间才能完成并且在进行大量的消耗之后很有可能得不到想要的结果<BR>&nbsp; &nbsp; &nbsp; &nbsp;不可预见性比较大因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究时需要有很好的心态和耐心 </p>  (责任编辑：admin)
+<img border="0" alt="心理学与经济学之间的越界行为" src="/images/lenfeng_5813.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',5813)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',5813)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(5813);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20155167.html'>一个人的归因方式会激发他的动机</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuadordenuncia/20156211.html'>武术的价值取决于武术本身的特点和社会需要</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=5813" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=5813&title=心理学与经济学之间的越界行为" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=5813" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=5813" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="5813" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=5813&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5813');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

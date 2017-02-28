@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>他们都坚持住了|我的网站</title>
+<meta name="description" content=" 有的不仅是“中国通”最后 我们要相信坚持的力量大众1984年第一个来到中国 在最困难的时候依旧不离不弃；丰田上世纪60年代即现身美国 无论是销量惨淡还" />
+<meta name="keywords" content="他们,坚持,住了,有的,仅是,中国通,最后,我们,相信,坚持" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.weiboyewu.com/images/default/a/dustandlightsheredoes/" title="热血传奇土城黑屏补丁下载">热血传奇土城黑屏补丁下载</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/eanplatter/" title="私服123">私服123</a></li><li><a href="http://forex8.com/api/connect/a/" title="武林声望">武林声望</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/ea65/" title="刚开一秒中变传奇">刚开一秒中变传奇</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dyjjsbf/" title="传奇2单机版">传奇2单机版</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastmanwhipstock/" title="英雄合击连击传奇">英雄合击连击传奇</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/easeemart/" title="176传奇">176传奇</a></li><li><a href="http://www.cowinvc.com/data/admin/a/eatrunlove01/" title="热血传奇网通私服">热血传奇网通私服</a></li><li><a href="http://www.hljtb.org/images/hpv/a/echipamenteapicole/" title="传奇sf合击">传奇sf合击</a></li><li><a href="http://fzlanting.com/admin/class/a/efaithmagazine/" title="仿盛大传奇1.5">仿盛大传奇1.5</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dx5000/" title="决战sf网">决战sf网</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastfalmouthfloristtoday/" title="合击私服">合击私服</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dynamiclifeacademy/" title="传奇黑屏补丁">传奇黑屏补丁</a></li><li><a href="http://www.51kaso.com/admin/Public/a/duplexglenellen/" title="176传奇私服">176传奇私服</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/eddacentrum/" title="传3私服">传3私服</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dwcr/" title="网通私服传奇">网通私服传奇</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edmontondesigners/" title="仿盛大热血传奇">仿盛大热血传奇</a></li><li><a href="http://www.hljtb.org/images/hpv/a/ecentredesaffaires/" title="传奇31.45私服">传奇31.45私服</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/easonstationery/" title="网通中变私服">网通中变私服</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/effgg2545/" title="传奇 sf">传奇 sf</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">功夫世界私服发布网相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/201511874.html" target="_blank" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/201510437.html" target="_blank" title="依照设计施工图纸详细进行现场调查">依照设计施工图纸详细进行现场调查</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20159549.html" target="_blank" title="用竞赛的方式提高学习兴趣 中职生学习积极性不高">用竞赛的方式提高学习兴趣 中职生学习积极性</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20159344.html" target="_blank" title="她守候着人类最小">她守候着人类最小</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20159115.html" target="_blank" title="《中国社区医师》集实用性科学性和专业性于一体">《中国社区医师》集实用性科学性和专业性于一</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20156611.html" target="_blank" title="要做好这一点">要做好这一点</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20156255.html" target="_blank" title="他们都坚持住了">他们都坚持住了</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20155390.html" target="_blank" title="利率市场化改革历经自上而下的实质性推进之后">利率市场化改革历经自上而下的实质性推进之后</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20155200.html" target="_blank" title="坚持实事求是">坚持实事求是</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20154839.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://xyjj.913zsw.com/Admin/Images/a/dymflex/" title="天堂1发布网">天堂1发布网</a></h3>
+<ul>
+<li><a href="http://xyjj.913zsw.com/Admin/Images/a/dymflex/contete11039.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://xyjj.913zsw.com/Admin/Images/a/dymflex/contete10813.html" title="中小企业与大型企业相比">中小企业与大型企业相比</a></li>
+<li><a href="http://xyjj.913zsw.com/Admin/Images/a/dymflex/contete10582.html" title="狭义上的素描">狭义上的素描</a></li>
+<li><a href="http://xyjj.913zsw.com/Admin/Images/a/dymflex/contete8854.html" title="摘要和关键词所有论文均要求有中文摘要和关键词">摘要和关键词所有论文均要求有中文摘要和关</a></li>
+<li><a href="http://xyjj.913zsw.com/Admin/Images/a/dymflex/contete8369.html" title="本文介绍了液化天然气项目质量管理的意义和特点">本文介绍了液化天然气项目质量管理的意义和</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.ftzmled.com/images/pic/a/easyintergame/" title="传奇变态合击私服网">传奇变态合击私服网</a></h3>
+<ul>
+<li><a href="http://www.ftzmled.com/images/pic/a/easyintergame/qq11962.html" title="为将溅渣护炉技术应用于炼镍转炉">为将溅渣护炉技术应用于炼镍转炉</a></li>
+<li><a href="http://www.ftzmled.com/images/pic/a/easyintergame/qq10776.html" title="高层建筑的结构设计关键之一是结构侧移的控制">高层建筑的结构设计关键之一是结构侧移的控</a></li>
+<li><a href="http://www.ftzmled.com/images/pic/a/easyintergame/qq10420.html" title="谈公开就是要尽可能地消除信息不对称">谈公开就是要尽可能地消除信息不对称</a></li>
+<li><a href="http://www.ftzmled.com/images/pic/a/easyintergame/qq6078.html" title="由于大多数的高中生写作都是命题作文的命题方式">由于大多数的高中生写作都是命题作文的命题</a></li>
+<li><a href="http://www.ftzmled.com/images/pic/a/easyintergame/qq5763.html" title="作为音乐工作者">作为音乐工作者</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 功夫世界私服发布网- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>他们都坚持住了</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 17:09</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=6255&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=6255">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       有的不仅是“中国通”最后       我们要相信坚持的力量大众1984年第一个来到中国       在最困难的时候依旧不离不弃；丰田上世纪60年代即现身美国       无论是销量惨淡还</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;有的不仅是“中国通”<p>最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们要相信坚持的力量大众1984年第一个来到中国<BR>&nbsp; &nbsp; &nbsp; &nbsp;在最困难的时候依旧不离不弃；丰田上世纪60年代即现身美国<BR>&nbsp; &nbsp; &nbsp; &nbsp;无论是销量惨淡还是“召回门”的打击<BR>&nbsp; &nbsp; &nbsp; &nbsp;都没有影响他们在美国闯天下的决心；铃木同样在印度坚持了30余年<BR>&nbsp; &nbsp; &nbsp; &nbsp;从合资企业中的弱势一方到强势一方就用了将近20年；菲亚特是最早去往巴西的汽车企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;也曾失去过市场第一的光环他们都坚持住了中国汽车的有识之士一直用“埋头苦干20年”来互相鼓励<BR>&nbsp; &nbsp; &nbsp; &nbsp;这也同样适用于我们在海外的发展之路有中国强大的市场作为后盾<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们都等得起 </p><p>菲亚特在巴西的汽车研发和创新具有很长的历史2003年成立的研发中心是菲亚特在意大利本土以外实力最强大的研发中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是拉丁美洲最具创新科技能力的研发中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;有800名工程师在配合意大利总部工作该中心的主要工作主要包括：设计、项目及实验性工程具有2d和3d的虚拟实验室进行原型开发实验室大约投资了100万欧元<BR>&nbsp; &nbsp; &nbsp; &nbsp;是当前巴西最先进的实验室该设计中心还有完整的建模场地用以制造1：1的模型菲亚特通过类似这样的手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;引入越来越多的科技和设计方案<BR>&nbsp; &nbsp; &nbsp; &nbsp;大大提高了巴西本土的设计能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而保证了在巴西出售的汽车<BR>&nbsp; &nbsp; &nbsp; &nbsp;一直受到市场的欢迎 </p><p>巴西<BR>&nbsp; &nbsp; &nbsp; &nbsp;拉美第一经济大国<BR>&nbsp; &nbsp; &nbsp; &nbsp;世界人口第五大国<BR>&nbsp; &nbsp; &nbsp; &nbsp;世界土地面积第五大国；巴西<BR>&nbsp; &nbsp; &nbsp; &nbsp;世界第四大汽车消费国<BR>&nbsp; &nbsp; &nbsp; &nbsp;第七大汽车生产国；巴西<BR>&nbsp; &nbsp; &nbsp; &nbsp;一个汽车工业基础雄厚却没有本国民族品牌的国度</p><p>在2012年3月的一期巴西著名杂志quatro rodas做的消费者调查中<BR>&nbsp; &nbsp; &nbsp; &nbsp;由菲亚特巴西设计中心参与设计的紧凑型轿车uno荣获最佳满意度大奖uno是2011年5月在巴西上市的<BR>&nbsp; &nbsp; &nbsp; &nbsp;赢得了巴西众多媒体大奖<BR>&nbsp; &nbsp; &nbsp; &nbsp;专业媒体的鼎力支持让uno这款车备受追捧<BR>&nbsp; &nbsp; &nbsp; &nbsp;在销量上也是节节攀高<BR>&nbsp; &nbsp; &nbsp; &nbsp;这次调查也印证了巴西消费者喜好从调查结果上看<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp; </p><p>这样的巴西<BR>&nbsp; &nbsp; &nbsp; &nbsp;无疑是全世界汽车企业欲得之而后快的沃土大众、丰田、、江淮<BR>&nbsp; &nbsp; &nbsp; &nbsp;但巴西汽车业界的王者<BR>&nbsp; &nbsp; &nbsp; &nbsp;却属于菲亚特 </p><p>回顾汽车企业如何成功进入海外市场的系列报道<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些成功的案例都有其共性简而言之<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以归结为三点： </p><p>研究菲亚特在巴西的成功<BR>&nbsp; &nbsp; &nbsp; &nbsp;人们更多的把原因归结于它的汽车所具有的拉丁风格菲亚特汽车的设计线条简练、极富动感、充满活力<BR>&nbsp; &nbsp; &nbsp; &nbsp;符合南美的巴西人热情奔放的个性菲亚特汽车具有意大利血统的艺术气质<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种气质正好也迎合了巴西人的喜好为此<BR>&nbsp; &nbsp; &nbsp; &nbsp;意大利人在巴西可谓煞费苦心 </p><p>首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;是选对一款适合当地市场的车型<BR>&nbsp; &nbsp; &nbsp; &nbsp;这近乎是成功的根本不论是桑塔纳、奥拓还是派力奥<BR>&nbsp; &nbsp; &nbsp; &nbsp;这些车型无一不是该企业集技术、外形为一体的经典车型<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也都是适应投资目的国气候环境、人文环境的上上之选既要经典又要适宜<BR>&nbsp; &nbsp; &nbsp; &nbsp;前者拥有自己的特色<BR>&nbsp; &nbsp; <img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/1F95214X-0.jpg" width="600px" height="400px" />&nbsp; &nbsp;后者为对方考虑 </p><p>可提供两款灵活燃料发动机：  flex<BR>&nbsp; &nbsp; &nbsp; &nbsp;前者能提供85马力<BR>&nbsp; &nbsp; &nbsp; &nbsp;而adventure locker只会搭载后者<BR>&nbsp; &nbsp; &nbsp; &nbsp;它能输出112马力（如果以酒精为燃料<BR>&nbsp; &nbsp; &nbsp; &nbsp;它能多产生2马力） </p><p>【xzbu】郑重<p>其次是对投资目的国充分的了解所谓知己知彼、百战不殆在高速信息化的时代<BR>&nbsp; &nbsp; &nbsp; &nbsp;收集一个国家或地区的信息变得不再困难<BR>&nbsp; &nbsp; &nbsp; &nbsp;其重要程度却不容置疑从法律法规到风土人情<BR>&nbsp; &nbsp; &nbsp; &nbsp;记者接触到跨国汽车企业中的“老外”<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至是“世界通”在出发之前了解目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;在到达之后依旧不懈地研究目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;是大众、菲亚特等等在海外市场取得成功的汽车企业共同的特征之一 </p><p>菲亚特特意在巴西追加了巴西特有的adventure locker车型<BR>&nbsp; &nbsp; &nbsp; &nbsp;与派里奥adventure、idea adventure和strada adventure构成了充满南美风情的adventure系列和普通的dobl</p><p>相比<BR>&nbsp; &nbsp; &nbsp; &nbsp;adventure locker增加了带有越野风格的保险杠和车身塑料包围<BR>&nbsp; &nbsp; &nbsp; &nbsp;中网为镀铬镂空式<BR>&nbsp; &nbsp; &nbsp; &nbsp;颇具运动感为适应巴西采用汽油和酒精作为燃料的状况<BR>&nbsp; &nbsp; &nbsp; &nbsp;dobl</p><p>从巴西的畅销车型中便可一窥菲亚特拉丁风的风采<BR>&nbsp; &nbsp; &nbsp; &nbsp;派力奥无疑是其中的佼佼者它出自意大利著名设计师乔治?亚罗之手<BR>&nbsp; &nbsp; &nbsp; &nbsp;当时可谓代表了紧凑型轿车的潮流车头造型饱满而流畅<BR>&nbsp; &nbsp; &nbsp; &nbsp;后部线条简洁而优雅<BR>&nbsp; &nbsp; &nbsp; &nbsp;深得拉丁风格的精髓第一代派力奥仅在巴西就售出了250万辆2011年<BR>&nbsp; &nbsp; &nbsp; &nbsp;菲亚特又在巴西推出新一代派力奥<BR>&nbsp; &nbsp; &nbsp; &nbsp;在巴西米纳斯吉拉斯州的betim工厂投产<BR>&nbsp; &nbsp; &nbsp; &nbsp;基于菲亚特uno平台研发<BR>&nbsp; &nbsp; &nbsp; &nbsp;借鉴了朋多的设计 </p><p>作为一家拥有百年历史的欧洲车企<BR>&nbsp; &nbsp; &nbsp; &nbsp;菲亚特一直稳居世界车企排名前十位但它的当家人马尔乔内却说：“菲亚特的盈利不是来自意大利总部<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是来自巴西”此言不虚<BR>&nbsp; &nbsp; &nbsp; &nbsp;从2009年开始<BR>&nbsp; &nbsp; &nbsp; &nbsp;菲亚特汽车公司全球第一大市场就已经由意大利本土转为巴西当年<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;占其全球总销量的38%<BR>&nbsp; &nbsp; &nbsp; &nbsp;高居集团榜首而据巴西汽车经销商协会发布的2011年巴西汽车销售情况报告称<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;超出排名第二的大众汽车6万辆之多<BR>&nbsp; &nbsp; &nbsp; &nbsp;%可以说<BR>&nbsp; &nbsp; &nbsp; &nbsp;菲亚特集团是依靠巴西才能够保持它的强大 </p>  (责任编辑：admin)
+<img border="0" alt="他们都坚持住了" src="/images/lenfeng_6255.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',6255)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',6255)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(6255);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecpdf/20155390.html'>利率市场化改革历经自上而下的实质性推进之后</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecpdf/20156611.html'>要做好这一点</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=6255" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=6255&title=他们都坚持住了" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=6255" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=6255" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="6255" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=6255&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '6255');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

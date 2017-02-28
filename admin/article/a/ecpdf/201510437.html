@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>依照设计施工图纸详细进行现场调查|我的网站</title>
+<meta name="description" content=" 解决这些问题的最有效地途径就是做好成本控制 (3)收集分包单位资料 并对分包商进行评价 拟定《合格分包商名录》 供日后类似项目选择分包商和制定分包成本" />
+<meta name="keywords" content="依照,设计施工,图纸,详细,进行,现场,调查,解决,这些,题" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.bjztjz.cn/Admin/add/a/educationincrisis/" title="天堂1私服发布网">天堂1私服发布网</a></li><li><a href="http://fzlanting.com/admin/class/a/efamilyguide/" title="迷失传奇私服">迷失传奇私服</a></li><li><a href="http://www.hljtb.org/images/hpv/a/ecgcardiology/" title="最新私服">最新私服</a></li><li><a href="http://fzlanting.com/admin/class/a/eeiow/" title="新开合击sf">新开合击sf</a></li><li><a href="http://qzcsgg.com/api/addons/a/efulian/" title="超变私服传奇">超变私服传奇</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/edwardianringdesign/" title="今天新开的传奇私服">今天新开的传奇私服</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecseagle/" title="仿盛大传奇sf">仿盛大传奇sf</a></li><li><a href="http://wjwlcm.com/data/attachments/a/e4energy_co/" title="热血传奇私服客户端下载">热血传奇私服客户端下载</a></li><li><a href="http://www.lygsyw.com/include/data/a/dumpscvv/" title="传奇1.76客户端下载">传奇1.76客户端下载</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eatingabudhabi/" title="破天一条龙">破天一条龙</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easysunkit/" title="超变态私服传奇">超变态私服传奇</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eatingandweightloss/" title="最新电信传奇私服">最新电信传奇私服</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/efloridamortgages/" title="1.76英雄合击">1.76英雄合击</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecxam/" title="合击传奇sf">合击传奇sf</a></li><li><a href="http://www.ahshtz.com/api/about/a/ecigspuffer/" title="超变传奇合击私服">超变传奇合击私服</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastonrecruitment/" title="传奇65535">传奇65535</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edmirsilva/" title="1.85传奇">1.85传奇</a></li><li><a href="http://www.lygsyw.com/include/data/a/dunasconstruction/" title="sf930">sf930</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/edsindia/" title="最新传奇sf发布网">最新传奇sf发布网</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eadvergence/" title="天龙八部私服">天龙八部私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">功夫世界私服发布网相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/201511874.html" target="_blank" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/201510437.html" target="_blank" title="依照设计施工图纸详细进行现场调查">依照设计施工图纸详细进行现场调查</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20159549.html" target="_blank" title="用竞赛的方式提高学习兴趣 中职生学习积极性不高">用竞赛的方式提高学习兴趣 中职生学习积极性</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20159344.html" target="_blank" title="她守候着人类最小">她守候着人类最小</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20159115.html" target="_blank" title="《中国社区医师》集实用性科学性和专业性于一体">《中国社区医师》集实用性科学性和专业性于一</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20156611.html" target="_blank" title="要做好这一点">要做好这一点</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20156255.html" target="_blank" title="他们都坚持住了">他们都坚持住了</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20155390.html" target="_blank" title="利率市场化改革历经自上而下的实质性推进之后">利率市场化改革历经自上而下的实质性推进之后</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20155200.html" target="_blank" title="坚持实事求是">坚持实事求是</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecpdf/20154839.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.cowinvc.com/data/admin/a/eb5visaamerica/" title="vip传奇3g">vip传奇3g</a></h3>
+<ul>
+<li><a href="http://www.cowinvc.com/data/admin/a/eb5visaamerica/qq12256.html" title="在众多的展厅中">在众多的展厅中</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/eb5visaamerica/qq11262.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/eb5visaamerica/qq10824.html" title="例如在版面编排时主体要素的比例大小">例如在版面编排时主体要素的比例大小</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/eb5visaamerica/qq10747.html" title="C整个施工段的顶进分阶段的进行检验">C整个施工段的顶进分阶段的进行检验</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/eb5visaamerica/qq8519.html" title="这一生产过程(即从浸渍到卷绕成据报导">这一生产过程(即从浸渍到卷绕成据报导</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.xgqfr.com/adminqfr/Images/a/dzrjy/" title="新开千年游戏发布网">新开千年游戏发布网</a></h3>
+<ul>
+<li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzrjy/contete11950.html" title="参考文献列表按文献在正文中引用的先后顺序排列">参考文献列表按文献在正文中引用的先后顺序</a></li>
+<li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzrjy/contete11608.html" title="宋初结束了五代十国的分裂局面">宋初结束了五代十国的分裂局面</a></li>
+<li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzrjy/contete11525.html" title="以湖州气象局门户网站为例">以湖州气象局门户网站为例</a></li>
+<li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzrjy/contete10370.html" title="现如今的电力系统中客户服务系统已经被广泛的运用">现如今的电力系统中客户服务系统已经被广泛</a></li>
+<li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzrjy/contete9565.html" title="《中国经济景气月报》由国家统计局创办">《中国经济景气月报》由国家统计局创办</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 功夫世界私服发布网- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>依照设计施工图纸详细进行现场调查</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 08:21</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10437&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10437">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       解决这些问题的最有效地途径就是做好成本控制 (3)收集分包单位资料       并对分包商进行评价       拟定《合格分包商名录》       供日后类似项目选择分包商和制定分包成本</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;解决这些问题的最有效地途径就是做好成本控制<p> (3)收集分包单位资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;并对分包商进行评价<BR>&nbsp; &nbsp; &nbsp; &nbsp;拟定《合格分包商名录》<BR>&nbsp; &nbsp; &nbsp; &nbsp;供日后类似项目选择分包商和制定分包成本时使用； </p><p> 工程项目成本控制系统的设计、实施和维护是一个包含账目图表、数据采集、成本报表和成本工程的过程</p><p> 加强工程成本控制的首要环节就是核定工程投资<BR>&nbsp; &nbsp; &nbsp; &nbsp;实施工程项目投资承包的内容一般是有投资、工期和质量三部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;在保证工程质量的前提下<BR>&nbsp; &nbsp; &nbsp; &nbsp;进行成本控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;坚持依据工作量制定工期要紧密结合生产的需要<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据设备周期、工程难易程度而确定整个工程的质量必须严格按照技术标准工艺要求进行施工<BR>&nbsp; &nbsp; &nbsp; &nbsp;确保工程质量合格 </p><p> 在建筑市场竞争日益激烈的今天<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何科学合理地进行资源配置、挖潜增效、获取最佳利润<BR>&nbsp; &nbsp; &nbsp; &nbsp;是铁路工程项目施工中最值得思考的问题项目成本过程控制是一个系统工程<BR>&nbsp; &nbsp; &nbsp; &nbsp;涉及到项目管理工作的各个方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;贯穿项目实施的整个过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;它不仅仅是项目经理和成本合同及财务部门的工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;更需要项目全体管理人员共同参与才能取得较好的效果 </p><p> 摘要：安全质量控制、成本控制是铁路工程项目实施过程中经常强调的三大控制其中一个比较重要的环节还是成本控制成本控制效果的优劣<BR>&nbsp; &nbsp; &nbsp; &nbsp;不仅关系到项目能否顺利完成<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且还直接影响到施工企业的经济效益笔者从施工企业项目管理的角度阐述成本控制的几点看法 </p><p> 成本控制要实现的是对项目成本的管理<BR>&nbsp; &nbsp; &nbsp; &nbsp;项目成本控制的主要内容包括：项目自身成本即内部成本和项目外部成本 </p><p> 施工完成后<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须结合总成本计划和可控成本计划与最终实际成本进行对比分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;成本分析可采用图表等多种形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;不但要对比分析总成本<BR>&nbsp; &nbsp; &nbsp; &nbsp;还要对工序成本进行分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且以工序分析为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;得出工序成本升高或降低的原因 </p><p>社会成本建筑施工企业并不是在预期的理想化的条件下施工的<BR>&nbsp; &nbsp; &nbsp; &nbsp;社会因素的干扰作用有时也是巨大的主要包括：当地政府部门和社会团体的干预(各种限制、要、各种名目的捐助、评比等)和当地居民的干扰社会因素往往因为施工的任务、地点和施工人员的不同而大相径庭因为建筑工程的投资主要发生在工程施工阶段<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此本文仅就工程施工阶段的成本控制进行分析 </p><p>机械台班费控制机械是施工必备的工具<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据工程的需要科学、合理的选用机械<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分发挥机械的效能；要科学合理的安排施工段落<BR>&nbsp; &nbsp; &nbsp; &nbsp;最大限度的提高现场机械的利用率<BR>&nbsp; &nbsp; &nbsp; &nbsp;减少机械费成本<BR>&nbsp; &nbsp; &nbsp; &nbsp;定期保养机械<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高机械的完好率<BR>&nbsp; &nbsp; &nbsp; &nbsp;为整体进度提供保证对于必须外租的机械设备<BR>&nbsp; &nbsp; &nbsp; &nbsp;要搞好市场调查摸底：a．机械进场必须根据工程施工的计划安排及施工项目的先后顺序；b．实行机械租赁制<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样做的好处是租施工机械费用低<BR>&nbsp; &nbsp; &nbsp; &nbsp;买机械支出费用高<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种办法既实用又经济；c．结合施工现场的实际情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽量选用当地的网电作施工电源；</p><p>【xzbu】郑重<p>成本账目图表的作用在于估计项目支出的基本原则<BR>&nbsp; &nbsp; &nbsp; &nbsp;在结合这一原则确定与公司的一般账目和会计职能的联系及与其他财务账目的协调一致；</p><p> 确保工程建设顺利进行的关键因素就是工程建设的资金要及时到位资金能否及时到位<BR>&nbsp; &nbsp; &nbsp; &nbsp;在很大程度上影响了项目承包人能否全面完成承包任务所以<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们必须从强化资金管理入手<BR>&nbsp; &nbsp; &nbsp; &nbsp;对所有项目根据轻重缓急分类排队<BR>&nbsp; &nbsp; &nbsp; &nbsp;合理安排资金 </p><p> 总之<BR>&nbsp; &nbsp; &nbsp; &nbsp;要做好铁路工程项目建设的成本控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;就必须明确并牢牢把握成本控制的内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立并不断完善成本控制体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;强化成本控制制度<BR>&nbsp; &nbsp; &nbsp; &nbsp;采用先进的成本控制方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;进行缜密、科学的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能有效控制住项目成本<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现预期的成本控制目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;使工程项目管理实现精细化<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而确保工程项目管理绩效得到实现 </p><p> (1)第一是分析出因施工条件、材料价格变动引起的工序单价的变动<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时注意收集采用新技术、新材料的工序成本资料； </p><p> 工程投资建设工作的最后一项任务就是工程的竣工验收了<BR>&nbsp; &nbsp; &nbsp; &nbsp;这对于财务管理、统计工作<BR>&nbsp; &nbsp; &nbsp; &nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0R12L061-0.jpg" width="600px" height="400px" />sp;对资产评估、总结项目综合效益都具有重要意义为了全面检验工程设计、装备水平、投资效益等方面的情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须加强工程验收工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立科学的奖惩考核制度对竣工验收后已办理固定资产移交手续的项目<BR>&nbsp; &nbsp; &nbsp; &nbsp;本着责、利相结合的原则<BR>&nbsp; &nbsp; &nbsp; &nbsp;制定相应的奖惩措施 </p><p>作好行政管理精简管理机构<BR>&nbsp; &nbsp; &nbsp; &nbsp;不留一个“吃闲饭的人”<BR>&nbsp; &nbsp; &nbsp; &nbsp;减少不必要的工资性支出<BR>&nbsp; &nbsp; &nbsp; &nbsp;控制业务费等各项非生产性开支的数量防止行政办公用的财产物资的损坏和流失<BR>&nbsp; &nbsp; &nbsp; &nbsp;一律采取登卡使用另外<BR>&nbsp; &nbsp; &nbsp; &nbsp;安全和质量控制成本也是项目实施中对项目效益影响比较大的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是必须认真抓好的重要系统工程<BR>&nbsp; &nbsp; &nbsp; &nbsp;这里就不再论述 </p><p> (2)其次比较主观确定成本部分的工序单价<BR>&nbsp; &nbsp; &nbsp; &nbsp;分析得到因制定方法不合理而导致的偏高或偏低的工序单价<BR>&nbsp; &nbsp; &nbsp; &nbsp;重视积累书面资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;以便日后制定同类项目成本计划时使用； </p><p> 第一要建立责、利相结合的原则成本控制方法要真正达到发挥及时有效的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;一定要严格按照经济责任制的要求<BR>&nbsp; &nbsp; &nbsp; &nbsp;贯彻责、利相结合的原则在工程项目的施工过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;项目经理、工程技术人员、业务管理人员以及各施工队和生产班组都负有一定的成本控制责任<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而形成整个项目的成本控制责任网络另外<BR>&nbsp; &nbsp; &nbsp; &nbsp;各管理部门、班组在肩负成本控制责任的同时<BR>&nbsp; &nbsp; &nbsp; &nbsp;还应有成本控制的权力<BR>&nbsp; &nbsp; &nbsp; &nbsp;即在规定的权力范围内能自主决定费用的开支最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;项目经理还要对各部门、各作业队及各班组进行定期的成本检查和考评<BR>&nbsp; &nbsp; &nbsp; &nbsp;并与工资分配紧密挂钩<BR>&nbsp; &nbsp; &nbsp; &nbsp;实行有奖有罚只有责、利高度结合的成本控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;才是名实相符的项目成本控制<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能取得较好的经济效果；第二是建立完善的目标责任制<BR>&nbsp; &nbsp; &nbsp; &nbsp;做到每个员工都有成本控制意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;同心协力去完成目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据目标任务完成的情况给予不同的奖励和处罚；第三建立风险预测机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据本单位多年来积累的经验或借鉴他人的经验预测施工中的风险<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据风险的性质、大小采取相应地措施<BR>&nbsp; &nbsp; &nbsp; &nbsp;如回避、自担等<BR>&nbsp; &nbsp; &nbsp; &nbsp;将风险损失降到最低程度；第四是建立索赔机制<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于不是自身原因造成的经济损失或非自身应当承担的经济损失<BR>&nbsp; &nbsp; &nbsp; &nbsp;要及时索赔 </p><p>人工费控制a．依据施工阶段特点合理控制施工人员的数量<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽量选择多面手的生产人员<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高生产效率；b．采用多招用熟练的临时工<BR>&nbsp; &nbsp; &nbsp; &nbsp;合理使用正式职工的办法<BR>&nbsp; &nbsp; &nbsp; &nbsp;这也是降低成本的一项措施；c．执行本单位制定的奖罚制度</p><p>材料控制科学统计证明<BR>&nbsp; &nbsp; &nbsp; &nbsp;整个项目成本中占比例最大的还是施工所用的原材料的费用<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般可达60％<BR>&nbsp; &nbsp; &nbsp; &nbsp;材料成本的节约<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是降低项目成本的关键依照设计施工图纸详细进行现场调查<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后编制准确的材料计划；、货比三家；<BR>&nbsp; &nbsp; &nbsp; &nbsp;制定奖罚措施<BR>&nbsp; &nbsp; &nbsp; &nbsp;杜绝材料浪费；</p><p>政府成本在我国<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为政府行政力量占据主导地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;建筑施工企业在正常的经济活动中不可避免地要和政府打交道市场准入制度的建立与施工有关的各种法律法规的制定都是政府行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业必须遵守；少数地方政府采取地方保护主义<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高外地企业进入本地市场的门槛<BR>&nbsp; &nbsp; &nbsp; &nbsp;或设立限制阻碍外地企业的进入<BR>&nbsp; &nbsp; &nbsp; &nbsp;增加了外地企业的成本；</p>  (责任编辑：admin)
+<img border="0" alt="依照设计施工图纸详细进行现场调查" src="/images/lenfeng_10437.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10437)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10437)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10437);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecpdf/20159549.html'>用竞赛的方式提高学习兴趣 中职生学习积极性不高</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecpdf/201511874.html'>以提供梗概为目的</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10437" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10437&title=依照设计施工图纸详细进行现场调查" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10437" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10437" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10437" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10437&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10437');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

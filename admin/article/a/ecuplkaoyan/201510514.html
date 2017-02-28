@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>在开拓电力市场中|我的网站</title>
+<meta name="description" content=" 就是确立了符合现代促销规律的以客户服务为中心的营销战略要坚定不移地贯彻执行“人民电业为人民”的宗旨 坚持客户至上的服务观 全心全意为客户服务通过继续深入开展有针对" />
+<meta name="keywords" content="开拓,电力,市场,就是,确立,符合,现代,促销,律的,客户服" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.twabc.com.cn/css/_notes/a/edirectmailing/" title="传奇私服通用登陆器">传奇私服通用登陆器</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastentrance/" title="红太阳传奇">红太阳传奇</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecurieweb/" title="新开传奇3私服">新开传奇3私服</a></li><li><a href="http://www.lygsyw.com/include/data/a/dulishop/" title="传奇私服发布网">传奇私服发布网</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebacktoeden/" title="虎庙传奇">虎庙传奇</a></li><li><a href="http://www.darenaika.com/images/lurd/a/easternblockmusic/" title="最新变态传奇">最新变态传奇</a></li><li><a href="http://www.lygsyw.com/include/data/a/duluthbag/" title="盛大传奇官网">盛大传奇官网</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/" title="生活技能">生活技能</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwmartens/" title="玩幼小说">玩幼小说</a></li><li><a href="http://www.51kaso.com/admin/Public/a/duofenshop/" title="盛大传奇1.76客户端">盛大传奇1.76客户端</a></li><li><a href="http://fzlanting.com/admin/class/a/eeeetttt/" title="传奇连击">传奇连击</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/educationcitycity/" title="挑战私服发布网">挑战私服发布网</a></li><li><a href="http://www.51kaso.com/admin/Public/a/durangonaturalfoods/" title="老版热血传奇客户端">老版热血传奇客户端</a></li><li><a href="http://www.ahshtz.com/api/about/a/eclectikaccessories/" title="刚开一秒的传奇">刚开一秒的传奇</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eatlovepaleo/" title="传奇sf客户端">传奇sf客户端</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edconsultinginteractive/" title="最新传世私服">最新传世私服</a></li><li><a href="http://www.lygsyw.com/include/data/a/dundeegreatdeal/" title="传奇私服登陆器">传奇私服登陆器</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzbcky/" title="传奇通用登陆器">传奇通用登陆器</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/earthbornhypnotherapy/" title="古惑仔传奇">古惑仔传奇</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastcoastknightsofthetrueinvisiableempire/" title="daneastcoastknightsofthetrueinvisdan">daneastcoastknightsofthetrueinvisdan</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">三国群英传ol私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/201512017.html" target="_blank" title="摘要必须拥有与论文同等量的主要信息">摘要必须拥有与论文同等量的主要信息</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/201510514.html" target="_blank" title="在开拓电力市场中">在开拓电力市场中</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/201510421.html" target="_blank" title="加强与校友的联络与沟通">加强与校友的联络与沟通</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20156637.html" target="_blank" title="小学美术课程强调对学生进行素质教育">小学美术课程强调对学生进行素质教育</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20156454.html" target="_blank" title="分布在内部空间上收敛在部分空间上起到允置的作用">分布在内部空间上收敛在部分空间上起到允置的</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20156118.html" target="_blank" title="根据传统代课教师界定">根据传统代课教师界定</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20154868.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20153532.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20152556.html" target="_blank" title="心动过速节律不齐">心动过速节律不齐</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuplkaoyan/20151507.html" target="_blank" title="浙江省中蜂肘脉指数地区间均无显著性差异（P﹥）">浙江省中蜂肘脉指数地区间均无显著性差异（P</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.yataixiyu.com/images/dfj/a/earthstoneart/" title="新开传奇合击">新开传奇合击</a></h3>
+<ul>
+<li><a href="http://www.yataixiyu.com/images/dfj/a/earthstoneart/qq11065.html" title="通过衣康酸与聚乙二醇的酯化反应">通过衣康酸与聚乙二醇的酯化反应</a></li>
+<li><a href="http://www.yataixiyu.com/images/dfj/a/earthstoneart/qq9562.html" title="本文拟从女性主义视角出发">本文拟从女性主义视角出发</a></li>
+<li><a href="http://www.yataixiyu.com/images/dfj/a/earthstoneart/qq8836.html" title="特别是很多老年人有潜在的疾病">特别是很多老年人有潜在的疾病</a></li>
+<li><a href="http://www.yataixiyu.com/images/dfj/a/earthstoneart/qq8280.html" title="女儿们没能领悟">女儿们没能领悟</a></li>
+<li><a href="http://www.yataixiyu.com/images/dfj/a/earthstoneart/qq7506.html" title="方法:将例消化道肿瘤患者分为组">方法:将例消化道肿瘤患者分为组</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.gdglsq.com/images/lurd/a/eatatsynos/" title="合击传奇私服网">合击传奇私服网</a></h3>
+<ul>
+<li><a href="http://www.gdglsq.com/images/lurd/a/eatatsynos/qq12049.html" title="西餐专业技能水平是一个需要经验不断积累的过程">西餐专业技能水平是一个需要经验不断积累的</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/eatatsynos/qq11428.html" title="G-四链体因其广泛参与了基因转录和翻译的调控">G-四链体因其广泛参与了基因转录和翻译的调</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/eatatsynos/qq11059.html" title="在行业发展的大背景下">在行业发展的大背景下</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/eatatsynos/qq10955.html" title="通过分析这些影响因素">通过分析这些影响因素</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/eatatsynos/qq10843.html" title="给歌曲编排简单且符合音乐律动的舞蹈动作">给歌曲编排简单且符合音乐律动的舞蹈动作</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 三国群英传ol私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>在开拓电力市场中</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 09:02</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10514&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10514">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       就是确立了符合现代促销规律的以客户服务为中心的营销战略要坚定不移地贯彻执行“人民电业为人民”的宗旨       坚持客户至上的服务观       全心全意为客户服务通过继续深入开展有针对</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;就是确立了符合现代促销规律的以客户服务为中心的营销战略<p>要坚定不移地贯彻执行“人民电业为人民”的宗旨<BR>&nbsp; &nbsp; &nbsp; &nbsp;坚持客户至上的服务观<BR>&nbsp; &nbsp; &nbsp; &nbsp;全心全意为客户服务通过继续深入开展有针对性的电力形势的宣传教育<BR>&nbsp; &nbsp; &nbsp; &nbsp;使职工进一步明确企业面临的严峻形势<BR>&nbsp; &nbsp; &nbsp; &nbsp;认清电力市场基本趋势<BR>&nbsp; &nbsp; &nbsp; &nbsp;了解企业战略目标和经营方针<BR>&nbsp; &nbsp; &nbsp; &nbsp;增强职工企业经营风险意识首先要摆正与客户的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;树立客户至上的思想<BR>&nbsp; &nbsp; &nbsp; &nbsp;其次电力职工要注重市场研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;学习法律法规<BR>&nbsp; &nbsp; &nbsp; &nbsp;研究国家政策<BR>&nbsp; &nbsp; &nbsp; &nbsp;熟悉市场规则<BR>&nbsp; &nbsp; &nbsp; &nbsp;勇于开拓市场其次是通过开展优质服务的宣传<BR>&nbsp; &nbsp; &nbsp; &nbsp;使职工明确其重要性、必要性及其内容实质<BR>&nbsp; &nbsp; &nbsp; &nbsp;对优质服务有一个全面正确的认识要树立竞争意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;做到人无我有、人有我先<BR>&nbsp; &nbsp; &nbsp; &nbsp;在市场上处于有利地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后要主动进攻市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;扩大市场份额 </p><p>【xzbu】郑重<p>电力企业是为全社会服务的特殊行业<BR>&nbsp; &nbsp; &nbsp; &nbsp;电业企业生产经营活动不仅直接关乎本行业职工的工作和生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且与全社会的发展和稳定息息相关<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而对电力行业广大职工来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;不仅肩负创造丰富的经济效益<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进国民经济的快速发展的任务<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且还承担着艰巨的社会责任<BR>&nbsp; &nbsp; &nbsp; &nbsp;是重要的社会效益的创造者因而<BR>&nbsp; &nbsp; &nbsp; &nbsp;围绕党和国家中心工作的大局<BR>&nbsp; &nbsp; &nbsp; &nbsp;在企业中不断培养全体员工的“全局”意识和“大局”观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;将是电力企业企业文化的核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别要树立一切围绕党和国家大局出发服务全国改革、稳定的全局观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务地方经济建设的观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;并以此为核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;构建企业文化建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能使电力行业“优质服务”工作具有深厚的文化底蕴<BR>&nbsp; &nbsp; &nbsp; &nbsp;赋予“优质服务”工作以深刻的思想内涵 </p><p>长期以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;供电部门奉行“人民电业为人民”的行业宗旨<BR>&nbsp; &nbsp; &nbsp; &nbsp;立足搞好服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;为社会提供安全、高效的电能但从严格意义来讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们现在的服务还是单纯的、被动的<BR>&nbsp; &nbsp; &nbsp; &nbsp;尚未进入全方位、多层次的主动服务阶段形成被动型供电服务的原因主要有以下两点： </p><p> 优质服务是电力企业的生命线<BR>&nbsp; &nbsp; &nbsp; &nbsp;它渗透企业生产、管理的各个环节、各个部门<BR>&nbsp; &nbsp; &nbsp; &nbsp;是企业综合实力的体现<BR>&nbsp; &nbsp; &nbsp; &nbsp;关系到企业的生存和发展而随着社会的发展,电力企业体制改革的推进,电力逐步由“紧张”向“过剩”转变,电力企业面临着日趋激烈的竞争能否在竞争中保持优势地位,不断发展壮大,因素固然很多,但有一点是应该及早认识到的:电力企业必须摄弃传统垄断企业的优越感树立现代市场营销观念其中,树立良好的服务品牌无疑会起到非常重要的作用优质服务是电力企业的生命线,是电力企业拓展市场的通行证,是打造电力品牌的根本途径 </p><p>实践证明<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务是企业发展的立足之本在供电行业转为买方市场的今天<BR>&nbsp; &nbsp; &nbsp; &nbsp;电力企业必须按客观规律办事<BR>&nbsp; &nbsp; &nbsp; &nbsp;服务理念要更新、服务质量要优化、服务方式要灵活、服务管理要到位<BR>&nbsp; &nbsp; &nbsp; &nbsp;在规范中完善服务、提高质量在服务中开拓市场、寻求发展 </p><p>完善激励机制要体现奖惩分明<BR>&nbsp; &nbsp; &nbsp; &nbsp;奖惩分明是经营服务的动力<BR>&nbsp; &nbsp; &nbsp; &nbsp;其核心是岗位责任制它要求岗位有责任<BR>&nbsp; &nbsp; &nbsp; &nbsp;目标有考核<BR>&nbsp; &nbsp; &nbsp; &nbsp;考核有奖惩约束机制应健全、便于操作要将优质服务与监督、监察与检查相结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;严厉查处损害企业形象的违纪违规行为<BR>&nbsp; &nbsp; &nbsp; &nbsp;对客户投诉的问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;应严格按照相应流程和考核办法及时查处<BR>&nbsp; &nbsp; &nbsp; &nbsp;以此规范企业的服务行为电力是基础性、公益性和服务性行业<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是最需讲诚信的行业此外<BR>&nbsp; &nbsp; &nbsp; &nbsp;在售后服务环节上<BR>&nbsp; &nbsp; &nbsp; &nbsp;还要健全售后跟踪服务体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;以切实解决客户的后顾之忧<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断改进服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高企业的信誉度 </p><p>服务是宗旨<BR>&nbsp; &nbsp; &nbsp; &nbsp;是供电企业重要的政治、经济和社会责任<BR>&nbsp; &nbsp; &nbsp; &nbsp;是实现供用电“双赢”的重要手段服务文化是以服务价值观为核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;以创造顾客忠诚、提升企业核心竞争力为目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;以形成共同的服务价值认知和行为规范为内容的文化供电企业还要积极探索新形势下服务用电客户的措施和方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断提高用户满意度<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立优质真诚、和谐共赢的服务文化美国营销大师麦凯纳说：“这个时代是客户永不满意的时代”现代社会是多元的<BR>&nbsp; &nbsp; &nbsp; &nbsp;客户对电力需求也是多元的<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们已不再仅限于满足用电保障需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;对供电质量、技术、安全用电等多方面提出深层次复杂化的用电需求 </p><p>一提及优质服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;许多同志马上联想到的是对客户的服务和对社会的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;而对企业内部的服务关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;则往往被忽视<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得服务工作形成缺失一是领导为员工的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业员工是企业的主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是企业的主人<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业中各级领导为职工群众服好务<BR>&nbsp; &nbsp; &nbsp; &nbsp;是贯彻落实“三个代表”重要思想的充分体现二是坚持机关为基层的服务机关是企业领导有效指导工作的专门部门<BR>&nbsp; &nbsp; &nbsp; &nbsp;机关工作人员对基层的工作不仅有督导权<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时也有指导和服务的义务各机关部门在对基层工作检<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0Z20B614-0.jpg" width="600px" height="400px" />查时<BR>&nbsp; &nbsp; &nbsp; &nbsp;应充分发挥自己的专业优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;将发现问题和解决问题相结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;特别是要将注意力放在帮助基层解决问题上<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能收到事半功倍的效果；三是生产为营销的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;生产单位和部门是供电企业的重要工作部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;但供电企业的最终目标是将电能出售给客户<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而营销工作才是电力系统工作成果的最终体现者和经济效益的实现者四是营销必须为市场服务对营销部门和人员来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须和客户建立紧密的联系关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须及时了解市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;使服务工作更加到位和及时<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能使电力营销工作再上台阶以优质服务为宗旨为客户提供方便、优质的服务,来提高企业的信誉,增强企业的竞争力,进而扩大电力消费市场 </p><p>优质服务是电力企业营销战略的重要组成部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;电力企业在供、销一体化的基础上也要实现销售一体化<BR>&nbsp; &nbsp; &nbsp; &nbsp;即实现电力产品售前服务</p><p>当今世界已进入知识经济时代<BR>&nbsp; &nbsp; &nbsp; &nbsp;市场竞争不再仅仅是产品质量的竞争<BR>&nbsp; &nbsp; &nbsp; &nbsp;更是服务质量的竞争<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以提供优质服务的企业将比竞争对手拥有更迅猛的增长势头和更强大的获利能力从服务入手优质服务已经成为经济社会的共识电力做为国民经济发展的支柱产业<BR>&nbsp; &nbsp; &nbsp; &nbsp;更应抢先一步树立以优质服务抢占市场的先进理念 </p><p><BR>&nbsp; &nbsp; &nbsp; &nbsp;患难与共意识不强供电企业在长期高度集中的计划经济体制和政企不分的管理模式下<BR>&nbsp; &nbsp; &nbsp; &nbsp;形成了发展靠国家、管理靠行政手段的意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;职工受传统观念影响较深<BR>&nbsp; &nbsp; &nbsp; &nbsp;对市场经济的基本规律和电力生产的特殊规律缺乏全面系统的认识“皇帝女儿不愁嫁”、我不求人”等优越感还在相当一部分职工的头脑中存在 </p><p>电力行业作为集垄断性、公益性和服务性于一体的国有重点骨干企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;关系到国家安全和国民经济命脉<BR>&nbsp; &nbsp; &nbsp; &nbsp;承担着重要的经济责任、政治责任和社会责任服务党和国家工作大局、服务电力客户、服务发电企业、服务社会发展是电力企业的宗旨和使命<BR>&nbsp; &nbsp; &nbsp; &nbsp;是一切工作的出发点和落脚点<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是衡量我们工作的基本标准 </p><p>过去由于对职工的优质服务教育重视不够<BR>&nbsp; &nbsp; &nbsp; &nbsp;以致职工对供电服务的深刻内涵认识不清相当一部分职工未能从企业的生存发展、从企业经营战略的高度去充分认识优质服务的重要性和必要性多数职工对优质服务的目的不明确<BR>&nbsp; &nbsp; &nbsp; &nbsp;领导叫怎么做就怎么做<BR>&nbsp; &nbsp; &nbsp; &nbsp;完成任务就行<BR>&nbsp; &nbsp; &nbsp; &nbsp;缺乏主动性、创造性的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;致使服务工作带有一定的盲目性 </p><p>5、正确处理好优质服务与安全、同业对标、拓宽电力市场的关系 优质服务与安全、效益的关系安全是基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济效益是中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;优质服务是宗旨假如把三者看成是一个圆柱体<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么安全就是这个圆柱体的底面<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济效益则是中间部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;优质服务就是上面的盖子安全基础不牢地动山摇<BR>&nbsp; &nbsp; &nbsp; &nbsp;经济效益、优质服务都会成空；经济效益需要优质服务来呵护<BR>&nbsp; &nbsp; &nbsp; &nbsp;优质服务需要经济效益来支撑三者是相互依存、相互促进的辩证关系优质服务工作要努力做到：服务态度礼仪化、服务程序标准化、服务手段现代化、服务治理军事化、服务方式便捷化、非凡服务亲情化、宣传报道常态化 </p><p>在开拓电力市场中<BR>&nbsp; &nbsp; &nbsp; &nbsp;供电企业要紧紧依靠科技进步<BR>&nbsp; &nbsp; &nbsp; &nbsp;加大对人才的培养力度<BR>&nbsp; &nbsp; &nbsp; &nbsp;对职工进行职业道德和职业技能教育<BR>&nbsp; &nbsp; &nbsp; &nbsp;通过形式多样的技术比武、推广首席员工制等活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;为员工搭建交流和学习的平台<BR>&nbsp; &nbsp; &nbsp; &nbsp;激发其潜质随着时代的发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;用电技术日新月异<BR>&nbsp; &nbsp; &nbsp; &nbsp;用电设备包罗万象<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们假如不经常学习和培训<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能把握相适应的知识、技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;不要说优质服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是普通服务都做不好因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;要通过加强培训<BR>&nbsp; &nbsp; &nbsp; &nbsp;定时地对职工进行岗位培训<BR>&nbsp; &nbsp; &nbsp; &nbsp;使职工在思想认识上更加以客户和市场为重点<BR>&nbsp; &nbsp; &nbsp; &nbsp;为客户提供更优质的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;如方便客户的电费结算和用电查询、取消人情电<BR>&nbsp; &nbsp; &nbsp; &nbsp;将电力客户与供电企业的地位平等起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;真正做到人民电力为人民 </p><p>售后服务的一体化在电能流向客户的过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;既要提供电力产品的售前宣传和咨询服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;免费为客户提供用电规划、材料运送等服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时又要在电力产品出售后作好定期检查和回访<BR>&nbsp; &nbsp; &nbsp; &nbsp;对于客户在用电过程中的突发情况要及时作出响应<BR>&nbsp; &nbsp; &nbsp; &nbsp;坚持做到安全第一、预防为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;实施全天、全面的服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;对突发问题做出最迅速的抢修和解决 </p>  (责任编辑：admin)
+<img border="0" alt="在开拓电力市场中" src="/images/lenfeng_10514.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10514)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10514)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10514);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuplkaoyan/201510421.html'>加强与校友的联络与沟通</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuplkaoyan/201512017.html'>摘要必须拥有与论文同等量的主要信息</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10514" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10514&title=在开拓电力市场中" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10514" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10514" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10514" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10514&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10514');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

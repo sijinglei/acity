@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>IT设施将来成为水电一样的基础设施|我的网站</title>
+<meta name="description" content=" 提升制造业中小企业工业设计水平中小微企业联盟“联盟”的方式开展信息化服务是中小企业信息化推进工程致力探索的服务模式 由企业牵头自发组建的服务联盟 具有市场定位准、" />
+<meta name="keywords" content="设施,将来,成为,水电,一样,基础设施,提升,制造业,中小企" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://forex8.com/api/connect/a/eastqh/" title="今天新开传奇私服发布网">今天新开传奇私服发布网</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/" title="采集系统">采集系统</a></li><li><a href="http://www.lygsyw.com/include/data/a/dumprunnerwaste/" title="xp13万能登陆器">xp13万能登陆器</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecriredelafantasy/" title="今日新开传奇sf">今日新开传奇sf</a></li><li><a href="http://fzlanting.com/admin/class/a/eewior/" title="sf传世">sf传世</a></li><li><a href="http://www.yizuocity.com/admin/article/a/edaby/" title="功夫世界私服">功夫世界私服</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/eauctioning/" title="第一登陆器下载">第一登陆器下载</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dxgtnm/" title="传世服务端">传世服务端</a></li><li><a href="http://fzlanting.com/admin/class/a/efegemakine/" title="超级变态私服">超级变态私服</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdshelving/" title="传奇行会封号">传奇行会封号</a></li><li><a href="http://www.weiboyewu.com/images/default/a/" title="进阶">进阶</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/eastaltonfloristtoday/" title="今日新开传奇发布网">今日新开传奇发布网</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/ea65/" title="刚开一秒中变传奇">刚开一秒中变传奇</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebtajpmorgan/" title="新开中变传世sf">新开中变传世sf</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzsw168/" title="龙腾传奇">龙腾传奇</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/eashh/" title="欧洲传奇">欧洲传奇</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecotecpower/" title="超级变态sf">超级变态sf</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/eden214/" title="中变合击">中变合击</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/" title="韩版传奇私服">韩版传奇私服</a></li><li><a href="http://www.darenaika.com/images/lurd/a/easternkyappraisalservices/" title="1.76网通传奇私服">1.76网通传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">传奇私服万能登陆器相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201512079.html" target="_blank" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201511938.html" target="_blank" title="老宅系卢明发所建">老宅系卢明发所建</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201511112.html" target="_blank" title="背景肥胖严重危害着人类的健康">背景肥胖严重危害着人类的健康</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201510648.html" target="_blank" title="大力提升干部职工素质">大力提升干部职工素质</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20159586.html" target="_blank" title="系统仿真结果充分体现了改进后光伏电池的有效性">系统仿真结果充分体现了改进后光伏电池的有效</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20159337.html" target="_blank" title="文章详细讨论了其组成原理及实现方法">文章详细讨论了其组成原理及实现方法</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20158544.html" target="_blank" title="实验结束后分别观察胃粘膜组">实验结束后分别观察胃粘膜组</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20158135.html" target="_blank" title="凡被录用的参考文献">凡被录用的参考文献</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20156859.html" target="_blank" title="从CPI当月同比走势与加息时机选择的历史情况来看">从CPI当月同比走势与加息时机选择的历史情况</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20156095.html" target="_blank" title="IT设施将来成为水电一样的基础设施">IT设施将来成为水电一样的基础设施</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.fzlanting.com/admin/images/a/duydonnie/" title="变态征途sf">变态征途sf</a></h3>
+<ul>
+<li><a href="http://www.fzlanting.com/admin/images/a/duydonnie/contete12128.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://www.fzlanting.com/admin/images/a/duydonnie/contete10812.html" title="儿童凭借榜样的作用">儿童凭借榜样的作用</a></li>
+<li><a href="http://www.fzlanting.com/admin/images/a/duydonnie/contete9380.html" title="参考文献应为正式出版物发表的作品">参考文献应为正式出版物发表的作品</a></li>
+<li><a href="http://www.fzlanting.com/admin/images/a/duydonnie/contete8862.html" title="图表中字符和数据应准确无误">图表中字符和数据应准确无误</a></li>
+<li><a href="http://www.fzlanting.com/admin/images/a/duydonnie/contete8234.html" title="但同时也必须看到">但同时也必须看到</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.zzaidun.com/Tool/Css/a/" title="魔兽">魔兽</a></h3>
+<ul>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicsforbeginners/201512264.html" title="本刊严禁一稿两投">本刊严禁一稿两投</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/ecomthinking/201512221.html" title="尽管达芬奇事件尚未有最终定论">尽管达芬奇事件尚未有最终定论</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economyinvesting/201512129.html" title="三国在向近代外交迈进的过程中表现出不同的姿态">三国在向近代外交迈进的过程中表现出不同的</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/ecomanner/201512118.html" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.zzaidun.com/Tool/Css/a/economicbusinesssolutions/201512092.html" title="表格采用三线表">表格采用三线表</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 传奇私服万能登陆器- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>IT设施将来成为水电一样的基础设施</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 16:28</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=6095&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=6095">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       提升制造业中小企业工业设计水平中小微企业联盟“联盟”的方式开展信息化服务是中小企业信息化推进工程致力探索的服务模式       由企业牵头自发组建的服务联盟       具有市场定位准、</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;提升制造业中小企业工业设计水平<p>中小微企业联盟“联盟”的方式开展信息化服务是中小企业信息化推进工程致力探索的服务模式<BR>&nbsp; &nbsp; &nbsp; &nbsp;由企业牵头自发组建的服务联盟<BR>&nbsp; &nbsp; &nbsp; &nbsp;具有市场定位准、互补性强等特点如中国工业软件产业发展联盟推广工业领域国产cad这代表了以企业类型为主的<BR>&nbsp; &nbsp; &nbsp; &nbsp;中小企业信息化向方向规模化、规范化方向发展 </p><p> 情报服务企业成长不仅需要信息化的硬件和软件<BR>&nbsp; &nbsp; &nbsp; &nbsp;还需要对信息数据的发掘和分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;专利服务、成果推广转化服务 </p><p>信息化是当今世界发展的大趋势<BR>&nbsp; &nbsp; &nbsp; &nbsp;党中央、国务院及时做出推动信息化和工业化深度融合的重大战略决策<BR>&nbsp; &nbsp; &nbsp; &nbsp;对促进我国经济发展方式转变<BR>&nbsp; &nbsp; &nbsp; &nbsp;走中国特色新型工业化道路具有重大意义大力推进中小企业信息化是促进“两化”深度融合的重要内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;是提高中小企业发展质量、整体素质和竞争能力的有效途径<BR>&nbsp; &nbsp; &nbsp; &nbsp;对中小企业拓展生存和发展的空间、提升生产效率和管理水平、增强自主创新能力、创新商业模式发挥着积极而重要的作用通过开展精益研发、电子商务应用、融资服务等信息化服务平台试点<BR>&nbsp; &nbsp; &nbsp; &nbsp;解决中小企业创新能力弱、资金不足、市场开拓难等突出问题 </p><p>it设施将来成为水、电一样的基础设施<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府在基础设施的建设中起至关重要的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;那么另外一方面不可以避免<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府在建设中的决策和成效的延迟<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此中小企业推进信息化建设中<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分利用各级各地资源开展适合中小微企业的信息服务形式支持社会服务机构利用信息化手段<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立为中小企业开拓市场、培养人才、融资等提供信息化服务加强第三方信息化咨询与监理服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;确保信息化投资达到预期的效果 </p><p>紧密围绕中小企业信息服务平台第三方<BR>&nbsp; &nbsp; &nbsp; &nbsp;进一步强化有针对性、专业化的服务细化、深化中小企业信息服务平台服务内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强对不同区域、不同行业中小企业运用信息技术的分类指导<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进中小企业利用信息化手段开展网站宣传、供应链管理和电子商务应用及市场拓展 </p><p>信息教育和培训服务信息服务机构为企业员工提供信息教育和培训服务可以培养员工的信息意识<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助其掌握一定的信息技术<BR>&nbsp; &nbsp; &nbsp; &nbsp;使其在日常工作中能更好地利用信息资源提升业务水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时还可以利用掌握的信息技术解决信息系统的常见故障<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高效率 </p><p>当前国外中小企业信息化发展主要呈现以下几方面趋势：强调技术应用与业务创新、管理创新相结合<BR>&nbsp; &nbsp; &nbsp; &nbsp;利用信息网络技术进行文件管理、员工考勤和生产时间管理、库存管理、个性化定制<BR>&nbsp; &nbsp; &nbsp; &nbsp;整合企业内部各种资源；以电子商务和外包切入<BR>&nbsp; &nbsp; &nbsp; &nbsp;2006年以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;欧盟国家约有2/3的中小企业在网上寻找合适的供应商<BR>&nbsp; &nbsp; &nbsp; &nbsp;在线开展询价、采购/销售确认等电子商务活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;约有10%的中小企业已将公司的ict系统与其供应商或大客户联网；ict产品与服务厂商更加面向中小企业多层次需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;提供物美价廉、简便宜用的信息化解决方案<BR>&nbsp; &nbsp; &nbsp; &nbsp;创新中小企业服务模式；基于移动商务和移动支付等新技术的应用<BR>&nbsp; &nbsp; &nbsp; &nbsp;对中小企业产生示范影响；重视中小企业信息化的宣传教育和人员培训；加强对中小企业信息化绩效的测评和研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高中小企业信息化绩效的显示度 </p><p>我国自2006年开展中小企业信息化来<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分发挥政府政策引导、环境营造职能作用工业和信息化部把2012年确定为中小企业服务年<BR>&nbsp; &nbsp; &nbsp; &nbsp;在全国范围广泛深入开展以“服务企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;助力成长”为主题的服务活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;给中小企业送政策、送服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助中小企业特别是小型微型企业度难关、谋发展江苏地方主管部门和信息化服务商充分发挥的源优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;组织开展大规模的推广活动<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立了中小企业信息化辅导站和信息化服务中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及信息化大讲堂、免费参观、信息平台在2012年推广信息化应用和服务的经验基础上<BR>&nbsp; &nbsp; &nbsp; &nbsp;将进一步根据中小特别是小微企业的需求<BR>&nbsp; &nbsp; &nbsp; &nbsp;优化服务内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;强化对中小微企业信息提升显著的服务 </p><p>【xzbu】郑重<p>2011年<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%；<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;%<BR>&nbsp; &nbsp; &nbsp; &nbsp;<BR>&nbsp; &nbsp; &nbsp; &nbsp;目前<BR>&nbsp; &n<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/162T43M7-0.jpg" width="600px" height="400px" />bsp; &nbsp; &nbsp;江苏省规模以上中小工业企业主要分布于机械、纺织、建材、医药等八个行业<BR>&nbsp; &nbsp; &nbsp; &nbsp;从销售收入占比情况分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;%、%、%、%、%、%、%、% </p><p>目前信息服务的信息内容主要以中小企业发展政策、市场信息等中小政策经济信息为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;而随着企业业务的不断发展<BR>&nbsp; &nbsp; &nbsp; &nbsp;除政策经济信息外<BR>&nbsp; &nbsp; &nbsp; &nbsp;对科技、娱乐等各方面的信息需求将不断增加由于企业信息服务多种新需求的出现<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得信息服务的内容呈现出多元化趋势 </p><p>信息产品和信息技术的提供服务如提供管理软件、数据库信息以及为企业开发各种信息系统等 </p><p>在中小企业智慧云服务综合平台上<BR>&nbsp; &nbsp; &nbsp; &nbsp;整合软件应用、综合服务等多项信息服务内容面向中小企业用户提供“云-端”架构的集宽带、应用和服务一体化交付的一揽子解决方案<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现“桌面虚拟化、应用智能化”的虚拟办公环境在信息平台上实现“一站式”的服务界面<BR>&nbsp; &nbsp; &nbsp; &nbsp;“菜单式”的便捷选择<BR>&nbsp; &nbsp; &nbsp; &nbsp;为中小微企业提供“即需即用”的信息化应用服务 </p><p>政府将继续发挥主导作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;在规划制定、政策扶持、电子政务运行等方面起主导作用 </p><p>各类中介组织将成为中小企业信息化建设的重要补充各类专业合作组织、高校院所、行业龙头企业、社会中介组织在信息资源收集、利用中将发挥重要作用 </p><p>信息咨询分析与决策服务企业在发展过程中需要进行产品研发<BR>&nbsp; &nbsp; &nbsp; &nbsp;需要密切关注相关行业发展动态及市场动向<BR>&nbsp; &nbsp; &nbsp; &nbsp;而信息服务机构就可以利用自身的优势<BR>&nbsp; &nbsp; &nbsp; &nbsp;获取相关信息并加以分析处理<BR>&nbsp; &nbsp; &nbsp; &nbsp;按照企业要求或是定期为企业提供各种综合分析报告和市场预测报告<BR>&nbsp; &nbsp; &nbsp; &nbsp;为企业管理者的决策提供依据 </p><p>中国电信江苏公司与江苏省经信委携手开展的“数字企业”创建活动结出硕果<BR>&nbsp; &nbsp; &nbsp; &nbsp;目前江苏省“数字企业”超过1万家<BR>&nbsp; &nbsp; &nbsp; &nbsp;总数达家江苏电信“e企云”已上线49款云产品<BR>&nbsp; &nbsp; &nbsp; &nbsp;另有137家合作伙伴正在接入中 </p><p> 摘要：江苏省中小企业现代信息化建设过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;企业日益增长的信息化需求矛盾日益突出<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府在信息化建设中应发挥主导作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断优化信息服务体系为更好地服务中小企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府需要不断有效地配置资源<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐步完善服务体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;并发挥其他主体的优势 </p><p>各类企业将成为信息化的重要建设和推进主体特别是各大电信运营商和各类信息服务提供商<BR>&nbsp; &nbsp; &nbsp; &nbsp;今后将在中小企业信息化推进中发挥主体作用 </p><p>在企业信息化方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;日本企业要比美国晚行一步日本从上个世纪80年代初建立了日本中小企业事业团信息中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;并与中央及地方政府、群众团体和有关单位、机构互相支援<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强交流<BR>&nbsp; &nbsp; &nbsp; &nbsp;共同发展日本政府还加快网络建设步伐<BR>&nbsp; &nbsp; &nbsp; &nbsp;加强和完善支援中小企业机构的跨区域合作<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现信息共享；构筑广泛的信息发布和接收系统<BR>&nbsp; &nbsp; &nbsp; &nbsp;将各国立、公立研究机构的研究成果、新技术及各种经营信息通过网络提供给中小企业<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现信息资源共享 </p><p>近年来<BR>&nbsp; &nbsp; &nbsp; &nbsp;中小企业产业分布出现了一些新变化<BR>&nbsp; &nbsp; &nbsp; &nbsp;由过去机械、纺织等传统产业为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐步向电子信息、新兴产业和现代服务业等领域拓展一大批中小企业抢占发展先机<BR>&nbsp; &nbsp; &nbsp; &nbsp;快速占领新兴市场并成为新兴产业发展的“领头羊”中小企业迫切需要通过信息化了解市场信息<BR>&nbsp; &nbsp; &nbsp; &nbsp;增强销售能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;发现更多的新客户在生产和研发方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;中小企业是把提高产品质量和降低生产成本作为最需要通过信息化解决的问题在企业管理方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;中小企业的信息化需求更多的是掌握企业经营情况<BR>&nbsp; &nbsp; &nbsp; &nbsp;其次是提高工作效率 </p>  (责任编辑：admin)
+<img border="0" alt="IT设施将来成为水电一样的基础设施" src="/images/lenfeng_6095.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',6095)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',6095)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(6095);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecoswayatt/20155552.html'>这种教学理念是十分陈旧落后的</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecoswayatt/20156859.html'>从CPI当月同比走势与加息时机选择的历史情况来看</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=6095" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=6095&title=IT设施将来成为水电一样的基础设施" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=6095" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=6095" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="6095" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=6095&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '6095');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

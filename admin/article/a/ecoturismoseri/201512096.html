@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>老人家说本地话|我的网站</title>
+<meta name="description" content=" 这是“卧龙街”被冠上的第一个名号住老人家的农家乐 80块钱一晚上 便宜但条件差一点 早晨还有早餐宋伟清“每天陪老太太晒晒太阳 吹吹牛老人家" />
+<meta name="keywords" content="老人家,地话,这是,卧龙街,第一个,名号,老人家,农家乐,块" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.twabc.com.cn/css/_notes/a/edjofsanity/" title="传奇3私服网站">传奇3私服网站</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdrcopier/" title="新开千年sf发布网">新开千年sf发布网</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebayauctionid/" title="1.95神龙合击">1.95神龙合击</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eatmyspam/" title="仿盛大传奇">仿盛大传奇</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eachchurcheachchildeachcommunity/" title="daneachchurcheachchildeachcommunidan">daneachchurcheachchildeachcommunidan</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/effervesence/" title="最新传奇私服发布网">最新传奇私服发布网</a></li><li><a href="http://www.ftzmled.com/images/pic/a/easygamedev/" title="合击私服发布网">合击私服发布网</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edirc/" title="命运2私服">命运2私服</a></li><li><a href="http://forex8.com/api/connect/a/easybuyequipment/" title="私服传奇登陆器">私服传奇登陆器</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/edwardianringdesign/" title="今天新开的传奇私服">今天新开的传奇私服</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/" title="房网通登陆">房网通登陆</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecothaiclub/" title="传奇合击sf">传奇合击sf</a></li><li><a href="http://www.hljtb.org/images/hpv/a/echolsmack/" title="王传奇">王传奇</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edmontondesigners/" title="仿盛大热血传奇">仿盛大热血传奇</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/eduationconnection/" title="梁山传奇论坛">梁山传奇论坛</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edelbuys/" title="私服sf">私服sf</a></li><li><a href="http://fzlanting.com/admin/class/a/eeisland/" title="传奇合击私服发布">传奇合击私服发布</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eatloveshop/" title="魔龙传奇">魔龙传奇</a></li><li><a href="http://www.bjztjz.cn/Admin/add/a/educatingforprosperity/" title="万劫三破">万劫三破</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/earcandylive/" title="最新合击版传奇私服">最新合击版传奇私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">今天新开传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/201512096.html" target="_blank" title="老人家说本地话">老人家说本地话</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/201511578.html" target="_blank" title="请勿一稿多投">请勿一稿多投</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20159538.html" target="_blank" title="从教本里学会阅读庄子的文章必须具备两套眼光">从教本里学会阅读庄子的文章必须具备两套眼光</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20158831.html" target="_blank" title="所引文献必须是作者直接阅读参考过的公开出版文献">所引文献必须是作者直接阅读参考过的公开出版</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20157673.html" target="_blank" title="本文简要介绍了方差分析法">本文简要介绍了方差分析法</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20156592.html" target="_blank" title="有了智能电网的改造">有了智能电网的改造</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20154510.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20154205.html" target="_blank" title="在两位清华教授的提议和大力支持下">在两位清华教授的提议和大力支持下</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20153285.html" target="_blank" title="以庞大的期刊库为依托">以庞大的期刊库为依托</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20153104.html" target="_blank" title="辅以抗菌消炎补液等辅助治疗">辅以抗菌消炎补液等辅助治疗</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.darenaika.com/images/lurd/a/easterbunnycostumesite/" title="新开传奇1.76">新开传奇1.76</a></h3>
+<ul>
+<li><a href="http://www.darenaika.com/images/lurd/a/easterbunnycostumesite/qq12158.html" title="采用石英粉更易于原位自生获">采用石英粉更易于原位自生获</a></li>
+<li><a href="http://www.darenaika.com/images/lurd/a/easterbunnycostumesite/qq10743.html" title="创新优质服务离不开员工文化素质的支持">创新优质服务离不开员工文化素质的支持</a></li>
+<li><a href="http://www.darenaika.com/images/lurd/a/easterbunnycostumesite/qq10075.html" title="业银行的资本充足率与资产收益率进行回归检验">业银行的资本充足率与资产收益率进行回归检</a></li>
+<li><a href="http://www.darenaika.com/images/lurd/a/easterbunnycostumesite/qq9682.html" title="投递文稿时首页请打印为作者信息页">投递文稿时首页请打印为作者信息页</a></li>
+<li><a href="http://www.darenaika.com/images/lurd/a/easterbunnycostumesite/qq8235.html" title="游戏的教学组织工作是完成游戏教学任务的重要环节">游戏的教学组织工作是完成游戏教学任务的重</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.cowinvc.com/data/admin/a/" title="泰瑞尔">泰瑞尔</a></h3>
+<ul>
+<li><a href="http://www.cowinvc.com/data/admin/a/eattoeat/qq12312.html" title="中心校下辖东庐石家山和沙河四所完小">中心校下辖东庐石家山和沙河四所完小</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/eatoutsomereallobster4less/qq12291.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/ebaya3/qq12275.html" title="随着内镜诊疗技术的不断发展">随着内镜诊疗技术的不断发展</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/ebathroomgraffiti/qq12274.html" title="多项研究显示肿瘤线粒体DNA的突变率高">多项研究显示肿瘤线粒体DNA的突变率高</a></li>
+<li><a href="http://www.cowinvc.com/data/admin/a/ebayjpy/qq12273.html" title="但是明代中期以后">但是明代中期以后</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 今天新开传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>老人家说本地话</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 14:12</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=12096&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=12096">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       这是“卧龙街”被冠上的第一个名号住老人家的农家乐       80块钱一晚上       便宜但条件差一点       早晨还有早餐宋伟清“每天陪老太太晒晒太阳       吹吹牛老人家</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;这是“卧龙街”被冠上的第一个名号<p>住老人家的农家乐<BR>&nbsp; &nbsp; &nbsp; &nbsp;80块钱一晚上<BR>&nbsp; &nbsp; &nbsp; &nbsp;便宜但条件差一点<BR>&nbsp; &nbsp; &nbsp; &nbsp;早晨还有早餐宋伟清“每天陪老太太晒晒太阳<BR>&nbsp; &nbsp; &nbsp; &nbsp;吹吹牛老人家说本地话<BR>&nbsp; &nbsp; &nbsp; &nbsp;但他孙子在” </p><p>政府部门的人来了<BR>&nbsp; &nbsp; &nbsp; &nbsp;“他们要把我这里变成爱国主义教育基地” </p><p>此时叶家在拆迁问题上已进入法律程序“打小父亲就跟我们说<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;拆了就没有了”叶家兄弟坚持不拆 </p><p>在地下“卧龙街”<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清刚招待完政府拆迁规划部门的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;又迎来了桃花坞地区的“钉子户” 叶家兄弟前者希望他能为拆迁规划出主意<BR>&nbsp; &nbsp; &nbsp; &nbsp;后者则希望他能为保护出主意 </p><p>2010年桃花坞开始拆迁<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清当然不能放过这块从小生长的土地他在废墟里寻找敲下“漂亮的马头墙”的拆迁工人<BR>&nbsp; &nbsp; &nbsp; &nbsp;路过打铁弄4号<BR>&nbsp; &nbsp; &nbsp; &nbsp;一打眼就看见了叶家厅堂里两条楠木横梁“楠木厅！”宋伟清在心中惊叹 </p><p>东西一拿出来<BR>&nbsp; &nbsp; &nbsp; &nbsp;两拨人竞相抬价<BR>&nbsp; &nbsp; &nbsp; &nbsp;另一个说也要宋伟清跟包工头说：“你跟他们讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;这东西不能买的<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是文物”包工头把东西放在他的洗澡盆里扣起来“第二天<BR>&nbsp; &nbsp; &nbsp; &nbsp;我就去拿了”宋伟清说到这里得意地笑开了 </p><p>宋伟清压了压额上的鸭舌帽<BR>&nbsp; &nbsp; &nbsp; &nbsp;登上他的蓝色丰田酷路泽车轮在苏州桃花坞的拆迁废墟上刨出一串灰尘 </p><p>地下街建成后<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清的身边热闹起来“很多人劝我<BR>&nbsp; &nbsp; &nbsp; &nbsp;把明清街放到地上来<BR>&nbsp; &nbsp; &nbsp; &nbsp;有人说他们有地<BR>&nbsp; &nbsp; &nbsp; &nbsp;让我去做但每个人目的不同<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们可能想我在他们的地上建一个<BR>&nbsp; &nbsp; &nbsp; &nbsp;变成他们的筹码<BR>&nbsp; &nbsp; &nbsp; &nbsp;我只是想传承”宋伟清保持着商人的警惕 </p><p>迫于压力<BR>&nbsp; &nbsp; &nbsp; &nbsp;当地拆迁部门也就打铁弄4号拆与不拆进行了多次听证<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终拆迁被搁置下来宋伟清拿捏着分寸参与了叶家与拆迁部门的拉锯 </p><p>另有官方数据显示：“桃花坞片区综合工程启动区包括唐寅故居文化区、泰伯庙及西街文化区等<BR>&nbsp; &nbsp; &nbsp; &nbsp;涉及拆迁居民约1560户、” </p><p>他请了几个小时工<BR>&nbsp; &nbsp; &nbsp; &nbsp;工人走了三批<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清盯着工头威胁说：“你不做工资就不给了” </p><p>5年前<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清关掉了他的“电子贸易”工厂“最初的工厂有上千工人<BR>&nbsp; &nbsp; &nbsp; &nbsp;后来逐步减小规模<BR>&nbsp; &nbsp; &nbsp; &nbsp;到上百人老婆和孩子到现在还反对到我的地下街说风凉话<BR>&nbsp; &nbsp; &nbsp; &nbsp;我儿子说风凉话比我老婆还厉害”还在读书的儿子教育宋伟清说：“什么叫商人<BR>&nbsp; &nbsp; &nbsp; &nbsp;商人就是讲利益<BR>&nbsp; &nbsp; &nbsp; &nbsp;还是商人吗？这是你做的吗？这是政府该做的你应该去赚你的钱” </p><p>宋伟清念叨着：“这些城墙砖<BR>&nbsp; &nbsp; &nbsp; &nbsp;别人就拿走了他们有钱啊<BR>&nbsp; &nbsp; &nbsp; &nbsp;上百亿的公司<BR>&nbsp; &nbsp; &nbsp; &nbsp;已经有了一批小一点的城墙砖了人家想把这些砖全部拿走的他们也有人在那边的我知道他早晨4点钟去拿<BR>&nbsp; &nbsp; &nbsp; &nbsp;那我比他去得更早” </p><p>十五六年前<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清开始喜欢收藏<BR>&nbsp; &nbsp; &nbsp; &nbsp;“那时收藏和田玉<BR>&nbsp; &nbsp; &nbsp; &nbsp;字画玩不起<BR>&nbsp; &nbsp; &nbsp; &nbsp;民俗的鸦片烟枪<BR>&nbsp; &nbsp; &nbsp; &nbsp;都喜欢”当时他做着“电子贸易”生意在他多番描述后<BR>&nbsp; &nbsp; &nbsp; &nbsp;抽象的“电子贸易”才具象成为收“洋垃圾”的行当 </p><p>宋伟清喊来泥水匠<BR>&nbsp; &nbsp; &nbsp; &nbsp;把门窗砌好两层楼的楼梯还缺扶手<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清又出门四处找旧扶手在一个工地夹缝中<BR>&nbsp; &nbsp; &nbsp; &nbsp;他发现了一段被人弃置的旧扶梯<BR>&nbsp; &nbsp; &nbsp; &nbsp;拿下来一看有点散了<BR>&nbsp; &nbsp; &nbsp; &nbsp;他喊来老木匠敲好固定<BR>&nbsp; &nbsp; &nbsp; &nbsp;安放到他的楼梯上刚刚好 </p><p>“桃花坞拆了<BR>&nbsp; &nbsp; &nbsp; &nbsp;我生气了我有心理落差地上没地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;老房子都被拆了<BR>&nbsp; &nbsp; &nbsp; &nbsp;即使搬到地面上别的地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;一建房子屋顶<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是要审批的！我要在地下建一条卧龙街<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们在地上拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;那我就在地下建一条卧龙<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是人民如果在上面盖<BR>&nbsp; &nbsp; &nbsp; &nbsp;盖了都会被拆的地下没有违建” </p><p>宋伟清所说的“卧龙街”是苏州老城中轴线的古称伍子胥建阖闾城时即有了“卧龙街”<BR>&nbsp; &nbsp; &nbsp; &nbsp;直到清康熙南巡<BR>&nbsp; &nbsp; &nbsp; &nbsp;苏州文武官员站在卧龙街上接驾<BR>&nbsp; &nbsp; &nbsp; &nbsp;官兵在街上护卫<BR>&nbsp; &nbsp; &nbsp; &nbsp;又有了“护龙街”的称号1949年以后<BR>&nbsp; &nbsp; &nbsp; &nbsp;这条街被改名为“人民路” </p><p>在此之前<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清已经捐出了一部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;“我说我还有很多<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们就不理我了这有什么用啊？我的捐赠证书也在呢！我要捐<BR>&nbsp; &nbsp; &nbsp; &nbsp;人家还骂我神经病我以后有机会自己造” </p><p> 宋伟清觉得老人的儿子不会要牌匾了<BR>&nbsp; &nbsp; &nbsp; &nbsp;孙子都读书了“武魁3年一次<BR>&nbsp; &nbsp; &nbsp; &nbsp;一打仗就没有了<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是状元是每年都有的<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以武魁的牌匾特别稀有我住在她家<BR>&nbsp; &nbsp; &nbsp; &nbsp;每天出去收些别的东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能让他们觉得我跑到那里就是看中她家的东西” </p><p>城池建了一半<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清自己也在心里打起哆嗦来<BR>&nbsp; &nbsp; &nbsp; &nbsp;“就差一点往后退”不伦不类<BR>&nbsp; &nbsp; &nbsp; &nbsp;架子搭起来了<BR>&nbsp; &nbsp; &nbsp; &nbsp;“我自己和工人都累趴下了平时施工的二三十人<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们不愿意干了地底下<BR>&nbsp; &nbsp; &nbsp; &nbsp;空气也不好<BR>&nbsp; &nbsp; &nbsp; &nbsp;什么都不方便”泥沙、石块在往地下运的过程中价钱就翻了倍 </p><p>开工之时<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清是孤独的“没有人支持我<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有我自己支持自己<BR>&nbsp; &nbsp; &nbsp; &nbsp;”连给他做工的木匠最初都以为是开玩笑<BR>&nbsp; &nbsp; &nbsp; &nbsp;“他都不想赚我的钱<BR>&nbsp; &nbsp; &nbsp; &nbsp;他说我不可能成功的” </p><p>【xzbu】郑重<p>我问宋伟清<BR>&nbsp; &nbsp; &nbsp; &nbsp;“如果叶家不得不拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;你有把握能拿到他们家的楠木横梁吗？”宋伟清很自信：“他要拆的话我就能拿到” </p><p>他太熟悉这里了打小生活在街对面<BR>&nbsp; &nbsp; &nbsp; &nbsp;这里是他玩乐的天堂<BR>&nbsp; &nbsp; &nbsp; &nbsp;小学也在这里完成但是眼前的桃花坞却有些陌生：满地断垣<BR>&nbsp; &nbsp; &nbsp; &nbsp;完整的房屋均不见街市倒是依旧热闹<BR>&nbsp; &nbsp; &nbsp; &nbsp;不肯离开的人们在拆了一半的店铺内继续营业；蔬菜、大闸蟹</p><p>从桃花坞废墟上收来的准提庵鼎以及一对石蜡扦<BR>&nbsp; &nbsp; &nbsp; &nbsp;是宋伟清得意宝贝之一<BR>&nbsp; &nbsp; &nbsp; &nbsp;“只有这两件是唐伯虎当年日常生活的东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;其他都是后来人建的” </p><p>宋伟清跟苏州科技大学的老师商量<BR>&nbsp; &nbsp; &nbsp; &nbsp;“都说我吃饱了撑的<BR>&nbsp; &nbsp; &nbsp; &nbsp;学校又让我去给他们做一条街我在他们学校里现在名气是这个呢！”他一边竖起拇指<BR>&nbsp; &nbsp; &nbsp; &nbsp;一边抡起电话给学校负责人打电话 </p><p>一晚<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋跟一个踩地皮的人出门“那个拆迁包工头<BR>&nbsp; &nbsp; &nbsp; &nbsp;我以前跟他买过瓦和砖他的老婆生了癌症<BR>&nbsp; &nbsp; &nbsp; &nbsp;他家有一个女儿一个儿子<BR>&nbsp; &nbsp; &nbsp; &nbsp;儿子在上大学老婆癌症中期<BR>&nbsp; &nbsp; &nbsp; &nbsp;我看他不舍得花钱<BR>&nbsp; &nbsp; &nbsp; &nbsp;就去买了安利蛋白粉<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为他不能吃鱼<BR>&nbsp; &nbsp; &nbsp; &nbsp;只能吃植物蛋白我花了一千多给他买了一大桶<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有些维生素c<BR>&nbsp; &nbsp; &nbsp; &nbsp;维生素e” </p><p>材料不是早就准备好的<BR>&nbsp; &nbsp; &nbsp; &nbsp;做一点找一点每间房都取决于先前做成的环境<BR>&nbsp; &nbsp; &nbsp; &nbsp;才把东西配上去” </p><p>没有规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;“因为地貌不好规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;凹一点就补一点<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽量让它一步一个景<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有图纸”宋伟清动不动就跟木匠说：“过来<BR>&nbsp; &nbsp; &nbsp; &nbsp;我这个木窗子要这样<BR>&nbsp; &nbsp; &nbsp; &nbsp;你帮我抬高<BR>&nbsp; &nbsp; &nbsp; &nbsp;我现在想做成两层楼”木匠常常想不明白他要做什么 </p><p>多年来<BR>&nbsp; &nbsp; &nbsp; &nbsp;桃花坞执拗地保持着市井繁华上溯明清<BR>&nbsp; &nbsp; &nbsp; &nbsp;位于苏州古城西北角的桃花坞曾是姑苏城的cbd<BR>&nbsp; &nbsp; &nbsp; &nbsp;由唐寅领衔的江南文人雅士云集官方数据显示：“地盘”上<BR>&nbsp; &nbsp; &nbsp; &nbsp;有各级文物保护单位16处、各级非物质文化遗产25项<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中世界级非物质文化遗产4项 </p><p>宋伟清要建的地下“卧龙街”在苏州老城郊外的何山路下路面上是咖啡馆<BR>&nbsp; &nbsp; &nbsp; &nbsp;毗邻着一扇铁门<BR>&nbsp; &nbsp; &nbsp; &nbsp;过了厚厚的防空洞铁门<BR>&nbsp; &nbsp; &nbsp; &nbsp;幽暗处廊檐瓦当<BR>&nbsp; &nbsp; &nbsp; &nbsp;鸡犬相闻的旧时景象<BR>&nbsp; &nbsp; &nbsp; &nbsp;在红色灯笼的照耀下穿越而来 </p><p>“我最远跑到西藏<BR>&nbsp; &nbsp; &nbsp; &nbsp;最多是去成都、福建<BR>&nbsp; &nbsp; &nbsp; &nbsp;周边的安徽和浙江也有好东西这两天要去收一个青花枕头东西品相好<BR>&nbsp; &nbsp; &nbsp; &nbsp;在成都的山里<BR>&nbsp; &nbsp; &nbsp; &nbsp;是清朝仿明的官窑里出来的很少了<BR>&nbsp; &nbsp; &nbsp; &nbsp;得花个几十万收回来”宋伟清忍不住拿出“线人”发给他的短信照片 </p><p>有日本人问宋伟清买<BR>&nbsp; &nbsp; &nbsp; &nbsp;他没有答应“原本是想给苏州市政府重建相门<BR>&nbsp; &nbsp; &nbsp; &nbsp;结果他们不要<BR>&nbsp; &nbsp; &nbsp; &nbsp;老的不要你看造成了什么样？假的！” </p><p>城墙砖是南京边上的明朝皇城砖“有个朋友跟我只说有一点点后来我去买<BR>&nbsp; &nbsp; &nbsp; &nbsp;他卖了我几千片我就不讲钱<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/14121BQ2-0.jpg" width="600px" height="400px" />了因为量大<BR>&nbsp; &nbsp; &nbsp; &nbsp;不是几百万能买下来的我运费都花了两百万左右如果我做成产品卖出去<BR>&nbsp; &nbsp; &nbsp; &nbsp;那就是多少亿的问题总共可以建3公里多一点的城墙现在都在我的仓库里” </p><p>宋伟清曾经在卖家手上买过东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;“他也是个中间人<BR>&nbsp; &nbsp; &nbsp; &nbsp;认识部队的领导<BR>&nbsp; &nbsp; &nbsp; &nbsp;城墙砖是58年部队一个团拆下来的我们现在再去拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;不知要判多少年、枪毙多少次呢！” </p><p>因为事先跟包工头说“不能买卖”<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋跟包工头说：“你就算送给我<BR>&nbsp; &nbsp; &nbsp; &nbsp;我给你的钱不是给你的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是给你老婆治病的<BR>&nbsp; &nbsp; &nbsp; &nbsp;跟这个是不相关的不然的话你要变成变卖文物了我无所谓<BR>&nbsp; &nbsp; &nbsp; &nbsp;但你有罪”临走<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清还叮嘱包工头：“你是捐给我的<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是这钱是我给你老婆看病的分开啊！” </p><p>宋摸清了这户人家的底细：“老父亲走了<BR>&nbsp; &nbsp; &nbsp; &nbsp;我跟他母亲磨我这不是用钱的补贴肯定要补贴点人家的我吃住在他们家的农家乐<BR>&nbsp; &nbsp; &nbsp; &nbsp;跟老人家聊天<BR>&nbsp; &nbsp; &nbsp; &nbsp;拿点雕花木头回来<BR>&nbsp; &nbsp; &nbsp; &nbsp;看起来也蛮艰苦的她看到我名片上有这么多公司<BR>&nbsp; &nbsp; &nbsp; &nbsp;她觉得你这个人有这么多公司<BR>&nbsp; &nbsp; &nbsp; &nbsp;还吃这么多苦干什么？我说我爱好<BR>&nbsp; &nbsp; &nbsp; &nbsp;喜欢” </p><p>宋伟清摸熟了规律<BR>&nbsp; &nbsp; &nbsp; &nbsp;夏天中午两点多是“踩地皮”人睡觉的时间<BR>&nbsp; &nbsp; &nbsp; &nbsp;“我拿上一瓶矿泉水去找总能找到他们” </p><p>包工头在工地发现了准提庵鼎<BR>&nbsp; &nbsp; &nbsp; &nbsp;给宋伟清打电话说：“宋老板<BR>&nbsp; &nbsp; &nbsp; &nbsp;这东西我给你留着了上面有3个字：准提庵” </p><p>一扇名为“匠门”的城门将地下建筑群分为城内、城外两部分城内展示着明清时老苏州的生活状态：从建筑的回廊、灶台<BR>&nbsp; &nbsp; &nbsp; &nbsp;到日常生活的草窝、拗桶</p><p>原先在桃花坞开设私人博物馆的收藏爱好者宋伟清被包围在一片隆隆声中他开始为他从各地拆迁工地收来的近十万个桶以及古城墙砖、各色旧器具寻找新家 </p><p>因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;根据房子去搜集材料、选料成为他最大的烦恼“我这里每一件东西都是明清的<BR>&nbsp; &nbsp; &nbsp; &nbsp;明的少”2012年<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清花了9个月<BR>&nbsp; &nbsp; &nbsp; &nbsp;在地下像燕子衔泥垒窝一样建起了100米长的明清苏式老街 </p><p>城墙砖的烧制有108道工序<BR>&nbsp; &nbsp; &nbsp; &nbsp;从选泥到做瓦<BR>&nbsp; &nbsp; &nbsp; &nbsp;把糯米汁放进去<BR>&nbsp; &nbsp; &nbsp; &nbsp;过水6次后发酵<BR>&nbsp; &nbsp; &nbsp; &nbsp;一块砖要做上3年宋伟清称他会时不时拿一点做成砖雕产品 </p><p>“瀚思文化”浓重的江湖气息让他在全国各地拥有数百“踩地皮”的“线人”江南一带将出没在拆迁工地上收旧家具的人称为“踩地皮” </p><p>来回7次后<BR>&nbsp; &nbsp; &nbsp; &nbsp;原主人忍不住了：“朱先生<BR>&nbsp; &nbsp; &nbsp; &nbsp;把我们老太太都俘虏起来了”就这样他拿到了被视若宝物的“武魁”牌匾 </p><p>从2010年底至今<BR>&nbsp; &nbsp; &nbsp; &nbsp;桃花坞成了一片大工地围绕着主要景点的居民房被“整治拆迁”<BR>&nbsp; &nbsp; &nbsp; &nbsp;取而代之的将是崭新的别墅和店铺<BR>&nbsp; &nbsp; &nbsp; &nbsp;被重建或修饰一新的几处古迹等待着风景名胜的冠名和旅行团的到来 </p><p>第一次去<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清不被理睬他暗自思忖：“那是他们家祖上传下来的<BR>&nbsp; &nbsp; &nbsp; &nbsp;也不是他一个人的<BR>&nbsp; &nbsp; &nbsp; &nbsp;可能是兄弟几个的<BR>&nbsp; &nbsp; &nbsp; &nbsp;不是那么简单的” </p><p>为了套近乎<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清还跟老人说：“你们祖上是搞武术的<BR>&nbsp; &nbsp; &nbsp; &nbsp;我也是搞武术的我找不到真正的一块匾<BR>&nbsp; &nbsp; &nbsp; &nbsp;代表我自己” </p><p>每去一个地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清先查资料<BR>&nbsp; &nbsp; &nbsp; &nbsp;“旅游杂志都是介绍驴友去的地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;我要查那些不为人知的地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;到明朝就够了明朝有了<BR>&nbsp; &nbsp; &nbsp; &nbsp;那地方就得有千八百年历史<BR>&nbsp; &nbsp; &nbsp; &nbsp;再看看大众旅游资料上有没有<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多人都不知道的话<BR>&nbsp; &nbsp; &nbsp; &nbsp;飞机到那个地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;再坐几百公里的大巴” </p><p>宋伟清究竟希望叶家的房子拆还是不拆呢？他的解释是：“我有好多楠木<BR>&nbsp; &nbsp; &nbsp; &nbsp;比他好的也有只是他的历史比较悠久我的金丝楠木<BR>&nbsp; &nbsp; &nbsp; &nbsp;12米长我不希望他拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是如果拆了<BR>&nbsp; &nbsp; &nbsp; &nbsp;我也不希望它流出去<BR>&nbsp; &nbsp; &nbsp; &nbsp;我把它保存下来我没有跟叶家兄弟商量这事<BR>&nbsp; &nbsp; &nbsp; &nbsp;说这事他们会伤心的但只要拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;我有把握拿到” </p><p>“我在全国各地有几百个踩地皮的线人、买古董的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们都会发信息给我别人以为我是到哪个地方去玩<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是去看这些东西” </p><p>“做这么多年的生意后<BR>&nbsp; &nbsp; &nbsp; &nbsp;跟人打交道有经验”有时宋伟清跟着车友俱乐部<BR>&nbsp; &nbsp; &nbsp; &nbsp;“专门去别人不去的地方我跟他们一起去<BR>&nbsp; &nbsp; &nbsp; &nbsp;我去找自己的东西我不开车<BR>&nbsp; &nbsp; &nbsp; &nbsp;有时是摩托车<BR>&nbsp; &nbsp; &nbsp; &nbsp;越穷越偏僻的地方<BR>&nbsp; &nbsp; &nbsp; &nbsp;越多老东西” </p><p>说起话来大开大合的气势<BR>&nbsp; &nbsp; &nbsp; &nbsp;和他狡黠的眼神相配合<BR>&nbsp; &nbsp; &nbsp; &nbsp;在“卧龙街”成名之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清更期望自己成名 </p><p>宋伟清最初租下人防工程是做仓库的<BR>&nbsp; &nbsp; &nbsp; &nbsp;放置他不断收集来的老物件一年后<BR>&nbsp; &nbsp; &nbsp; &nbsp;有人建议他在地下开个足疗健身馆<BR>&nbsp; &nbsp; &nbsp; &nbsp;能赚钱他想着先把地占了<BR>&nbsp; &nbsp; &nbsp; &nbsp;再看能干什么“后来桃花坞都快拆完了<BR>&nbsp; &nbsp; &nbsp; &nbsp;我想就让人看看地下桃花坞吧这就算是我的样板房” </p><p>“我有事没事看到可参考的设计就拍张照片<BR>&nbsp; &nbsp; &nbsp; &nbsp;回来参照着做一下有时电视里在播明清电视剧<BR>&nbsp; &nbsp; &nbsp; &nbsp;看到了也拍一下根据我建房子时周边的环境来匹配比如说窗<BR>&nbsp; &nbsp; &nbsp; &nbsp;肯定不能再用苏式窗了<BR>&nbsp; &nbsp; &nbsp; &nbsp;但不会一样<BR>&nbsp; &nbsp; &nbsp; &nbsp;一样就不好看了” </p><p>宋伟清最初参与桃花坞阊门西街规划<BR>&nbsp; &nbsp; &nbsp; &nbsp;“画好了规划图<BR>&nbsp; &nbsp; &nbsp; &nbsp;过了两天我闻着味道不对<BR>&nbsp; &nbsp; &nbsp; &nbsp;过去说：让我拿回去裱再过两天他们又说：我觉得你的图蛮不错的<BR>&nbsp; &nbsp; &nbsp; &nbsp;你拿过来嘛我说<BR>&nbsp; &nbsp; &nbsp; &nbsp;我拿过来干嘛？纸都弄破了<BR>&nbsp; &nbsp; &nbsp; &nbsp;你要哪天过来看看可以”就这样<BR>&nbsp; &nbsp; &nbsp; &nbsp;宋伟清和规划部门的合作无疾而终 </p><p>宋伟清想起唐寅的第二个老婆九娘<BR>&nbsp; &nbsp; &nbsp; &nbsp;喜欢供奉准提<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以桃花坞才有了准提庵等到宋伟清去取时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他看到很多人在抢<BR>&nbsp; &nbsp; &nbsp; &nbsp;“我一看要死了<BR>&nbsp; &nbsp; &nbsp; &nbsp;整个桃花坞就是唐伯虎<BR>&nbsp; &nbsp; &nbsp; &nbsp;唐伯虎就是这个庙<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有双荷花池我一看这东西是好东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;就跟卖东西的人说：我听街道的人讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;这东西不能卖但是因为价钱出高了<BR>&nbsp; &nbsp; &nbsp; &nbsp;她可能觉得这反正是一块石头” </p><p>宋伟清继续在拆迁工地之间奔波<BR>&nbsp; &nbsp; &nbsp; &nbsp;混迹于各种踩地皮的人之间“有些东西我自己去买<BR>&nbsp; &nbsp; &nbsp; &nbsp;价格还要高踩地皮的人<BR>&nbsp; &nbsp; &nbsp; &nbsp;都是死皮赖脸的<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们也不识货我从他们手上能买到好东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;反正他们每一次都有钱赚就好了对我们来讲<BR>&nbsp; &nbsp; &nbsp; &nbsp;有没有意义更重要很多人都喜欢说<BR>&nbsp; &nbsp; &nbsp; &nbsp;这东西值多少钱我喜欢说这东西没有了<BR>&nbsp; &nbsp; &nbsp; &nbsp;就没有人有了” </p><p>“武魁”牌匾<BR>&nbsp; &nbsp; &nbsp; &nbsp;是宋伟清从成都大邑山收来的为了这块牌匾<BR>&nbsp; &nbsp; &nbsp; &nbsp;他去了7次原主人家<BR>&nbsp; &nbsp; &nbsp; &nbsp;每次都住在人家的农家乐 </p><p>宋伟清加入了这场“楠木厅”的“保卫战”他找来一群古建筑圈内的专家<BR>&nbsp; &nbsp; &nbsp; &nbsp;对叶家的房子进行鉴定<BR>&nbsp; &nbsp; &nbsp; &nbsp;专家们在微博中提出质疑<BR>&nbsp; &nbsp; &nbsp; &nbsp;掀起了声势浩大的舆论倒逼 </p>  (责任编辑：admin)
+<img border="0" alt="老人家说本地话" src="/images/lenfeng_12096.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',12096)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',12096)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(12096);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecoturismoseri/201511578.html'>请勿一稿多投</a> </li>
+                                        <li>下一篇：没有了 </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=12096" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=12096&title=老人家说本地话" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=12096" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=12096" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="12096" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=12096&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '12096');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

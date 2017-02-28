@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>由于中考的压力|我的网站</title>
+<meta name="description" content=" 首先就要将教学和实践结合起来传统的教学观念是以“教”为主 突出的是教师在课堂教学中的作用 这忽视了学生的主体地位 使得学生参与化学课堂的积极性受挫 " />
+<meta name="keywords" content="由于,中考,压力,首先,要将,教学,实践,结合,起来,传统," />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.darenaika.com/images/lurd/a/eastfalmouthfloristtoday/" title="合击私服">合击私服</a></li><li><a href="http://www.lygsyw.com/include/data/a/dumptrucknr/" title="超变态传奇">超变态传奇</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvhs1986/" title="好私服">好私服</a></li><li><a href="http://www.darenaika.com/images/lurd/a/eastmidlandsbusinesscrimeportal/" title="daneastmidlandsbusinesscrimeportadan">daneastmidlandsbusinesscrimeportadan</a></li><li><a href="http://wjwlcm.com/data/attachments/a/eworldgroup/" title="传奇歌曲下载">传奇歌曲下载</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/eashh/" title="欧洲传奇">欧洲传奇</a></li><li><a href="http://www.hljtb.org/images/hpv/a/" title="野蛮人">野蛮人</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/efficiencysquad/" title="传奇3 私服">传奇3 私服</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebestoftheweb/" title="超变传奇私服65535">超变传奇私服65535</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/earncashpro/" title="1.95合击传奇">1.95合击传奇</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/ehvserveisintegrals/" title="决战私服网站">决战私服网站</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edinborofloristtoday/" title="传奇连击私服">传奇连击私服</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdorange/" title="传奇私服补丁">传奇私服补丁</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dvdrcopier/" title="新开千年sf发布网">新开千年sf发布网</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/efilmy/" title="万能登陆器下载">万能登陆器下载</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/ecigarrosguate/" title="传奇登陆器下载">传奇登陆器下载</a></li><li><a href="http://xyjj.913zsw.com/Admin/Images/a/dylanandlindseysweddingpics/" title="东北传奇">东北传奇</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eaglemediasolutions/" title="盛大传奇私服">盛大传奇私服</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebonygaynet/" title="万劫版本">万劫版本</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwiattorneyboston/" title="chuanqisifufabuwang">chuanqisifufabuwang</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">新开 传奇私服相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/201510184.html" target="_blank" title="由于中考的压力">由于中考的压力</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156708.html" target="_blank" title="本刊对文稿有修改权">本刊对文稿有修改权</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156532.html" target="_blank" title="尼采不是简单地将透视法看成一种艺术手法">尼采不是简单地将透视法看成一种艺术手法</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156379.html" target="_blank" title="由于中国-东盟自由贸易区的启动">由于中国-东盟自由贸易区的启动</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20155492.html" target="_blank" title="在面对学科研修诸多困境的情况下">在面对学科研修诸多困境的情况下</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecstaticvacation/20152084.html" target="_blank" title="期刊几乎涵盖所有学术领域">期刊几乎涵盖所有学术领域</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.zyzginfo.com/images/lurd/a/earnonthego/" title="传奇合击连击">传奇合击连击</a></h3>
+<ul>
+<li><a href="http://www.zyzginfo.com/images/lurd/a/earnonthego/qq11556.html" title="基金项目及重要性论文应加英文篇名作者工作单位">基金项目及重要性论文应加英文篇名作者工作</a></li>
+<li><a href="http://www.zyzginfo.com/images/lurd/a/earnonthego/qq11537.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://www.zyzginfo.com/images/lurd/a/earnonthego/qq9988.html" title="参考文献应采用公开发表的文献">参考文献应采用公开发表的文献</a></li>
+<li><a href="http://www.zyzginfo.com/images/lurd/a/earnonthego/qq9321.html" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注</a></li>
+<li><a href="http://www.zyzginfo.com/images/lurd/a/earnonthego/qq8518.html" title="在培训前进行脊柱体检及红外热像检查">在培训前进行脊柱体检及红外热像检查</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/" title="今天新开传奇私服">今天新开传奇私服</a></h3>
+<ul>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/201512096.html" title="老人家说本地话">老人家说本地话</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/201511578.html" title="请勿一稿多投">请勿一稿多投</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20159538.html" title="从教本里学会阅读庄子的文章必须具备两套眼光">从教本里学会阅读庄子的文章必须具备两套眼</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20158831.html" title="所引文献必须是作者直接阅读参考过的公开出版文献">所引文献必须是作者直接阅读参考过的公开出</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoturismoseri/20157673.html" title="本文简要介绍了方差分析法">本文简要介绍了方差分析法</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 新开 传奇私服- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>由于中考的压力</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 06:58</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=10184&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=10184">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       首先就要将教学和实践结合起来传统的教学观念是以“教”为主       突出的是教师在课堂教学中的作用       这忽视了学生的主体地位       使得学生参与化学课堂的积极性受挫  </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;首先就要将教学和实践结合起来<p>传统的教学观念是以“教”为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;突出的是教师在课堂教学中的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;这忽视了学生的主体地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得学生参与化学课堂的积极性受挫<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以教师要转变教学观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;在课堂教学中要以学生为主体<BR>&nbsp; &nbsp; &nbsp; &nbsp;突出学生“学”的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证教学活动的进行都紧紧围绕学生展开<BR>&nbsp; &nbsp; &nbsp; &nbsp;满足新课改对学生综合素质的要求由于中考的压力<BR>&nbsp; &nbsp; &nbsp; &nbsp;大部分教师为了赶教学进度<BR>&nbsp; &nbsp; &nbsp; &nbsp;会在课堂中讲授超范围的化学知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且许多实验都不做<BR>&nbsp; &nbsp; &nbsp; &nbsp;强迫学生记忆大量抽象的化学概念和知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;抑制学生学习的积极性<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得原本丰富的课堂教学变成枯燥乏味的知识学习因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师转变教学观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;在遵循学生认知规律的基础上进行化学课堂教学就显得尤为重要 </p><p>比如<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师在进行《金属材料》一课的教学环节设计时<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师就要用科学的态度完成设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能促进学生用科学的态度学习教师设计教学环节的时候不能只按照课本的内容进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;还要穿插进一些相关的金属材料的利用<BR>&nbsp; &nbsp; &nbsp; &nbsp;生活中常见的各种金属制成品<BR>&nbsp; &nbsp; &nbsp; &nbsp;以及技术材料对我们生活的影响等知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能丰富教学内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进学生全面发展 </p><p>能够通过实验、观察等常用的化学方法获得自己想要的化学信息和进行信息的加工<BR>&nbsp; &nbsp; &nbsp; &nbsp;能够运用学到的知识与他人进行交流<BR>&nbsp; &nbsp; &nbsp; &nbsp;并在此过程中找到适合自己的学习方法<BR>&nbsp; &nbsp; &nbsp; &nbsp;养成主动学习的好习惯 </p><p>例如讲《常见的酸和碱》一课时<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师就要设置相关教学情境进行讲解<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以先利用一些实际生活中有关酸和碱的故事<BR>&nbsp; &nbsp; &nbsp; &nbsp;将学生带入这种学习氛围<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后让学生举一些生活中常用的例子<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高学生的认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;还可以在教学过程中播放一些有关我国酸碱工业发展的视频加深学生的理解这样让学生在轻松的环境中学习知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;能在提高教学效率的同时提高学生的科学素养 </p><p>在初中化学教学科学素养的培养中<BR>&nbsp; &nbsp; &nbsp; &nbsp;科学的态度具有十分重要的作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师进行教学环节设计的时候将科学的态度贯穿于其中<BR>&nbsp; &nbsp; &nbsp; &nbsp;并用科学的态度进行教学<BR>&nbsp; &nbsp; &nbsp; &nbsp;学生也用科学的态度进行学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;才是有效提高学生科学素养的重要途径要将科学的态度贯穿于教学环节的设计中<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能只注重教学而忽视实践教学<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师设计教学环节的过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能只重视组织教学、讲练新内容、布置作业等教学环节的设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;也要将化学实验的实际操作融入到教学设计中其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;要在教材内容的基础上进行教学设计<BR>&nbsp; &nbsp; &nbsp; &nbsp;并在设计中融入与化学有关的各种社会、资源等内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;丰富教学内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;加深学生对所学知识的理解 </p><p>【xzbu】郑重<p>学生科学素养的培养是素质教育改革的一个重要方面<BR>&nbsp; &nbsp; &nbsp; &nbsp;学生科学素养的提高对素质教育改革的推进具有重要作用化学是初中学生必修的一门基础课程<BR>&nbsp; &nbsp; &nbsp; &nbsp;在化学教学中培养学生的科学素养是全面提高学生素质的一个重要方面因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;在初中化学教学中要不断进行方法的探究<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高学生的科学素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;为学生以后的发展做好准备 </p><p>化学的学习对大部分学生来说都比较困难<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而合理地创设教学情境<BR>&nbsp; &nbsp; &nbsp; &nbsp;营造轻松的学习氛围显得尤为重要化学课堂教学中通过教学情境的创设<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以激发学生学习化学的兴趣<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进学生实践能力的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而提高教学效率和质量实际的生产生活中处处涉及化学知识的应用<BR>&nbsp; &nbsp; &nbsp; &nbsp;从学生接触到的实际生活出发创设相应的教学情境不仅可以有效发挥学生的主体作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;还可以改善教师的“教”和学生的“学”之间的关系<BR>&nbsp; &nbsp; &nbsp; &nbsp;更好地实现教学目标 </p><p>科学探究是学生学习化学的一种重要方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;在初中化学教学中开展科学探究活动对促进学生科学素养的发展具有极大意义化学教学中的实验探究活动可以激发学生对各种化学现象的好奇心和求知欲<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断提高学生探求化学本质的积极性<BR>&nbsp; &nbsp; &nbsp; &nbsp;提升学生的实际操作水平<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而使学生的科学素养得到不断提高 </p><p>例如<BR>&nbsp; &nbsp; &nbsp; &nbsp;在做食盐的提纯这一实验时<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师要先将实验的步骤<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后进行示范<BR>&nbsp; &nbsp; &nbsp; &nbsp;在示范过程中告诉学生需要注意的事项<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后让学生进行实验操作<BR>&nbsp; &nbsp; &nbsp; &nbsp;对学生操作中不对的地方要及时指正<BR>&nbsp; &nbsp; &nbsp; &nbsp;并尽可能让学生多操作几遍<BR>&nbsp; &nbsp; &nbsp; &nbsp;才能提高学生的操作技能<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而促进科学素养的提高 </p><p>化学教学中的科学素养具体是指通过对化学的学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐渐形成的对化学问题的科学认识及科学解决问题的思维方法科学素养实质上是人们对自然界各种物质的总体看法和认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;化学教学中的科学素养是对科学素养的细化<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而化学教师要在教学中帮助学生不断提高自身科学素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而促进自身综合科学素养的全面提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;为今后的发展打下坚实基础初中学生通过化学的学习应具备的科学素养主要包括以下方面： </p><p>对身边常见化学物质的性<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/0AR35260-0.jpg" width="600px" height="400px" />质、构成及其在生活中的应用有一定了解<BR>&nbsp; &nbsp; &nbsp; &nbsp;具备基本的化学实验操作技能<BR>&nbsp; &nbsp; &nbsp; &nbsp;能够自主设计并完成一些简单的实验 </p><p>传统的教学模式采用的是“填鸭式”和“满堂灌”的方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师在讲台上不停地向学生灌输课本知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;整个课堂也是围绕教师进行的<BR>&nbsp; &nbsp; &nbsp; &nbsp;学生只要负责在下面听就行这不仅使学生学习的积极性受挫<BR>&nbsp; &nbsp; &nbsp; &nbsp;还不利于学生思维的发展为了更好地培养学生的科学素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师必须改变这种教学观念<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证整个课堂教学都为学生服务<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断开发学生思维<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分体现学生的主体地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进学生积极能动性的发挥<BR>&nbsp; &nbsp; &nbsp; &nbsp;学生的科学素养才能得到提高 </p><p>提高对化学学习的兴趣<BR>&nbsp; &nbsp; &nbsp; &nbsp;对自然界中的一些化学现象具有探究的欲望<BR>&nbsp; &nbsp; &nbsp; &nbsp;在学习化学的过程中<BR>&nbsp; &nbsp; &nbsp; &nbsp;能积极主动地完成课程的学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;保证学习质量<BR>&nbsp; &nbsp; &nbsp; &nbsp;树立起科学的物质观念 </p><p> 在初中化学课堂教学中<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师不仅要重视课本上的各个实验、讨论及探究的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;还要合理设计相关的实验深化学生的认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;使抽象的、难理解的化学知识变为形象的、直观的知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;在不断地实验探究中帮助学生掌握更多的知识<BR>&nbsp; &nbsp; &nbsp; &nbsp;进一步培养学生提出问题、分析问题的能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;最终实现对学生科学素养的培养比如教师在讲《化学使世界变得更加绚丽多彩》一课时<BR>&nbsp; &nbsp; &nbsp; &nbsp;就可以用科学探究的方法培养学生的科学素养教师先向氢氧化钠溶液中滴入酚酞试液<BR>&nbsp; &nbsp; &nbsp; &nbsp;然后向其中滴入稀盐酸<BR>&nbsp; &nbsp; &nbsp; &nbsp;红色就会消失<BR>&nbsp; &nbsp; &nbsp; &nbsp;再向其中滴入氢氧化钠的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;溶液又会变红<BR>&nbsp; &nbsp; &nbsp; &nbsp;这样反复操作几遍<BR>&nbsp; &nbsp; &nbsp; &nbsp;让学生在这个过程中注意观察溶液的变化<BR>&nbsp; &nbsp; &nbsp; &nbsp;最后带领学生进行这一现象的探究<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养学生的探究能力 </p><p>初中阶段化学教学的主要目标是培养学生的科学素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;激发学生对化学学习的兴趣<BR>&nbsp; &nbsp; &nbsp; &nbsp;使学生具备进一步学习化学知识和基本操作技能的能力<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而需要化学教师在教学中高度重视学生科学素养的培养<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助进行化学学习方法的改进<BR>&nbsp; &nbsp; &nbsp; &nbsp;加深学生对科学探究方法和探究过程的认识<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进学生科学素养的全面提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而使学生成为符合社会发展需要的全方位人才 </p><p>实验教学是化学教学中的重要组成部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;它可以有效促进学生观察能力的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时提高学生的实验操作技能<BR>&nbsp; &nbsp; &nbsp; &nbsp;进而保证教学质量首先<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师在选择实验的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;要在简单、安全及直观的前提下突出教学的重难点<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养学生科学的实验态度<BR>&nbsp; &nbsp; &nbsp; &nbsp;促进学生操作技能的提高其次<BR>&nbsp; &nbsp; &nbsp; &nbsp;开展实验教学的时候要保证实验的规范化<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师要做好示范<BR>&nbsp; &nbsp; &nbsp; &nbsp;学生操作不正确的要及时予以纠正<BR>&nbsp; &nbsp; &nbsp; &nbsp;避免学生的错误操作<BR>&nbsp; &nbsp; &nbsp; &nbsp;在条件允许的情况下<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽量让学生多操作几遍<BR>&nbsp; &nbsp; &nbsp; &nbsp;加深学生的印象最后<BR>&nbsp; &nbsp; &nbsp; &nbsp;重视学生操作技能的提高<BR>&nbsp; &nbsp; &nbsp; &nbsp;操作技能的提高是初中化学教学中进行科学素养培养的重要目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;因而教师要根据教学计划做好实验的设计及训练<BR>&nbsp; &nbsp; &nbsp; &nbsp;提高学生的实验操作技能 </p><p>教师要根据教学内容用生活中的实例创设情境<BR>&nbsp; &nbsp; &nbsp; &nbsp;帮助学生将学到的化学知识与现实生活联系起来<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而加深理解营造良好好的教学氛围后<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师要注意转变教学的方式<BR>&nbsp; &nbsp; &nbsp; &nbsp;充分发挥自身的主导作用<BR>&nbsp; &nbsp; &nbsp; &nbsp;高度重视各个教学环节的有序进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;问题的设置、练习的完成等都要使学生在轻松的氛围中进行<BR>&nbsp; &nbsp; &nbsp; &nbsp;从而达到提高学生科学素养的目的 </p><p>总而言之<BR>&nbsp; &nbsp; &nbsp; &nbsp;要提高初中学生的科学素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;教师首先就要从思想上予以重视<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断进行教学观念的转变和方法的探究<BR>&nbsp; &nbsp; &nbsp; &nbsp;使用各种有效的手段提高学生的科学素养<BR>&nbsp; &nbsp; &nbsp; &nbsp;实现素质教育的目标<BR>&nbsp; &nbsp; &nbsp; &nbsp;培养更多的优秀人才<BR>&nbsp; &nbsp; &nbsp; &nbsp;为我国社会经济的发展提供更多的人才储备 </p>  (责任编辑：admin)
+<img border="0" alt="由于中考的压力" src="/images/lenfeng_10184.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',10184)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',10184)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(10184);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecstaticvacation/20156708.html'>本刊对文稿有修改权</a> </li>
+                                        <li>下一篇：没有了 </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=10184" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=10184&title=由于中考的压力" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=10184" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=10184" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="10184" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=10184&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '10184');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

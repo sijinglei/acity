@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>老宅系卢明发所建|我的网站</title>
+<meta name="description" content=" 热闹得很八铺街的冷清一直到1949年 以李大友为首的掌柜们走了一大半 剩下的铺子也只能勉强维持 源利、源盛两家在别处置了产业 曾经的八大铺" />
+<meta name="keywords" content="老宅,系卢,明发,所建,热闹,得很,八铺街,冷清,直到,19" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.xgqfr.com/adminqfr/Images/a/dyncool/" title="热血传奇十周年完整客户端下载">热血传奇十周年完整客户端下载</a></li><li><a href="http://www.ahshtz.com/api/about/a/ecoconsciousmoms/" title="传世2私服">传世2私服</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/eburess/" title="太阳传奇">太阳传奇</a></li><li><a href="http://www.ahshtz.com/api/about/a/ecocruiserbikes/" title="好sf传奇">好sf传奇</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edgebreak/" title="新开变态传奇私服">新开变态传奇私服</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dysonvacuumsreviews/" title="新开网通传奇私服发布网">新开网通传奇私服发布网</a></li><li><a href="http://lzbjzs.com/apply/shfr/a/edwinancarana/" title="最新传奇私服发布网站">最新传奇私服发布网站</a></li><li><a href="http://www.zyzginfo.com/images/lurd/a/earnfuel/" title="变态传奇合击版">变态传奇合击版</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eaglesummithomes/" title="找合击私服">找合击私服</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/ea65/" title="刚开一秒中变传奇">刚开一秒中变传奇</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easyturfaustin/" title="新开轻变传奇">新开轻变传奇</a></li><li><a href="http://www.lygsyw.com/include/data/a/dunbartonshiregreatdeal/" title="网通传奇新开">网通传奇新开</a></li><li><a href="http://www.hljtb.org/images/hpv/a/echoesreviews/" title="热血传奇私服1.80">热血传奇私服1.80</a></li><li><a href="http://forex8.com/api/connect/a/easttrust/" title="破天私服一条龙">破天私服一条龙</a></li><li><a href="http://www.fzlanting.com/admin/images/a/dwparts/" title="999传奇私服">999传奇私服</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edmondsonmotors/" title="长久稳定传奇">长久稳定传奇</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/edimoprasies/" title="传奇世界万能登陆器">传奇世界万能登陆器</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edenfilmography/" title="变态传奇似服发布网">变态传奇似服发布网</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edmontonfreeoffers/" title="武魂私服">武魂私服</a></li><li><a href="http://www.zzaidun.com/Tool/Css/a/econsultme/" title="中变私服">中变私服</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">传奇私服万能登陆器相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201512079.html" target="_blank" title="【xzbu】郑重">【xzbu】郑重</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201511938.html" target="_blank" title="老宅系卢明发所建">老宅系卢明发所建</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201511112.html" target="_blank" title="背景肥胖严重危害着人类的健康">背景肥胖严重危害着人类的健康</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/201510648.html" target="_blank" title="大力提升干部职工素质">大力提升干部职工素质</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20159586.html" target="_blank" title="系统仿真结果充分体现了改进后光伏电池的有效性">系统仿真结果充分体现了改进后光伏电池的有效</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20159337.html" target="_blank" title="文章详细讨论了其组成原理及实现方法">文章详细讨论了其组成原理及实现方法</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20158544.html" target="_blank" title="实验结束后分别观察胃粘膜组">实验结束后分别观察胃粘膜组</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20158135.html" target="_blank" title="凡被录用的参考文献">凡被录用的参考文献</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20156859.html" target="_blank" title="从CPI当月同比走势与加息时机选择的历史情况来看">从CPI当月同比走势与加息时机选择的历史情况</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecoswayatt/20156095.html" target="_blank" title="IT设施将来成为水电一样的基础设施">IT设施将来成为水电一样的基础设施</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://fzlanting.com/admin/class/a/eeiow/" title="新开合击sf">新开合击sf</a></h3>
+<ul>
+<li><a href="http://fzlanting.com/admin/class/a/eeiow/201512181.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://fzlanting.com/admin/class/a/eeiow/201510195.html" title="本文通过对大学精读课教学【xzbu】郑重">本文通过对大学精读课教学【xzbu】郑重</a></li>
+<li><a href="http://fzlanting.com/admin/class/a/eeiow/201510001.html" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://fzlanting.com/admin/class/a/eeiow/20159059.html" title="该废弃场地等影响">该废弃场地等影响</a></li>
+<li><a href="http://fzlanting.com/admin/class/a/eeiow/20158993.html" title="【xzbu】郑重">【xzbu】郑重</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.zbkxsq.com/admin/image/a/dzzd88/" title="今日新开变态传奇">今日新开变态传奇</a></h3>
+<ul>
+<li><a href="http://www.zbkxsq.com/admin/image/a/dzzd88/contete10967.html" title="因为艺术欣赏本身就是一种再创造和再评价">因为艺术欣赏本身就是一种再创造和再评价</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/dzzd88/contete10612.html" title="但是大化县地表崎岖破碎">但是大化县地表崎岖破碎</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/dzzd88/contete10524.html" title="使得人们在观赏时">使得人们在观赏时</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/dzzd88/contete10061.html" title="说的情境">说的情境</a></li>
+<li><a href="http://www.zbkxsq.com/admin/image/a/dzzd88/contete6737.html" title="稳重成熟">稳重成熟</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 传奇私服万能登陆器- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>老宅系卢明发所建</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 13:43</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=11938&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=11938">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       热闹得很八铺街的冷清一直到1949年       以李大友为首的掌柜们走了一大半       剩下的铺子也只能勉强维持       源利、源盛两家在别处置了产业       曾经的八大铺</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;热闹得很<p>八铺街的冷清一直到1949年<BR>&nbsp; &nbsp; &nbsp; &nbsp;以李大友为首的掌柜们走了一大半<BR>&nbsp; &nbsp; &nbsp; &nbsp;剩下的铺子也只能勉强维持<BR>&nbsp; &nbsp; &nbsp; &nbsp;源利、源盛两家在别处置了产业<BR>&nbsp; &nbsp; &nbsp; &nbsp;曾经的八大铺不复存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;空余一街 </p><p>知名“武昌通”刘谦定说<BR>&nbsp; &nbsp; &nbsp; &nbsp;当年的竹木富商们财大气粗<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们的住宅不论设计手法还是施工用料<BR>&nbsp; &nbsp; &nbsp; &nbsp;不亚于武昌城内的官宦名流之家<BR>&nbsp; &nbsp; &nbsp; &nbsp;在建筑风格上也如出一辙<BR>&nbsp; &nbsp; &nbsp; &nbsp;三合院的江夏民居形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;洲上学武昌城<BR>&nbsp; &nbsp; &nbsp; &nbsp;湖南、洞庭湖地区和江汉平原学这里<BR>&nbsp; &nbsp; &nbsp; &nbsp;是当时的建筑时尚” </p><p>解放后的卢家老宅成了白沙洲地区的著名梨园<BR>&nbsp; &nbsp; &nbsp; &nbsp;引来不少乡邻来看热闹<BR>&nbsp; &nbsp; &nbsp; &nbsp;后来还成为群众的宣传阵地<BR>&nbsp; &nbsp; &nbsp; &nbsp;从1950年开始<BR>&nbsp; &nbsp; &nbsp; &nbsp;为清匪反霸、三反五反和抗美援朝<BR>&nbsp; &nbsp; &nbsp; &nbsp;群众在这里自编自导自演<BR>&nbsp; &nbsp; &nbsp; &nbsp;好戏连台上世纪五十年代<BR>&nbsp; &nbsp; &nbsp; &nbsp;白沙洲一带的房子都淹了<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家人在武昌城里避难<BR>&nbsp; &nbsp; &nbsp; &nbsp;老宅无恙<BR>&nbsp; &nbsp; &nbsp; &nbsp;还关了一屋子的鱼<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中还有条二十斤的大白鳝<BR>&nbsp; &nbsp; &nbsp; &nbsp;算是个“惊喜” </p><p>1998年武汉发大水<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢兴裕在老宅预言<BR>&nbsp; &nbsp; &nbsp; &nbsp;他的人生已经历过三次洪水<BR>&nbsp; &nbsp; &nbsp; &nbsp;一般事不过三<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以他快不行了<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家也快要完了他的预言在2004年年底应验<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家老宅被拆</p><p>到1938年10月<BR>&nbsp; &nbsp; &nbsp; &nbsp;日军利用巡司河之隔<BR>&nbsp; &nbsp; &nbsp; &nbsp;将八铺街一带设置为“难民区”<BR>&nbsp; &nbsp; &nbsp; &nbsp;在掠夺了武昌城内的诸多财产后<BR>&nbsp; &nbsp; &nbsp; &nbsp;将大批居民赶往此地聚集<BR>&nbsp; &nbsp; &nbsp; &nbsp;派了日本宪兵中队进驻在八铺街上<BR>&nbsp; &nbsp; &nbsp; &nbsp;宪兵队长小田就驻扎在李大友酒铺对面<BR>&nbsp; &nbsp; &nbsp; &nbsp;后面还设有水牢<BR>&nbsp; &nbsp; &nbsp; &nbsp;那时<BR>&nbsp; &nbsp; &nbsp; &nbsp;常能听到从宪兵队里传来惨叫声<BR>&nbsp; &nbsp; &nbsp; &nbsp;让人毛骨悚然 </p><p>这以后<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家花厅办过粮店<BR>&nbsp; &nbsp; &nbsp; &nbsp;大厅堂办过扫盲学校、手工绣花厂和卫生所<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家人的日子稳定安逸 </p><p>卢明发的大儿子卢从康<BR>&nbsp; &nbsp; &nbsp; &nbsp;爱好在城里逛书市<BR>&nbsp; &nbsp; &nbsp; &nbsp;收藏古玩字画<BR>&nbsp; &nbsp; &nbsp; &nbsp;曾成套地买下《康熙字典》、《二十四史》、《资治通鉴》等经史子集<BR>&nbsp; &nbsp; &nbsp; &nbsp;遇上心仪的古董玩意儿<BR>&nbsp; &nbsp; &nbsp; &nbsp;像康熙年间的瓷瓶<BR>&nbsp; &nbsp; &nbsp; &nbsp;郑板桥、刘墉的挂轴<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有乾隆十二年的“武阳夏三镇木雕图”等等<BR>&nbsp; &nbsp; &nbsp; &nbsp;都被他运回卢家老宅刘谦定介绍<BR>&nbsp; &nbsp; &nbsp; &nbsp;“这也是当时竹木商人的时尚”他曾经看到过一张<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家后人向武昌区人民政府“文革”抄查古物书画清退办公室所列的清单<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中的稀奇物件能装下几十个皮箱<BR>&nbsp; &nbsp; &nbsp; &nbsp;包括雍正年间的官窑大瓷瓶 </p><p>抗日战争之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢兴裕带着家眷住到了法租界<BR>&nbsp; &nbsp; &nbsp; &nbsp;日本人投降之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;四散的卢家人回到白沙洲的老宅里<BR>&nbsp; &nbsp; &nbsp; &nbsp;与留守的卢从康团聚<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢从康吃鱼时叫刺卡住了喉咙<BR>&nbsp; &nbsp; &nbsp; &nbsp;一口气上不来断了气<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家再没人做过生意<BR>&nbsp; &nbsp; &nbsp; &nbsp;家业渐败 </p><p>发迹之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家定下了打造书香门第和官宦之家的家训<BR>&nbsp; &nbsp; &nbsp; &nbsp;到光绪三十一年的时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢明发将旅鄂湖南人学堂引到自家办班<BR>&nbsp; &nbsp; &nbsp; &nbsp;家中适龄儿童包括未出阁的女孩都要读书打这以后<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家老宅因学子众多被称为“百子堂”<BR>&nbsp; &nbsp; &nbsp; &nbsp;出了不下百名学生<BR>&nbsp; &nbsp; &nbsp; &nbsp;其中不乏可造之材 </p><p> 白沙洲<BR>&nbsp; &nbsp; &nbsp; &nbsp;是“五百年前一沙洲<BR>&nbsp; &nbsp; &nbsp; &nbsp;五百年后楼上楼”倚靠长江的繁华<BR>&nbsp; &nbsp; &nbsp; &nbsp;民间有俗语说<BR>&nbsp; &nbsp; &nbsp; &nbsp;白沙洲<BR>&nbsp; &nbsp; &nbsp; &nbsp;鲇鱼套里金银窝<BR>&nbsp; &nbsp; &nbsp; &nbsp;竹木行帮排成阵<BR>&nbsp; &nbsp; &nbsp; &nbsp;巡司河上客船多” </p><p>古时的八铺街就属于金沙洲的范围<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家老宅则在白沙洲的乌家巷<BR>&nbsp; &nbsp; &nbsp; &nbsp;它们见证着白沙洲曾经的繁华<BR>&nbsp; &nbsp; &nbsp; &nbsp;也随着时代走向寥落 </p><p>据说<BR>&nbsp; &nbsp; &nbsp; &nbsp;放排汉们还摸索出利用竹子和锯竹木的钢锯演奏音乐的绝活来<BR>&nbsp; &nbsp; &nbsp; &nbsp;每当夜幕降临<BR>&nbsp; &nbsp; &nbsp; &nbsp;江上点着烛火的排上<BR>&nbsp; &nbsp; &nbsp; &nbsp;放排汉们聚在一起<BR>&nbsp; &nbsp; &nbsp; &nbsp;拉钢锯 </p><p>八铺街的名字<BR>&nbsp; &nbsp; &nbsp; &nbsp;有两种不同的说法<BR>&nbsp; &nbsp; &nbsp; &nbsp;一种是民间文史学者所认为的<BR>&nbsp; &nbsp; &nbsp; &nbsp;古时管治安的“派出所”被称为“铺”<BR>&nbsp; &nbsp; &nbsp; &nbsp;八铺街就是“第八派出所”所在地<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此而得名另一种<BR>&nbsp; &nbsp; &nbsp; &nbsp;是因为街上有八家历史较长名声较大的铺子<BR>&nbsp; &nbsp; &nbsp; &nbsp;取八铺之街的意思在我们的走访中<BR>&nbsp; &nbsp; &nbsp; &nbsp;街上的原住民们似乎更认可后一种说法<BR>&nbsp; &nbsp; &nbsp; &nbsp;许多老人从小听着八家铺子的故事长大 </p><p>放排汉们来自“五府十八帮”<BR>&nbsp; &nbsp; &nbsp; &nbsp;街上遍布各地口音<BR>&nbsp; &nbsp; &nbsp; &nbsp;还顺带衍生出区别武汉地区的习俗来<BR>&nbsp; &nbsp; &nbsp; &nbsp;比如每年一到端午节<BR>&nbsp; &nbsp; &nbsp; &nbsp;当地德高望重的老人<BR>&nbsp; &nbsp; &nbsp; &nbsp;就会穿上特制服装<BR>&nbsp; &nbsp; &nbsp; &nbsp;化装成狗的造型<BR>&nbsp; &nbsp; &nbsp; &nbsp;被八个壮汉抬着巡游<BR>&nbsp; &nbsp; &nbsp; &nbsp;当巡游到自家门前时<BR>&nbsp; &nbsp; &nbsp; &nbsp;居民们便纷纷往“狗”身上泼水<BR>&nbsp; &nbsp; &nbsp; &nbsp;以祈求风调雨顺<BR>&nbsp; &nbsp; &nbsp; &nbsp;这就是“迎狗老爷”的习俗 </p><p>85岁的陈爹爹是八铺街原住民<BR>&nbsp; &nbsp; &nbsp; &nbsp;土生土长五代人<BR>&nbsp; &nbsp; &nbsp; &nbsp;对铺子还有模糊的印相<BR>&nbsp; &nbsp; &nbsp; &nbsp;“源利、源盛两家米铺<BR>&nbsp; &nbsp; &nbsp; &nbsp;李大友、九泰两家酒铺<BR>&nbsp; &nbsp; &nbsp; &nbsp;公泰和源泰两家杂货铺<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有少峰和靠堤旁的一家<BR>&nbsp; &nbsp; &nbsp; &nbsp;也是以卖杂货为主”这其中<BR>&nbsp; &nbsp; &nbsp; &nbsp;源利和源盛两家规模最大<BR>&nbsp; &nbsp; &nbsp; &nbsp;后面住人<BR>&nbsp; &nbsp; &nbsp; &nbsp;加起来差不多两三百个平方”陈爹爹曾跟随父亲去源利买米<BR>&nbsp; &nbsp; &nbsp; &nbsp;进过它的后院<BR>&nbsp; &nbsp; &nbsp; &nbsp;佣工们在做豆瓣酱<BR>&nbsp; &nbsp; &nbsp; &nbsp;里头放酱的园子也不小<BR>&nbsp; &nbsp; &nbsp; &nbsp;能住上好几口人 </p><p>这一时期的八铺街<BR>&nbsp; &nbsp; &nbsp; &nbsp;早已丧失了昔日的繁华劲<BR>&nbsp; &nbsp; &nbsp; &nbsp;它的售卖对象<BR>&nbsp; &nbsp; &nbsp; &nbsp;从放排汉变成了被称为“鸡杂鸭杂”的日本鬼子和汉奸<BR>&nbsp; &nbsp; &nbsp; &nbsp;售卖内容局限在应急的日用品<BR>&nbsp; &nbsp; &nbsp; &nbsp;只能满足最基本的生活需要长居在此的居民以武汉人为主<BR>&nbsp; &nbsp; &nbsp; &nbsp;靠做苦力和种菜为生<BR>&nbsp; &nbsp; &nbsp; &nbsp;平日里买米、油就去八铺街<BR>&nbsp; &nbsp; &nbsp; &nbsp;碰上家里有红白喜事<BR>&nbsp; &nbsp; &nbsp; &nbsp;一家老小得揣上积蓄<BR>&nbsp; &nbsp; &nbsp; &nbsp;到长街（今解放路一带）去置办家什<BR>&nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/1343222603-0.jpg" width="600px" height="400px" />sp; &nbsp; &nbsp; &nbsp;“我们说进城<BR>&nbsp; &nbsp; &nbsp; &nbsp;其实就是去长街” </p><p>【xzbu】郑重<p>这八铺街里的第一富豪<BR>&nbsp; &nbsp; &nbsp; &nbsp;还不是源利米铺<BR>&nbsp; &nbsp; &nbsp; &nbsp;而是卖酒的李大友这李大友不是武汉人<BR>&nbsp; &nbsp; &nbsp; &nbsp;专卖山西汾酒<BR>&nbsp; &nbsp; &nbsp; &nbsp;八铺街一带流传着“要喝酒找李大友”的说法<BR>&nbsp; &nbsp; &nbsp; &nbsp;生意兴隆八家掌柜中<BR>&nbsp; &nbsp; &nbsp; &nbsp;数李大友对街坊邻居们最豪气<BR>&nbsp; &nbsp; &nbsp; &nbsp;碰上有街坊帮他挑水<BR>&nbsp; &nbsp; &nbsp; &nbsp;一定要招呼进来喝杯免费酒<BR>&nbsp; &nbsp; &nbsp; &nbsp;在乡邻中颇有好评 </p><p>古时的八铺街北与武昌城巡司河相望<BR>&nbsp; &nbsp; &nbsp; &nbsp;西距江边码头仅数十米<BR>&nbsp; &nbsp; &nbsp; &nbsp;处于水路交通要道<BR>&nbsp; &nbsp; &nbsp; &nbsp;“南帮”顺江放排<BR>&nbsp; &nbsp; &nbsp; &nbsp;沿途需靠岸补给<BR>&nbsp; &nbsp; &nbsp; &nbsp;缰绳就系在附近的码头上<BR>&nbsp; &nbsp; &nbsp; &nbsp;放排汉们顺带上岸消遣一番八铺街一带<BR>&nbsp; &nbsp; &nbsp; &nbsp;正是“五府十八帮”沿长江顺流而下的放排目的地<BR>&nbsp; &nbsp; &nbsp; &nbsp;每天来做竹木贸易和消费的人群络绎不绝<BR>&nbsp; &nbsp; &nbsp; &nbsp;繁华程度不输于今天的司门口 </p><p>老宅系卢明发所建卢家祖上逃荒至白沙洲<BR>&nbsp; &nbsp; &nbsp; &nbsp;到卢明发这一代<BR>&nbsp; &nbsp; &nbsp; &nbsp;做起竹木生意<BR>&nbsp; &nbsp; &nbsp; &nbsp;实力在洲上七大竹木商中数一数二在幺儿子卢从序的周岁生日时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他拿出四千多两银子在乌家巷做房子清光绪十八年<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家老宅建成<BR>&nbsp; &nbsp; &nbsp; &nbsp;有一千五百多平方米<BR>&nbsp; &nbsp; &nbsp; &nbsp;轿厅、厢房、茅厕都一应俱全<BR>&nbsp; &nbsp; &nbsp; &nbsp;取名“毅安堂” </p><p>到光绪三十年<BR>&nbsp; &nbsp; &nbsp; &nbsp;“毅安堂”几经淹水<BR>&nbsp; &nbsp; &nbsp; &nbsp;加上卢家人丁兴旺<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家人将“毅安堂”翻修一遍<BR>&nbsp; &nbsp; &nbsp; &nbsp;同时在其左侧建了一模一样的新屋“景安堂”<BR>&nbsp; &nbsp; &nbsp; &nbsp;一时间成为白沙洲首屈一指的名胜 </p><p>因为卢家的名望<BR>&nbsp; &nbsp; &nbsp; &nbsp;乡亲们把“毅安堂”和“景安堂”当作“洲府”<BR>&nbsp; &nbsp; &nbsp; &nbsp;常来聚会议事<BR>&nbsp; &nbsp; &nbsp; &nbsp;被视为公共祠堂<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们认为“毅”同“亿”<BR>&nbsp; &nbsp; &nbsp; &nbsp;“景”跟“经”同音<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家老宅定能百年安好<BR>&nbsp; &nbsp; &nbsp; &nbsp;经久耐用 </p><p>白沙洲和金沙洲都是古时武昌南郊中淤积的沙洲<BR>&nbsp; &nbsp; &nbsp; &nbsp;两洲间水深港阔<BR>&nbsp; &nbsp; &nbsp; &nbsp;逐渐形成了港口和商市根据《江夏县志》、《武昌要览》的记载<BR>&nbsp; &nbsp; &nbsp; &nbsp;金沙洲在城外额公桥西南<BR>&nbsp; &nbsp; &nbsp; &nbsp;与白沙洲相对<BR>&nbsp; &nbsp; &nbsp; &nbsp;明清两代都是商贾客船云集之地清嘉庆之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;金沙洲逐渐与武昌城相连<BR>&nbsp; &nbsp; &nbsp; &nbsp;白沙洲则成了竹木贸易市场<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为“南帮”（放排为生的江西人、湖南人）的聚居地<BR>&nbsp; &nbsp; &nbsp; &nbsp;直到湖广总督张之洞时期<BR>&nbsp; &nbsp; &nbsp; &nbsp;修筑了从武昌至金口的武金堤<BR>&nbsp; &nbsp; &nbsp; &nbsp;将白沙洲和金沙洲隔在了堤外 </p><p>按照竹木商的惯例<BR>&nbsp; &nbsp; &nbsp; &nbsp;要办得热闹非凡卢家办过两场轰轰烈烈的喜事<BR>&nbsp; &nbsp; &nbsp; &nbsp;一次是卢明发的白喜事<BR>&nbsp; &nbsp; &nbsp; &nbsp;特地从汉阳请来了闹丧的武把子<BR>&nbsp; &nbsp; &nbsp; &nbsp;抛钢叉、耍三枚铁弹、头顶燃香烛<BR>&nbsp; &nbsp; &nbsp; &nbsp;扮成和尚的汉子抛接铜钹<BR>&nbsp; &nbsp; &nbsp; &nbsp;引得围观的人阵阵惊呼另一次是卢明发的孙子卢兴裕成亲<BR>&nbsp; &nbsp; &nbsp; &nbsp;娶的是汉阳富商之女胡淑芬<BR>&nbsp; &nbsp; &nbsp; &nbsp;胡家的陪嫁足足装满了一整条船<BR>&nbsp; &nbsp; &nbsp; &nbsp;前来道贺的亲友也多<BR>&nbsp; &nbsp; &nbsp; &nbsp;从汉阳过来的船队排起了长队<BR>&nbsp; &nbsp; &nbsp; &nbsp;这头的嫁妆已进门<BR>&nbsp; &nbsp; &nbsp; &nbsp;那头的宾客才能下船老宅里的婚宴摆了好几十桌<BR>&nbsp; &nbsp; &nbsp; &nbsp;毅安堂和景安堂摆不下<BR>&nbsp; &nbsp; &nbsp; &nbsp;花厅也坐满了宾客<BR>&nbsp; &nbsp; &nbsp; &nbsp;场面轰动了洲上<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有老人津津乐道那场婚礼 </p><p>卢家的灾难在“文革”后来临<BR>&nbsp; &nbsp; &nbsp; &nbsp;白沙洲上最显赫的卢家<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为红卫兵造反的对象<BR>&nbsp; &nbsp; &nbsp; &nbsp;老宅里的古玩字画、家具器皿等被一扫而光<BR>&nbsp; &nbsp; &nbsp; &nbsp;墙壁也被凿穿<BR>&nbsp; &nbsp; &nbsp; &nbsp;屋里的卢家人被赶到同一街的茅棚里<BR>&nbsp; &nbsp; &nbsp; &nbsp;老宅归公家所有 </p><p>当然<BR>&nbsp; &nbsp; &nbsp; &nbsp;八铺街的繁华可不止于此<BR>&nbsp; &nbsp; &nbsp; &nbsp;是吃喝玩乐一条街<BR>&nbsp; &nbsp; &nbsp; &nbsp;麻石路两边小馆子、剃头铺、伞店、米店、日用杂货店一应俱全<BR>&nbsp; &nbsp; &nbsp; &nbsp;街上还有个大关茶馆<BR>&nbsp; &nbsp; &nbsp; &nbsp;里面演着楚剧、湖南花鼓戏和湖北评书<BR>&nbsp; &nbsp; &nbsp; &nbsp;略有闲钱的放排汉们<BR>&nbsp; &nbsp; &nbsp; &nbsp;就往茶馆里钻 </p><p>回到金沙洲和白沙洲的故事上因金沙洲与武昌城相连<BR>&nbsp; &nbsp; &nbsp; &nbsp;白沙洲逐渐成为竹木贸易的中心<BR>&nbsp; &nbsp; &nbsp; &nbsp;“男帮”和放排汉多聚居在此一直到民国初年<BR>&nbsp; &nbsp; &nbsp; &nbsp;竹木贸易还相当繁盛<BR>&nbsp; &nbsp; &nbsp; &nbsp;并建有祁阳公所、明山善堂和“旅鄂湖南学堂”等等<BR>&nbsp; &nbsp; &nbsp; &nbsp;卢家老宅就是曾经的湖南学堂校舍 </p><p>这样的繁华离不开木材码头的繁盛<BR>&nbsp; &nbsp; &nbsp; &nbsp;也离不开五湖四海的放排汉<BR>&nbsp; &nbsp; &nbsp; &nbsp;但在武汉人心中<BR>&nbsp; &nbsp; &nbsp; &nbsp;这一带是“难民区”<BR>&nbsp; &nbsp; &nbsp; &nbsp;八铺街就是难民区的“法租界”1932年<BR>&nbsp; &nbsp; &nbsp; &nbsp;武汉成为泽国<BR>&nbsp; &nbsp; &nbsp; &nbsp;很多失去家园的武汉人<BR>&nbsp; &nbsp; &nbsp; &nbsp;在八铺街附近用树皮、板皮和布瓦搭起简易房子<BR>&nbsp; &nbsp; &nbsp; &nbsp;过起日子来 </p><p>这样的日子直到1980年<BR>&nbsp; &nbsp; &nbsp; &nbsp;政府归还了老宅<BR>&nbsp; &nbsp; &nbsp; &nbsp;戏台已经被拆<BR>&nbsp; &nbsp; &nbsp; &nbsp;占用了四间房的白沙洲街卫生所保留下来<BR>&nbsp; &nbsp; &nbsp; &nbsp;剩下的供卢家人居住卢兴裕（此时已改名卢新华）还亲自上房捡瓦<BR>&nbsp; &nbsp; &nbsp; &nbsp;在瓦条里见到了四条金叶子<BR>&nbsp; &nbsp; &nbsp; &nbsp;令人忆及当年的繁盛<BR>&nbsp; &nbsp; &nbsp; &nbsp;不免感慨良多 </p>  (责任编辑：admin)
+<img border="0" alt="老宅系卢明发所建" src="/images/lenfeng_11938.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',11938)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',11938)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(11938);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecoswayatt/201511112.html'>背景肥胖严重危害着人类的健康</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecoswayatt/201512079.html'>【xzbu】郑重</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=11938" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=11938&title=老宅系卢明发所建" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=11938" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=11938" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="11938" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=11938&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '11938');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

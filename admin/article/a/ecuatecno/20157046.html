@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>为了留住绿色|我的网站</title>
+<meta name="description" content=" 种下不久的芹菜微微探出头看着后勤机关和狮泉河医疗站12名精干人员准备带回 钱有武重新穿上了厚重的大衣 向集结地点走去 不经意一个转身 望到" />
+<meta name="keywords" content="为了,留住,绿色,种下,不久,芹菜,微微,出头,看着,后勤," />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://www.xgqfr.com/adminqfr/Images/a/dynastyatparade/" title="雷霆三合一">雷霆三合一</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eathealthyandhaltcancer/" title="轻变传奇sf">轻变传奇sf</a></li><li><a href="http://www.weiboyewu.com/images/default/a/dustandlightsheretry/" title="爱的色放">爱的色放</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dyzxlt/" title="传世SF">传世SF</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easystreetinformation/" title="网通传奇sifu">网通传奇sifu</a></li><li><a href="http://www.51kaso.com/admin/Public/a/duooboe/" title="变态传奇SF">变态传奇SF</a></li><li><a href="http://fzlanting.com/admin/class/a/effectentertainment/" title="神泣私服发布">神泣私服发布</a></li><li><a href="http://www.cowinvc.com/data/admin/a/eatsoeasy/" title="1.76合击私服">1.76合击私服</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebonyamatuerxxx/" title="1.95刺影合击">1.95刺影合击</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/eatdrinkreflect/" title="sf520">sf520</a></li><li><a href="http://www.yizuocity.com/admin/article/a/ecurieweb/" title="新开传奇3私服">新开传奇3私服</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edelveisjewelry/" title="龙腾世界sf">龙腾世界sf</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dzmsmd/" title="热血传奇超变私服">热血传奇超变私服</a></li><li><a href="http://www.twabc.com.cn/css/_notes/a/edirectmailing/" title="传奇私服通用登陆器">传奇私服通用登陆器</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eaglehomefinders/" title="盛大传奇客户端下载">盛大传奇客户端下载</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebestbathrooms/" title="传奇私服合击外挂">传奇私服合击外挂</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dyxdtz/" title="传奇私服客服端">传奇私服客服端</a></li><li><a href="http://www.darenaika.com/images/lurd/a/easterchocolatesale/" title="刚开一秒传奇私服">刚开一秒传奇私服</a></li><li><a href="http://www.lygsyw.com/include/data/a/duluthdivorceattorney/" title="传奇世界私服">传奇世界私服</a></li><li><a href="http://cyq0913.sgz.cnmei.com/images/wbht/a/edebtaylorjuiceplus/" title="最新传奇私服网">最新传奇私服网</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">房网通登陆相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201512207.html" target="_blank" title="VEGF的表达调控受多种因素的影响">VEGF的表达调控受多种因素的影响</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201511862.html" target="_blank" title="本刊论文均有中英文摘要">本刊论文均有中英文摘要</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201511060.html" target="_blank" title="以往的高光谱或多光谱图像分类与识别">以往的高光谱或多光谱图像分类与识别</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201510156.html" target="_blank" title="我住的房子周边">我住的房子周边</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/201510126.html" target="_blank" title="应用主动降噪技术降低东风一款中型商用车车内噪声">应用主动降噪技术降低东风一款中型商用车车内</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20159924.html" target="_blank" title="这是世纪老人季羡林说过的话">这是世纪老人季羡林说过的话</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20158569.html" target="_blank" title="摘要必须拥有与论文同等量的主要信息">摘要必须拥有与论文同等量的主要信息</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20157768.html" target="_blank" title="三年级的习 当前">三年级的习 当前</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20157046.html" target="_blank" title="为了留住绿色">为了留住绿色</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecuatecno/20155614.html" target="_blank" title="传统的教学过程往往以教师为主">传统的教学过程往往以教师为主</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://www.gdglsq.com/images/lurd/a/easytrack7/" title="1.80金币合击">1.80金币合击</a></h3>
+<ul>
+<li><a href="http://www.gdglsq.com/images/lurd/a/easytrack7/qq12156.html" title="目的总结复杂胫骨平台骨折手术治疗的临床经验">目的总结复杂胫骨平台骨折手术治疗的临床经</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/easytrack7/qq11981.html" title="收到稿件之后">收到稿件之后</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/easytrack7/qq11795.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/easytrack7/qq11549.html" title="作为广西音乐遗产中的偶像">作为广西音乐遗产中的偶像</a></li>
+<li><a href="http://www.gdglsq.com/images/lurd/a/easytrack7/qq11232.html" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://www.mrkeer.com.cn/images/ygy/a/dwenxue/" title="好sf发布网">好sf发布网</a></h3>
+<ul>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwenxue/contete9757.html" title="而学历又主要来自于学校">而学历又主要来自于学校</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwenxue/contete7675.html" title="本刊采用的一般论文可在一年内发表">本刊采用的一般论文可在一年内发表</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwenxue/contete5498.html" title="我很小很小的时候">我很小很小的时候</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwenxue/contete5493.html" title="我高举着它跑到妈妈跟前">我高举着它跑到妈妈跟前</a></li>
+<li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwenxue/contete3181.html" title="本刊是以沙漠学研究为主的综合性学术刊物">本刊是以沙漠学研究为主的综合性学术刊物</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 房网通登陆- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>为了留住绿色</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-19 19:38</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=7046&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=7046">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:       种下不久的芹菜微微探出头看着后勤机关和狮泉河医疗站12名精干人员准备带回       钱有武重新穿上了厚重的大衣       向集结地点走去       不经意一个转身       望到</p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            <BR>&nbsp; &nbsp; &nbsp; &nbsp;种下不久的芹菜微微探出头<p>看着后勤机关和狮泉河医疗站12名精干人员准备带回<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武重新穿上了厚重的大衣<BR>&nbsp; &nbsp; &nbsp; &nbsp;向集结地点走去<BR>&nbsp; &nbsp; &nbsp; &nbsp;不经意一个转身<BR>&nbsp; &nbsp; &nbsp; &nbsp;望到了对面的山头<BR>&nbsp; &nbsp; &nbsp; &nbsp;渐渐出了神8月的阿里高原<BR>&nbsp; &nbsp; &nbsp; &nbsp;在海拔5598米的某山口已是白雪皑皑<BR>&nbsp; &nbsp; &nbsp; &nbsp;白雾在山尖缭绕<BR>&nbsp; &nbsp; &nbsp; &nbsp;犹如人间仙境在这里<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武从汽车兵、代汽车营副营长、营房科科长再到现在的阿里军分区保障部部长<BR>&nbsp; &nbsp; &nbsp; &nbsp;一干就是28年<BR>&nbsp; &nbsp; &nbsp; &nbsp;被官兵称为“老阿里” </p><p>有一次钱有武看到一名年轻战士从防区下来<BR>&nbsp; &nbsp; &nbsp; &nbsp;见到第一棵小树<BR>&nbsp; &nbsp; &nbsp; &nbsp;竟然控制不住抱着树哭了<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为他整整两年没见到绿色植物为了留住绿色<BR>&nbsp; &nbsp; &nbsp; &nbsp;过去许多官兵习惯上山前带一些花草<BR>&nbsp; &nbsp; &nbsp; &nbsp;在守防的日子里一直伴随在身边<BR>&nbsp; &nbsp; &nbsp; &nbsp;即使枯萎也舍不得丢钱有武过去常说：“我们边防军人对绿色的渴望是常人不能想象的<BR>&nbsp; &nbsp; &nbsp; &nbsp;哪怕是一棵小草<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们也会看得无比珍贵！” </p><p>你的身体怎么样？你减肥没有<BR>&nbsp; &nbsp; &nbsp; &nbsp;你是胖了还是瘦了<BR>&nbsp; &nbsp; &nbsp; &nbsp;你在底下时都90多公斤了<BR>&nbsp; &nbsp; &nbsp; &nbsp;你说你在山上减到了80多公斤<BR>&nbsp; &nbsp; &nbsp; &nbsp;那我可要检查呦！ </p><p>28年前<BR>&nbsp; &nbsp; &nbsp; &nbsp;16岁的钱有武从甘肃天祝入伍<BR>&nbsp; &nbsp; &nbsp; &nbsp;成为了阿里军分区的一名高原汽车兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;他跟这片高原结下了不解之缘 </p><p>那时在普兰人武部担任后勤科科长的钱有武<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了让大家缓解一下吃不上新鲜蔬菜的难受<BR>&nbsp; &nbsp; &nbsp; &nbsp;就打电话给远在千里之外的爱人李伟英<BR>&nbsp; &nbsp; &nbsp; &nbsp;让她在电话里给每名官兵形容一下吃西红柿的味道 </p><p>更多时候<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武都会忘记自己的家庭角色<BR>&nbsp; &nbsp; &nbsp; &nbsp;忘记了自己的妻子、儿子<BR>&nbsp; &nbsp; &nbsp; &nbsp;甚至忽略了自己也是别人的儿子 </p><p>女汉子我又要上高原了<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且是到阿里去<BR>&nbsp; &nbsp; &nbsp; &nbsp;走之前大家各种嘱咐<BR>&nbsp; &nbsp; &nbsp; &nbsp;摆出一副给英雄饯行的架势这让我想起了大学毕业那年学校给服从分配到阿里的同学荣立三等功阿里就好像是荒凉、艰苦的代名词<BR>&nbsp; &nbsp; &nbsp; &nbsp;只要有胆量踏上这片土地就勇气可嘉 </p><p>营房科科长、保障部部长<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武不只姓钱<BR>&nbsp; &nbsp; &nbsp; &nbsp;又管钱、又管房<BR>&nbsp; &nbsp; &nbsp; &nbsp;这份在外人看来的“肥差”<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有丰满他的体态<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有吞噬他的信念<BR>&nbsp; &nbsp; &nbsp; &nbsp;却让几乎寸草不生的高原上种出了蔬菜<BR>&nbsp; &nbsp; &nbsp; &nbsp;坚固了永冻层上哨所的墙壁 </p><p>泪<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了那个满脸坚毅喊出“不让祖国人民失望”的藏族战士<BR>&nbsp; &nbsp; &nbsp; &nbsp;这不是口号；泪<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了那个被困风雪二十多天<BR>&nbsp; &nbsp; &nbsp; &nbsp;被救后接到的却是妻子和腹中孩子死讯的汽车兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;这不是故事；泪<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了被大家调侃“没有关系”被分到阿里的同学<BR>&nbsp; &nbsp; &nbsp; &nbsp;这不是吃亏；泪<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了钱有武那分居三地的一家人和永远在一起的“兄弟们”<BR>&nbsp; &nbsp; &nbsp; &nbsp;这不是做作 </p><p>今年2月<BR>&nbsp; &nbsp; &nbsp; &nbsp;父亲再次病危住进医院钱有武得知这一消息后<BR>&nbsp; &nbsp; &nbsp; &nbsp;仿佛浑身血液被抽光一样瘫软了他想起了去年的一个深夜<BR>&nbsp; &nbsp; &nbsp; &nbsp;刚从边防回来的他<BR>&nbsp; &nbsp; &nbsp; &nbsp;正坐在屋里泡脚<BR>&nbsp; &nbsp; &nbsp; &nbsp;这时电话响了<BR>&nbsp; &nbsp; &nbsp; &nbsp;是父亲打来的<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武赶忙接起<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们到底说了些什么<BR>&nbsp; &nbsp; &nbsp; &nbsp;他都不太记得<BR>&nbsp; &nbsp; &nbsp; &nbsp;只是父亲的一句“我想你”<BR>&nbsp; &nbsp; &nbsp; &nbsp;让两个男人在电话两头泪流满面 </p><p>“长空皓月”是钱有武微信的个性签名<BR>&nbsp; &nbsp; &nbsp; &nbsp;这个看上去沉默寡言<BR>&nbsp; &nbsp; &nbsp; &nbsp;长着一副电视剧里标准英雄脸的老阿里人之所以会用这么“潮”的社交软件<BR>&nbsp; &nbsp; &nbsp; &nbsp;据说是为了和家人联系方便这一家三口分居三地<BR>&nbsp; &nbsp; &nbsp; &nbsp;而上高一的儿子则只身在郑州读书<BR>&nbsp; &nbsp; &nbsp; &nbsp;平时他们就像一个大大的三角形上的三个角<BR>&nbsp; &nbsp; &nbsp; &nbsp;只能通过电波来传递那长长久久、浓浓的思念 </p><p>钱有武忍住哽咽<BR>&nbsp; &nbsp; &nbsp; &nbsp;含着泪水说：“知道了爸<BR>&nbsp; &nbsp; &nbsp; &nbsp;您要保重身体<BR>&nbsp; &nbsp; &nbsp; &nbsp;我这儿工作干完就马上回去看您！”但他心里明白<BR>&nbsp; &nbsp; &nbsp; &nbsp;今年阿里地区遭遇15年不遇的特大暴雪<BR>&nbsp; &nbsp; &nbsp; &nbsp;抗击雪灾的任务十分繁重<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武独自抹了半个多小时的眼泪第二天<BR>&nbsp; &nbsp; &nbsp; &nbsp;他忍着悲痛亲领车队给普兰边防连送油料<BR>&nbsp; &nbsp; &nbsp; &nbsp;组织工程机械打通西兰塔边防连的道路和为什布齐、山岗边防连急速空运保障物资</p><p>工作空闲时<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武总会掏出一张已经皱皱巴巴的纸<BR>&nbsp; &nbsp; &nbsp; &nbsp;反复读着作为父亲<BR>&nbsp; &nbsp; &nbsp; &nbsp;他时不时会想起这个因为常年只身在内地读书<BR>&nbsp; &nbsp; &nbsp; &nbsp;而显得比同龄人都要成熟的儿子在干什么<BR>&nbsp; &nbsp; &nbsp; &nbsp;是不是想爸爸妈妈了 </p><p>几年前<BR>&nbsp; &nbsp; &nbsp; &nbsp;为了确保年度高原运输任务安全圆满完成<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武休假期间接到军分区指示<BR>&nbsp; &nbsp; &nbsp; &nbsp;命令他提前归队到留守处报到<BR>&nbsp; &nbsp; &nbsp; &nbsp;带汽车三连12台拉运焦炭车队上山作为一名曾常年奔波在新藏线上的老汽车兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武有着多次生死经历<BR>&nbsp; &nbsp; &nbsp; &nbsp;每上一次山不仅要忍受高原反应的痛苦折磨<BR>&nbsp; &nbsp; &nbsp; &nbsp;还要随时应对各种恶劣环境的挑战<BR>&nbsp; &nbsp; &nbsp; &nbsp;稍不留神就会再也见不到爹娘 </p><p>走进普兰边防连的温室大棚<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武顿感心情放松、氧气“充足”温室大棚内<BR>&nbsp; &nbsp; &nbsp; &nbsp;小白菜泛着碧绿<BR>&nbsp; &nbsp; &nbsp; &nbsp;青翠欲滴的辣椒挂满枝头<BR>&nbsp; &nbsp; &nbsp; &nbsp;四季豆爬上了架战士们有的在拔草打杈、上肥浇水<BR>&nbsp; &nbsp; &nbsp; &nbsp;有的在看书学习<BR>&nbsp; &nbsp; &nbsp; &nbsp;还有的在赏景聊天 </p><p>阿里<BR>&nbsp; &nbsp; &nbsp; &nbsp;世界屋脊的屋脊<BR>&nbsp; &nbsp; &nbsp; &nbsp;平均海拔4500米<BR>&nbsp; &nbsp; &nbsp; &nbsp;初到这里的人会被低得仿佛触手可及的天空和白云所迷住<BR>&nbsp; &nbsp; &nbsp; &nbsp;但过不了多久<BR>&nbsp; &nbsp; &nbsp; &nbsp;他们就会恨不得把这些美景都变成氧气<BR>&nbsp; &nbsp; &nbsp; &nbsp;塞进局促的肺里而这对于钱有武来说早已不是问题 </p><p>来到阿里<BR>&nbsp; &nbsp; &nbsp; &nbsp;你才能深刻地体会到什么是走的人多了就有了路<BR>&nbsp; &nbsp; &nbsp; &nbsp;性能良好的越野车轧过崎岖不平的路面随着山势上下翻越<BR>&nbsp; &nbsp; &nbsp; &nbsp;本来就因缺氧快爆炸的脑袋晃得有随时掉下来的感觉终于到了连队<BR>&nbsp; &nbsp; &nbsp; &nbsp;走进他们的蔬菜大棚<BR>&nbsp; &nbsp; &nbsp; &nbsp;满眼的绿色直冲眼底<BR>&nbsp; &nbsp; &nbsp; &nbsp;随之而来的“福利”就是这里的氧气也相对充足些战士摘了一大堆西红柿和黄瓜<BR>&nbsp; &nbsp; &nbsp; &nbsp;大家晃了一路<BR>&nbsp; &nbsp; &nbsp; &nbsp;都有些无精打采<BR>&nbsp; &nbsp; &nbsp; &nbsp;于是就席地而坐<BR>&nbsp; &nbsp; &nbsp; &nbsp;品尝起这些珍馐佳肴来军分区的杨诚政委和我一起分享了一根黄瓜<BR>&nbsp; &nbsp; &nbsp; &nbsp;战士见状要再去摘一些<BR>&nbsp; &nbsp; &nbsp; &nbsp;说：“种点菜不容易<BR>&nbsp; &nbsp; &nbsp; &nbsp;省点给官兵们吃吧” </p><p> 如今<BR>&nbsp; &nbsp; &nbsp; &nbsp;28年的青春转瞬即逝<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武或许会被调整到其他岗位<BR>&nbsp; &nbsp; &nbsp; &nbsp;或者调往内地<BR>&nbsp; &nbsp; &nbsp; &nbsp;他都无怨无悔<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为他在这里留下了执着笔者路过一个哨所<BR>&nbsp; &nbsp; &nbsp; &nbsp;见上面有副对联：哨虽小实为军之门户<BR>&nbsp; &nbsp; &nbsp; &nbsp;士虽微诚为国之藩篱；横批：无名英雄或许<BR>&nbsp; &nbsp; &nbsp; &nbsp;这副对联就是对钱有武最好的解读 </p><p>【xzbu】郑重<p>父亲今年78岁高龄<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武已经不清楚多少次答应要陪父亲到北京看看天安门、登上万里长城<BR>&nbsp; &nbsp; &nbsp; &nbsp;但这个诺言许下14年了仍没有实现 </p><p>在阿里的日子像一幅幅老照片挂在钱有武心里最珍贵的位置<BR>&nbsp; &nbsp; &nbsp; &nbsp;虽然狼狈<BR>&nbsp; &nbsp; &nbsp; &nbsp;但却散发着迷人的香味儿之后每当遇到难事<BR>&nbsp; &nbsp; &nbsp; &nbsp;想想那时候的苦<BR>&nbsp; &nbsp; &nbsp; &nbsp;一切便不重要了没有比脚更长的路<BR>&nbsp; &nbsp; &nbsp; &nbsp;没有比人更高的山 </p><p>如今<BR>&nbsp; &nbsp; &nbsp; &nbsp;“电话里的西红柿”的故事已成为历史在钱有武担任后勤部长以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;启动了“菜篮子工程”建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;在边防一线连队修建了温室大棚<BR>&nbsp; &nbsp; &nbsp; &nbsp;种植辣椒、西红柿和黄瓜等10多种蔬菜这些大棚平均每座年产菜两千多公斤<BR>&nbsp; &nbsp; &nbsp; &nbsp;夏天可满足连队约50%的需要<BR>&nbsp; &nbsp; &nbsp; &nbsp;冬春淡季官兵也可吃上蒜苗、小白菜和小萝卜</p><p>回过神来<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武拿起电话拨打了爱人的手机<BR>&nbsp; &nb<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141019/193S55931-0.jpg" width="600px" height="400px" />sp; &nbsp; &nbsp;沙哑低沉的声音传到了妻子的耳畔：“伟英<BR>&nbsp; &nbsp; &nbsp; &nbsp;爸怎么样！能不能让他老人家接个电话啊？”电话里就听到妻子轻声呼唤：“爸</p><p>在很多人眼里<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武是大权在握<BR>&nbsp; &nbsp; &nbsp; &nbsp;保障部机关有财务、战勤、卫生5大科室<BR>&nbsp; &nbsp; &nbsp; &nbsp;手中握着财权、车权、药权但他却从来低调<BR>&nbsp; &nbsp; &nbsp; &nbsp;还时不时对下面的同志开讲：“今天我们开了个小口子<BR>&nbsp; &nbsp; &nbsp; &nbsp;明天就会有更多的人找过来我们决不能做辜负组织、自毁前程的事情” </p><p>在哨所<BR>&nbsp; &nbsp; &nbsp; &nbsp;战士们特意找出一本《解放军生活》让我签名留念<BR>&nbsp; &nbsp; &nbsp; &nbsp;我绞尽脑汁也想不出什么更富有哲理的语言<BR>&nbsp; &nbsp; &nbsp; &nbsp;于是笨拙地留下：祝阿里的官兵生活越来越幸福这是我最朴素的心愿<BR>&nbsp; &nbsp; &nbsp; &nbsp;也正是钱有武倾其一生追求的目标 </p><p>我还希望你能回来<BR>&nbsp; &nbsp; &nbsp; &nbsp;因为你有两个年没跟我和妈妈过了<BR>&nbsp; &nbsp; &nbsp; &nbsp;你要是再推三阻四的不下山来<BR>&nbsp; &nbsp; &nbsp; &nbsp;我和妈妈就不要你了还有就是少抽烟少喝酒<BR>&nbsp; &nbsp; &nbsp; &nbsp;这两样都是对身体不好的东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;所以少出去抽烟喝酒 </p><p>出操、上哨所几十年如一日的生活<BR>&nbsp; &nbsp; &nbsp; &nbsp;从钱有武那看不出单调和乏味<BR>&nbsp; &nbsp; &nbsp; &nbsp;反而更显得一丝不苟以前上哨所最近也要走一个多小时的山路<BR>&nbsp; &nbsp; &nbsp; &nbsp;后来路长了<BR>&nbsp; &nbsp; &nbsp; &nbsp;上哨所改乘了大卡车、越野车<BR>&nbsp; &nbsp; &nbsp; &nbsp;也变成了水泥路 </p><p>阿里最美的风景是永冻层上矗立的哨所<BR>&nbsp; &nbsp; &nbsp; &nbsp;是夕阳下站岗士兵的身影<BR>&nbsp; &nbsp; &nbsp; &nbsp;是风雪中巡逻的马队<BR>&nbsp; &nbsp; &nbsp; &nbsp;是钱有武桌上的全家福相片<BR>&nbsp; &nbsp; &nbsp; &nbsp;是长眠于此的英雄<BR>&nbsp; &nbsp; &nbsp; &nbsp;是飞扬在风中的动人故事我把最多的眼泪洒在了阿里这神圣的高原<BR>&nbsp; &nbsp; &nbsp; &nbsp;从最初不愿被人察觉的默默流泪到最后控制不住的抽泣<BR>&nbsp; &nbsp; &nbsp; &nbsp;好像每一个人、每一句话都直戳我心底最柔软的地方 </p><p>几年前<BR>&nbsp; &nbsp; &nbsp; &nbsp;普兰边防连高寒缺氧<BR>&nbsp; &nbsp; &nbsp; &nbsp;守防官兵连氧气都吸不饱<BR>&nbsp; &nbsp; &nbsp; &nbsp;更不敢奢望吃上新鲜蔬菜长期守防的官兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;会不同程度地出现头发脱落、嘴唇干裂和指甲凹陷等症状2005年冬天<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于大雪封山<BR>&nbsp; &nbsp; &nbsp; &nbsp;官兵们一个多月没有吃上新鲜蔬菜<BR>&nbsp; &nbsp; &nbsp; &nbsp;三餐都是“老三样”：土豆、白菜和罐头 </p><p>那年<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武前往曼扎边防连检查营房建设<BR>&nbsp; &nbsp; &nbsp; &nbsp;越野车艰难地爬上海拔5800米的某冰雪达坂<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于坡陡道窄弯急<BR>&nbsp; &nbsp; &nbsp; &nbsp;雪厚路滑车颠<BR>&nbsp; &nbsp; &nbsp; &nbsp;一直是车在路上跳<BR>&nbsp; &nbsp; &nbsp; &nbsp;心在嗓眼跳急转弯时<BR>&nbsp; &nbsp; &nbsp; &nbsp;车子方向打不过来<BR>&nbsp; &nbsp; &nbsp; &nbsp;直向路边冲去<BR>&nbsp; &nbsp; &nbsp; &nbsp;下面就是悬崖峭壁<BR>&nbsp; &nbsp; &nbsp; &nbsp;万幸的是一块大石头死死顶住了左前轮<BR>&nbsp; &nbsp; &nbsp; &nbsp;在距离路边不到10厘米处刹住了车像这样与死神擦肩而过的事情<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武经历了近20次 </p><p>当车队行驶至第四天时<BR>&nbsp; &nbsp; &nbsp; &nbsp;驾驶员都已经疲惫不堪下午<BR>&nbsp; &nbsp; &nbsp; &nbsp;车队行驶至死人沟时<BR>&nbsp; &nbsp; &nbsp; &nbsp;发现前方道路已经淹没在洪水中<BR>&nbsp; &nbsp; &nbsp; &nbsp;驾驶员们见状像泄了气的皮球<BR>&nbsp; &nbsp; &nbsp; &nbsp;怨声载道叹气不止见状<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武径直向被洪水覆盖的路面走去<BR>&nbsp; &nbsp; &nbsp; &nbsp;在水中一步一步慢慢挪动<BR>&nbsp; &nbsp; &nbsp; &nbsp;为车队探路冰冷的河水逼得他猛打了几个寒战<BR>&nbsp; &nbsp; &nbsp; &nbsp;但是他强忍着刺骨的寒冷渡过了洪水路面之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武高兴地大喊：“水不是很深<BR>&nbsp; &nbsp; &nbsp; &nbsp;最深也就到膝盖<BR>&nbsp; &nbsp; &nbsp; &nbsp;大家注意看我指挥”一辆车通过了<BR>&nbsp; &nbsp; &nbsp; &nbsp;两辆车通过了<BR>&nbsp; &nbsp; &nbsp; &nbsp;三辆车</p><p>有武电话！”电话那头<BR>&nbsp; &nbsp; &nbsp; &nbsp;老爷子用颤抖的声音说：“儿子<BR>&nbsp; &nbsp; &nbsp; &nbsp;爸爸没事！我知道你在高原边防工作很忙<BR>&nbsp; &nbsp; &nbsp; &nbsp;这儿有伟英照顾<BR>&nbsp; &nbsp; &nbsp; &nbsp;你就放心吧！” </p><p>后来<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武特意给老指导员道歉<BR>&nbsp; &nbsp; &nbsp; &nbsp;老指导员也理解了他：“我了解你正直的性格<BR>&nbsp; &nbsp; &nbsp; &nbsp;就不让你为难了”通情达理的老指导员还苦口婆心做通了其他老战友的工作 </p><p>这不过是高原带给他的反应之一从普通边防战士到保障部部长的28年守防生涯里<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武忍受着高原心脏病、肩周炎、慢性胃病、左脚骨刺等10余种病痛的折磨他总是能在身体出现不同反应时<BR>&nbsp; &nbsp; &nbsp; &nbsp;熟稔地从随身的药盒里找到对应的药丸服下<BR>&nbsp; &nbsp; &nbsp; &nbsp;颇有些“久病成医”的意思 </p><p> 2009年6月<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武的一位老首长领着儿子找到他说：“自从我退伍后<BR>&nbsp; &nbsp; &nbsp; &nbsp;你嫂子不幸因病去世<BR>&nbsp; &nbsp; &nbsp; &nbsp;我和儿子相依为命<BR>&nbsp; &nbsp; &nbsp; &nbsp;日子过得很艰难这次孩子想当个兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;减轻我的负担<BR>&nbsp; &nbsp; &nbsp; &nbsp;你说啥也要帮个忙”安排个孩子当个兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;对钱有武来说<BR>&nbsp; &nbsp; &nbsp; &nbsp;是件很容易的事<BR>&nbsp; &nbsp; &nbsp; &nbsp;可他就是硬着心肠没答应 </p><p>2011年10月<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武回老家探亲<BR>&nbsp; &nbsp; &nbsp; &nbsp;4位退伍战友特意登门拜访老指导员王锋代表大家提出了一个要求：“大家想请你帮忙<BR>&nbsp; &nbsp; &nbsp; &nbsp;能不能给个工程干一干”“你是知道的<BR>&nbsp; &nbsp; &nbsp; &nbsp;老李的公司有施工资质<BR>&nbsp; &nbsp; &nbsp; &nbsp;一定能保证质量” 钱有武十分尴尬<BR>&nbsp; &nbsp; &nbsp; &nbsp;但还是推辞了战友们的请求 </p><p>在阿里迎接了多少次检查组他已记不清了<BR>&nbsp; &nbsp; &nbsp; &nbsp;凡是来的人都说这里景色真好<BR>&nbsp; &nbsp; &nbsp; &nbsp;如同4a级旅游区是啊！这里的景色真的很美<BR>&nbsp; &nbsp; &nbsp; &nbsp;有高原上纯净的阳光<BR>&nbsp; &nbsp; &nbsp; &nbsp;在巨大山峦上流泻的强烈的光与影；蓝色的湖水与白色的卵石<BR>&nbsp; &nbsp; &nbsp; &nbsp;笼罩在高原上空神秘的夜空和分外耀眼的星群<BR>&nbsp; &nbsp; &nbsp; &nbsp;但如果在这空气稀薄的地方待上几十年<BR>&nbsp; &nbsp; &nbsp; &nbsp;又会是什么样？这时<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武的胃部突然钻心地痛<BR>&nbsp; &nbsp; &nbsp; &nbsp;虽然气温已经低至零下20摄氏度<BR>&nbsp; &nbsp; &nbsp; &nbsp;但豆大的汗珠不断地从额头滴落钱有武定了定神<BR>&nbsp; &nbsp; &nbsp; &nbsp;找了一个装满热水的水壶紧紧地贴着胃<BR>&nbsp; &nbsp; &nbsp; &nbsp;直到热水冻成了冰块 </p><p>出发之前<BR>&nbsp; &nbsp; &nbsp; &nbsp;我就已经对阿里的苦做好了思想准备<BR>&nbsp; &nbsp; &nbsp; &nbsp;从北京到拉萨<BR>&nbsp; &nbsp; &nbsp; &nbsp;一路上我都构思着这次采访如何渲染那里的苦<BR>&nbsp; &nbsp; &nbsp; &nbsp;如何煽情当可供我吸取的氧气从充分、够用再到稀薄之后<BR>&nbsp; &nbsp; &nbsp; &nbsp;我的意识有点短路了都说高原的人话特别少<BR>&nbsp; &nbsp; &nbsp; &nbsp;钱有武这个28年的老高原同样出奇地寡言<BR>&nbsp; &nbsp; &nbsp; &nbsp;和他一桌吃饭时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他低调得让你往往就忽略了他的存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;只有在有人指着桌上绿油油的新鲜蔬菜告诉你“今天我们能吃到这些<BR>&nbsp; &nbsp; &nbsp; &nbsp;可都是钱部长的功劳”时<BR>&nbsp; &nbsp; &nbsp; &nbsp;他才会不好意思地笑笑<BR>&nbsp; &nbsp; &nbsp; &nbsp;用浑厚的男低音说：“这是大家一起努力的结果” </p>  (责任编辑：admin)
+<img border="0" alt="为了留住绿色" src="/images/lenfeng_7046.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',7046)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',7046)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(7046);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuatecno/20155614.html'>传统的教学过程往往以教师为主</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecuatecno/20157768.html'>三年级的习 当前</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=7046" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=7046&title=为了留住绿色" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=7046" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=7046" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="7046" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=7046&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '7046');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>

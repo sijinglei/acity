@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META content="MSHTML 6.00.2900.6036" name=GENERATOR>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>由于权力客体的客观存在|我的网站</title>
+<meta name="description" content="要构建政治学范畴体系通过对政治、政治学的分析 我们明确了政治学所研究的核心范畴是政治权力 因此从政治权力的层面我们必然要追寻权力的本体、 在当代中国政治和政治研究的发展中 " />
+<meta name="keywords" content="由于,权力,客体,客观存在,构建,政治学,范畴,体系,通过," />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/common.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="http://www.yizuocity.com/admin/article/a/templets/default/style/page.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function doZoom(size) 
+{ 
+      var zoom=document.all?document.all['mbtxfont']:document.getElementById('mbtxfont'); 
+        zoom.style.fontSize=size+'px'; 
+} 
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body>
+<div class="w960 center">
+    <div class="topnav">
+        <div class="fl">
+            <span id="welcome"></span>
+            <span id="showAsks" class="pl8"></span>
+        </div>
+        <div class="fr link">
+            <a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank" class="rss">RSS订阅</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>
+        </div>
+    </div>
+    <div class="header mt8">
+        <div class="logo fl">
+            <a href="http://shuju28.precise-connection.com.cn">
+                <img src="http://www.yizuocity.com/admin/article/a/templets/default/img/logo.gif" alt="我的网站" /></a>
+        </div>
+        <div class="banner1 fl pl8">
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/head_468.js"></script>        </div>
+        <div class="banner2 fl pl8">
+<a href="/tougao.html"><img src="http://www.yizuocity.com/admin/article/a/templets/mobantx/img/banner2.gif" alt="我要投稿" /></a>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="navMenu" >
+        <ul>
+            <li class="hoveri"><a href='/'>教程</a></li>
+            
+            <li class="channel"><a href='http://www.lygsyw.com/include/data/a/'  rel='dropmenu1'>少林</a></li>
+            
+            <li class="channel"><a href='http://www.zyzginfo.com/images/lurd/a/'  rel='dropmenu336'>采集系统</a></li>
+            
+            <li class="channel"><a href='http://www.ahshtz.com/api/about/a/'  rel='dropmenu658'>巫医</a></li>
+            
+            <li class="channel"><a href='http://www.zzaidun.com/Tool/Css/a/'  rel='dropmenu692'>魔兽</a></li>
+            
+            <li class="channel"><a href='http://www.yataixiyu.com/images/dfj/a/'  rel='dropmenu367'>制造系统</a></li>
+            
+            <li class="channel"><a href='http://www.51kaso.com/admin/Public/a/'  rel='dropmenu35'>七煞</a></li>
+            
+            <li class="channel"><a href='http://www.darenaika.com/images/lurd/a/'  rel='dropmenu399'>任务系统</a></li>
+            <li class='hoverc'><a href='http://www.yizuocity.com/admin/article/a/'  rel='dropmenu727'>阿尔萨斯</a></li>
+            <li class="channel"><a href='http://www.weiboyewu.com/images/default/a/'  rel='dropmenu69'>进阶</a></li>
+            </ul>
+    </div>
+    <div id="HotSearch">
+        <div class="hot fl">
+            <h3>本月热词：</h3>
+            <ul>
+                </ul>
+        </div>
+        <div class="search fr">
+            <form name="formsearch" action="/plus/search.php" target="_blank">
+                <div class="form">
+                    <h3>搜索：</h3>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" class="sckey" id="search-keyword" value="在这里搜索..."
+                    onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                    <select name="searchtype" class="scsel" id="search-option">
+                        <option value="title" selected='1'>标题</option>
+                        <option value="titlekeyword">模糊</option>
+                    </select>
+                    <button type="submit" class="scbtn">搜索</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /header -->
+<!-- /header -->
+    <div class="clear" style="margin-top:5px;"></div>
+    <div id="mbtx" style="margin-bottom:5px;"></div>
+    <div class="mbody">
+        <div id="article_left">
+            <div id="lm_class">
+                <h5><ins>栏目分类</ins></h5>
+                <ul>
+                   <li><a href="http://fzlanting.com/admin/class/a/effectentertainment/" title="神泣私服发布">神泣私服发布</a></li><li><a href="http://www.51kaso.com/admin/Public/a/duokeep/" title="黑金传奇3">黑金传奇3</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/" title="生活技能">生活技能</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dynamicsbackup/" title="天堂私服">天堂私服</a></li><li><a href="http://www.weiboyewu.com/images/default/a/dustinsantiago/" title="传奇变态私服">传奇变态私服</a></li><li><a href="http://www.chinazhhj.com/admin/images/a/ebuyen/" title="合击连击传奇">合击连击传奇</a></li><li><a href="http://www.mrkeer.com.cn/images/ygy/a/dwilawyersminneapolis/" title="变态传奇网页游戏">变态传奇网页游戏</a></li><li><a href="http://wjwlcm.com/data/attachments/a/e2ers/" title="传奇个性行会封号">传奇个性行会封号</a></li><li><a href="http://www.ahshtz.com/api/about/a/ecodesigninternational/" title="1.76传奇合击私服">1.76传奇合击私服</a></li><li><a href="http://www.weiboyewu.com/images/default/a/dustbowlpercussion/" title="传奇登陆器">传奇登陆器</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dysonvacuumsreviews/" title="新开网通传奇私服发布网">新开网通传奇私服发布网</a></li><li><a href="http://www.yataixiyu.com/images/dfj/a/" title="制造系统">制造系统</a></li><li><a href="http://www.zbkxsq.com/admin/image/a/edemonic/" title="电信传奇SF发布网">电信传奇SF发布网</a></li><li><a href="http://www.chinahql.org.cn/Images/Face/a/eachchurcheachchildeachcommunity/" title="daneachchurcheachchildeachcommunidan">daneachchurcheachchildeachcommunidan</a></li><li><a href="http://www.gdglsq.com/images/lurd/a/easyway99/" title="超级变态传奇">超级变态传奇</a></li><li><a href="http://www.xgqfr.com/adminqfr/Images/a/dynamitedesignstudio/" title="传世新开sf">传世新开sf</a></li><li><a href="http://www.cowinvc.com/data/admin/a/ebaya3/" title="热血传奇连击私服">热血传奇连击私服</a></li><li><a href="http://www.51kaso.com/admin/Public/a/duplexglenellen/" title="176传奇私服">176传奇私服</a></li><li><a href="http://www.qhdzxw.com/admin/images/a/eftforsportsperformance/" title="最新开的传奇">最新开的传奇</a></li><li><a href="http://www.jcjhlw.com/images/qq/a/ebonygrannies/" title="传奇私服轻变">传奇私服轻变</a></li></ul>
+					
+
+            </div>
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">biantaichuanqi相关信息</h4>
+                <div class="soft_xg_box">
+                    <div id="soft_xg_tuij">
+                       
+                        <ul class="soft_xg_ul">
+                            <li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/201511881.html" target="_blank" title="目的体外研究羽扇豆醇在移植物抗宿主病中的作用">目的体外研究羽扇豆醇在移植物抗宿主病中的作</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/201511562.html" target="_blank" title="外文字符必须分清大白体">外文字符必须分清大白体</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/201510369.html" target="_blank" title="既不夺茶香又无熟汤气">既不夺茶香又无熟汤气</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20159505.html" target="_blank" title="中国论文网致力于学术杂志信息整理收录和投稿">中国论文网致力于学术杂志信息整理收录和投稿</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20159472.html" target="_blank" title="由于权力客体的客观存在">由于权力客体的客观存在</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20159101.html" target="_blank" title="农业管理信息化是农业农村信息化的重要组成部分">农业管理信息化是农业农村信息化的重要组成部</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20158302.html" target="_blank" title="图表题和图表注释需采用中文">图表题和图表注释需采用中文</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20157522.html" target="_blank" title="文稿一经发表">文稿一经发表</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20157498.html" target="_blank" title="数脉动风压系数等值线分布图">数脉动风压系数等值线分布图</a></li>
+<li><a href="http://www.yizuocity.com/admin/article/a/ecovit360/20157137.html" target="_blank" title="为了解决前线与后方在人力资源上的矛盾">为了解决前线与后方在人力资源上的矛盾</a></li>
+</ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tuijian_soft">
+               
+                <ul>
+                    <h3><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/" title="韩版传奇私服">韩版传奇私服</a></h3>
+<ul>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/201511940.html" title="以提供梗概为目的">以提供梗概为目的</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/201511535.html" title="关键词是反映论文主要内容的名词性术语">关键词是反映论文主要内容的名词性术语</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/201510044.html" title="随着波前像差技术的发展">随着波前像差技术的发展</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/20158961.html" title="《文理导航》系内蒙古社会科学联合会主管">《文理导航》系内蒙古社会科学联合会主管</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edwardpinestevens/20158944.html" title="即在他们心中播下兴趣的种子">即在他们心中播下兴趣的种子</a></li>
+
+</ul>
+                    <li><p class="simg">
+                            <a href="[field:arcurl /]" target="_blank" title="[field:fulltitle /]">
+                                <img src="[field:picname /]" width="16" height="16" />
+                            </a>
+                        </p>
+                        <p class="text">
+                            <strong>
+                               
+                            </strong>
+                            <br />
+                          
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="soft_xiangg">
+                <h4 class="soft_xg_title">广告赞助商</h4>
+                <div class="soft_xg_box" id="mbtx250220">                   
+                </div>
+            </div>
+
+            <div id="soft_down_ph">
+                <h5> <h3><a href="http://lzbjzs.com/apply/shfr/a/edvironmentaldesign/" title="二合一传奇私服">二合一传奇私服</a></h3>
+<ul>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edvironmentaldesign/201511576.html" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edvironmentaldesign/201511171.html" title="许多珍珠般的水泡纷纷冒出水面">许多珍珠般的水泡纷纷冒出水面</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edvironmentaldesign/20159141.html" title="一来稿文辞力求精炼">一来稿文辞力求精炼</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edvironmentaldesign/20158895.html" title="作者简介包括出生年月日学位主要研究与关注方向">作者简介包括出生年月日学位主要研究与关注</a></li>
+<li><a href="http://lzbjzs.com/apply/shfr/a/edvironmentaldesign/20158877.html" title="摘要必须拥有与论文同等量的主要信息">摘要必须拥有与论文同等量的主要信息</a></li>
+
+</ul></ul>
+                </div>
+            </div>
+        </div>
+        <div id="down_right">
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ biantaichuanqi- 文章列表
+                    <span>INTRODUCE</span>
+                </h3>
+                <div class="down_about_box">
+                    <div class="single">
+                        <h1>由于权力客体的客观存在</h1>
+                        <div class="meta singlemeta">
+                            <span>2014-10-20 03:41</span>
+                            <span>作者:侠客</span>
+                            <span>来源:未知</span>
+                            <span>浏览:
+                                <script src="/plus/count.php?view=yes&aid=9472&mid=1" type='text/javascript' language="javascript"></script>次</span>
+                            <span class="cmts">
+                                <a href="#down_comment">我要评论</a>
+                                <a href="/plus/feedback.php?aid=9472">
+                                    (条)</a></span>
+                            <span>字号:<a href="javascript:doZoom(16)" class="mfbig">大</a>
+                                <a href="javascript:doZoom(14)" class="mfmid mfcurrent">中</a>
+                                <a href="javascript:doZoom(12)" class="mfsml">小</a></span>
+                        </div>
+                    </div>
+                    <div class="entrycontent">
+                        <div class="entry">
+                            
+                            <p class="summary"><strong>摘要</strong>:要构建政治学范畴体系通过对政治、政治学的分析       我们明确了政治学所研究的核心范畴是政治权力       因此从政治权力的层面我们必然要追寻权力的本体、 在当代中国政治和政治研究的发展中   </p>
+                            
+                            <div class="content">
+                                <div id="mbtxfont">
+                                <table width='100%'>
+                                    <tr>
+                                        <td>
+                                            <div id="mbtx300250" style="float:right; clear:both; top:0; vertical-align:top;"></div>
+                                            要构建政治学范畴体系<p>通过对政治、政治学的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们明确了政治学所研究的核心范畴是政治权力<BR>&nbsp; &nbsp; &nbsp; &nbsp;因此从政治权力的层面我们必然要追寻权力的本体、 </p><p>在当代中国政治和政治研究的发展中<BR>&nbsp; &nbsp; &nbsp; &nbsp;马克思主义政治观一直占有主导地位<BR>&nbsp; &nbsp; &nbsp; &nbsp;概括起来有如下特点：政治是一种特定的社会关系；政治是更为基础的经济关系的集中体现；国家政权是政治的主体和根本问题；政治是一种有规律的社会现象 </p><p> 随着政治学研究的不断深入<BR>&nbsp; &nbsp; &nbsp; &nbsp;政治学科作为一门独立的学科体系已是不争的事实<BR>&nbsp; &nbsp; &nbsp; &nbsp;不同的观点必然提出其学科范畴体系构建的不同思路文章从构建政治学范畴体系的总体要求出发<BR>&nbsp; &nbsp; &nbsp; &nbsp;以解构政治及政治学的含义为切入点<BR>&nbsp; &nbsp; &nbsp; &nbsp;提出以权力为中心构建政治学范畴体系新的思路 </p><p>综观以上分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;由于人们的观察点、立足点不同<BR>&nbsp; &nbsp; &nbsp; &nbsp;使得对政治的理解和解释完全不一致杰弗里?庞顿说过：我们最好不要将一种概念视为某种固有的客观东西也就是说对政治的定义<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们无须也不可能用一个单一的模式、方式等框架结构将其固定(这在实质上也是没有必要的)然而我们通过对政治诠释性的定义<BR>&nbsp; &nbsp; &nbsp; &nbsp;透过其现象的描述、对本质的分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们仍不难发现他们对政治的理解有着如下的共识：(1)政治是在以国家存在为前提条件下的一种社会关系；(2)政治所探讨的是一种力量或者说是公共权力的表现、运作及其内在机制；等等这就是说<BR>&nbsp; &nbsp; &nbsp; &nbsp;在政治的范畴中公共权力是其核心和本质由此<BR>&nbsp; &nbsp; &nbsp; &nbsp;为我们进一步理解政治学研究的对象及其本质的内核找到了切入点 </p><p>【xzbu】郑重<p>3．坚持马克思主义的发展观是政治学范畴体系不断丰富完善的唯一途径马克思主义的发展观揭示了事物发展的客观规律任何一门学科都是开放的<BR>&nbsp; &nbsp; &nbsp; &nbsp;不断发展丰富的<BR>&nbsp; &nbsp; &nbsp; &nbsp;政治学也毫不例外<BR>&nbsp; &nbsp; &nbsp; &nbsp;它作为一门独立的学科体系也伴随着社会、经济的发展进步而前进它一方面会从政治学已有的内容中进行取舍<BR>&nbsp; &nbsp; &nbsp; &nbsp;另一方面也会从广泛的社会实践中<BR>&nbsp; &nbsp; &nbsp; &nbsp;从其他学科的成果中汲取有益成分来不断地丰富完善自己因而<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们对政治学体系的构建也是一个渐进的过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;而非固定的框架和模式 </p><p>政治学的定义显然也只能以政治定义为基准<BR>&nbsp; &nbsp; &nbsp; &nbsp;不同的政治理解必然表现出对政治学的定义的差异从马克思主义的政治观来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;政治活动的核心就是国家政权因此<BR>&nbsp; &nbsp; &nbsp; &nbsp;国家政权是所有阶级社会上层建筑的核心部分<BR>&nbsp; &nbsp; &nbsp; &nbsp;是政治上层建筑的主体也就是说<BR>&nbsp; &nbsp; &nbsp; &nbsp;政治学应抓住政治中最本质、最根本的问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;即国家政权问题作为主要的研究对象其实结合上述分析<BR>&nbsp; &nbsp; &nbsp; &nbsp;即我们在剖析各家关于政治概念的诠释时<BR>&nbsp; &nbsp; &nbsp; &nbsp;已窥见到政治学包含着以下核心的要义：政治学是研究政治运作、变化及其规律的科学从本质上看<BR>&nbsp; &nbsp; &nbsp; &nbsp;它所揭示的是在国家中对政治权力的探讨<BR>&nbsp; &nbsp; &nbsp; &nbsp;也就是说对权力的研究是其核心范畴<BR>&nbsp; &nbsp; &nbsp; &nbsp;伴随着权力运作方式、模式等是其必然拓展的范畴系统由此<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们在建构政治学范畴体系时<BR>&nbsp; &nbsp; &nbsp; &nbsp;权力必然是其体系建构的核心<BR>&nbsp; &nbsp; &nbsp; &nbsp;而其体系的构建是依此为中心依托的展开 </p><p>正确认识政治和政治学是构建政治学范畴体系的切入点政治是什么?这是一个古老而又新鲜的话题对于这个问题<BR>&nbsp; &nbsp; &nbsp; &nbsp;可以说自从国家(城邦)产生以来<BR>&nbsp; &nbsp; &nbsp; &nbsp;人们就在苦苦地思索、不懈地探索<BR>&nbsp; &nbsp; &nbsp; &nbsp;但仍达不成共识因为政治学者由于各自的立场、方法不同<BR>&nbsp; &nbsp; &nbsp; &nbsp;几乎都有自己对政治的理解和表述概言之<BR>&nbsp; &nbsp; &nbsp; &nbsp;对政治的定义主要有以下几种观点：政治是一种社会价值追求、一种规范性的道德；政治是一种超自然超社会力量的体现或外化；政治是对于权力的追求和运用；政治是一种管理活动 </p><p>一门学科范畴体系的构建<BR>&nbsp; &nbsp; &nbsp; &nbsp;不可能以个人的主观随意性<BR>&nbsp; &nbsp; &nbsp; &nbsp;想当然地去组织、拼合它的体系结构<BR>&nbsp; &nbsp; &nbsp; &nbsp;必须从学科本质的特征出发<BR>&nbsp; &nbsp; &nbsp; &nbsp;依托于一定的理论基础<BR>&nbsp; &nbsp; &nbsp; &nbsp;遵循相应的组织原则<BR>&nbsp; &nbsp; &nbsp; &nbsp;揭示学科构建的科学规律那么<BR>&nbsp; &nbsp; &nbsp; &nbsp;构建政治学范畴体系的依据所把握的总体要求又在哪里呢? </p><p>1．马克思主义的认识方法论是我们构建政治学范畴体系的指导思想马克思主义的认识方法论是科学的世界观和方法论<BR>&nbsp; &nbsp; &nbsp; &nbsp;它为我们正确认识事物、洞悉事物的本质提供方法论的指导<BR>&nbsp; &nbsp; &nbsp; &nbsp;我们不妨看看列宁在《哲学笔记》中吸收黑格尔的合理思想所提出的一些观点(1)任何一门科学的思想体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;就是表述这门科学的全部内容的思想过程<BR>&nbsp; &nbsp; &nbsp; &nbsp;这个过程必然是从抽象到具体这是符合人的认识过程的人认识一个对象时总是从抽象到具体<BR>&nbsp; &nbsp; &nbsp; &nbsp;科学体系从抽象到具体的安排<BR>&nbsp; &nbsp; &nbsp; &nbsp;最便于人对这个对象的了解从抽象到具体的过程也是从少到多、从简单到复杂、从表层到深层、从平面到立体、从现象到本质的过程(2)一个科学体系的起点应该是这个体系最抽象的东西如马克思认为商品是人类现代经济生活最抽象的东西<BR>&nbsp; &nbsp; &nbsp; &nbsp;商品便成为他的政治经济学的起点(3)推动从抽象到具体的过程的内在动力是对立统一规律<BR>&nbsp; &nbsp; &nbsp; &nbsp;每一个原理应符合矛盾运动的形式 </p><p>(5)政治行为是指政治活动运行的外在表现形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;其基本范畴有政治斗争、政治管理和政治参与等(6)政治发展及其规律所探讨的是以研究政治运行发展变化及其规律为目的的<BR>&nbsp; &nbsp; &nbsp; &nbsp;尽管目前尚无共识的定义形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;但作为政治学所研究的基本范畴已成事实 </p><p>肖锋<BR>&nbsp; &nbsp; &nbsp; &nbsp;广东外语外贸大学校长办公室<BR>&nbsp; &nbsp; &nbsp; &nbsp;广东广州；吴大兵<BR>&nbsp; &nbsp; &nbsp; &nbsp;重庆社会科学院副研究员<BR>&nbsp; &nbsp; &nbsp; &nbsp;重庆 </p><p>织和管理分析、组织理论和行为、人事行政等(6)国际关系包括国际政治理论、国际组织、国际政治格局、<img src="http://shuju28.precise-connection.com.cn/uploads/allimg/141020/03411I527-0.jpg" width="600px" height="400px" />世界性和地区性战略研究、国际战略研究等(7)政治学方法论包括政治学研究的根本方法、定量分析、个案研究以及政治系统分析、结构功能分析、政治行为分析、政治沟通分析、政治精英分析、政治团体分析、政治决策分析等 </p><p>3．从权力的客体来看权力客体是相对于权力主体而言的<BR>&nbsp; &nbsp; &nbsp; &nbsp;是权力主体作用的对象、环境及其运行方式等等它包括政治环境、政治文化、民主政治等由于权力客体的客观存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;所有的要素也在一定程度上揭示了权力本体的基本要素<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是它们交汇之处<BR>&nbsp; &nbsp; &nbsp; &nbsp;并不存在矛盾冲突<BR>&nbsp; &nbsp; &nbsp; &nbsp;是统一的 </p><p>2．学界对政治学研究的丰硕成果是构建政治学范畴体系的基础政治研究是一门具有悠久历史传统的学问<BR>&nbsp; &nbsp; &nbsp; &nbsp;古今中外人们始终如一地对政治学研究投入巨大的热情<BR>&nbsp; &nbsp; &nbsp; &nbsp;政治学已成为现代社会科学体系中一门具有独立地位的重要科学自1980年中国政治学恢复后<BR>&nbsp; &nbsp; &nbsp; &nbsp;中国政治学界以及其他学科的学者对政治学的研究和发展做了卓有成效的实质性工作<BR>&nbsp; &nbsp; &nbsp; &nbsp;对政治、政治学的基本概念、范畴体系等进行了具有开创性的探索<BR>&nbsp; &nbsp; &nbsp; &nbsp;并在众多的研究领域形成共识<BR>&nbsp; &nbsp; &nbsp; &nbsp;拓展了政治学研究的对象、范围和方向因而为政治学范畴体系的构建奠定了根基 </p><p>2．从权力的主体来看权力的主体所探讨的是权力运作的执行者或实施者及其对象从古希腊的柏拉图到近现代的马克思、马克斯?韦伯、罗尔斯等等<BR>&nbsp; &nbsp; &nbsp; &nbsp;一直到当代的政治学研究发展的方向和趋势国家(亚里士多德所言的城邦)一直是政治学研究的范畴<BR>&nbsp; &nbsp; &nbsp; &nbsp;并在长时期里成为一部分研究者研究领域的核心范畴但必须明确的是<BR>&nbsp; &nbsp; &nbsp; &nbsp;国家只是作为政治权力主体的核心范畴<BR>&nbsp; &nbsp; &nbsp; &nbsp;而非政治本身的核心范畴<BR>&nbsp; &nbsp; &nbsp; &nbsp;也就是说从属于权力核心范畴可以说国家作为权力主体范畴的核心地位是不争的事实这样伴随着国家这一主体的存在<BR>&nbsp; &nbsp; &nbsp; &nbsp;与之并存的阶级、革命以及其中两个重要的范畴</p><p>4．对政治学的正确认识是构建政治学范畴体系的关键要使中国政治学理论体系更加完善<BR>&nbsp; &nbsp; &nbsp; &nbsp;政治学就必须走向科学<BR>&nbsp; &nbsp; &nbsp; &nbsp;即要在马克思主义、邓小平理论和“三个代表”重要思想的指导下<BR>&nbsp; &nbsp; &nbsp; &nbsp;建立有特定研究对象的政治学理论体系<BR>&nbsp; &nbsp; &nbsp; &nbsp;克服政治泛化和政治概念狭隘化的影响政治学不能什么都研究<BR>&nbsp; &nbsp; &nbsp; &nbsp;不能把什么社会现象都作为政治现象来研究从研究对象看<BR>&nbsp; &nbsp; &nbsp; &nbsp;对象是否明确是一门学科能否成立的首要前提从内容上看<BR>&nbsp; &nbsp; &nbsp; &nbsp;一门学科的对象<BR>&nbsp; &nbsp; &nbsp; &nbsp;决定学科的内容一门学科的内容包括两个方面：一是对象的主要组成部分及其结构；二是对象的运动及其规律从内容的逻辑安排看<BR>&nbsp; &nbsp; &nbsp; &nbsp;从抽象到具体<BR>&nbsp; &nbsp; &nbsp; &nbsp;从简单到复杂<BR>&nbsp; &nbsp; &nbsp; &nbsp;从客观到主观<BR>&nbsp; &nbsp; &nbsp; &nbsp;这几乎成为任何学科构成体系的顺序<BR>&nbsp; &nbsp; &nbsp; &nbsp;这种顺序符合认识的规律<BR>&nbsp; &nbsp; &nbsp; &nbsp;符合认识的历史<BR>&nbsp; &nbsp; &nbsp; &nbsp;也便于读者对一个思想体系的理解那么构建政治学范畴体系的着眼点又在哪里呢?于此<BR>&nbsp; &nbsp; &nbsp; &nbsp;笔者从对政治学的正确认识人手分析和论述政治学范畴体系的构建问题 </p><p>从其表现形式上看<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是其处于从属的地位层面《中国大百科全书(政治卷)》从较为宽泛的角度把政治学范畴概括为七个方面：政治学原理、比较政治、公共政策、国际政治和政治学方法等(1)政治学理论包括马克思主义政治学原理、中国和外国政治思想史、当代政治学理论和政治哲学、政治学的基本概念和范畴、社会的意识形态体系等(2)中国政治包括中国的政治史、社会主义中国的政治结构、政府体制、党的领导和建设、地方政府、统一战线问题、人民与政治家问题、中国的政治心理、政治参与过程、政治发展等(3)比较政治包括各国的政治制度的模式、政治形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;一些主要国家的政治制度史和现行政府体制、政治过程、精英人物和一些国家特别是第三世界国家的政治发展、政治变迁及其各种模式以及地区研究和国家研究等(4)公共政治包括公共政策理论、政策分析、决策的模型研究及其福利政策、教育对象、种族政策、外交政策、军事政策的研究等(5)公共行政包括行政管理、行政法学、比较行政、组</p><p>1．从权力的本体来看<BR>&nbsp; &nbsp; &nbsp; &nbsp;作为政治权力的本体所探讨的自然是政治权力自身的结构、要素及其内部机制具体来讲可从两个层面来展开从内部机制的层面看<BR>&nbsp; &nbsp; &nbsp; &nbsp;这是一个处于基础的层面它应该包括如下范畴：政治关系、政治思想、政治行为、政治发展及其规律等(1)政治关系是人们在社会生活中<BR>&nbsp; &nbsp; &nbsp; &nbsp;基于特定的利益要求而形成的<BR>&nbsp; &nbsp; &nbsp; &nbsp;以政治强制力量和权利分配为特征的社会关系它是人类社会政治的本质内容<BR>&nbsp; &nbsp; &nbsp; &nbsp;其他一切政治现象都是政治关系的外化和具体形态表现从本质上看它包括：利益与政治、政治权利等(2)政治制度是指政治行为方式在国家权力活动的表现形式民主与专制是两种基本形式<BR>&nbsp; &nbsp; &nbsp; &nbsp;目前集中表现为资本主义民主制度与社会主义民主制度它包括人们的政治观念形态、政治思想及其评判等(4)政治文化是指一个国家中的阶级、团体和个人<BR>&nbsp; &nbsp; &nbsp; &nbsp;在长期的社会历史文化传统的影响下形成的某种特定的政治价值观念、政治心理和政治行为模式它具体包括以下范畴：政治意识、政治行为标准、政治价值评价、政治情感、政治心理等</p><p>权力的客体<BR>&nbsp; &nbsp; &nbsp; &nbsp;这三者不仅处于政治学范畴体系的第二个层次<BR>&nbsp; &nbsp; &nbsp; &nbsp;而且由此演绎构建起整个政治学范畴的体系框架 </p>  (责任编辑：admin)
+<img border="0" alt="由于权力客体的客观存在" src="/images/lenfeng_9472.jpg" width="0" height="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                                <div class="dede_pages">
+                                    <ul class="pagelist">
+                                        </ul>
+                                </div>
+                            </div>
+                            <!-- //顶踩 -->
+                            <div class="newdigg" id="newdigg">
+                                <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',9472)">
+                                    <div class="digg_act">顶一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                                <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',9472)">
+                                    <div class="digg_act">踩一下</div>
+                                    <div class="digg_num">(0)</div>
+                                    <div class="digg_percent">
+                                        <div class="digg_percent_bar">
+                                            <span style="width:0%"></span>
+                                        </div>
+                                        <div class="digg_percent_num">0%</div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- //顶踩部份的源码结束 -->
+							<script language="javascript" type="text/javascript">getDigg(9472);</script>
+                            <!-- //分享代码开始 -->
+                            <!-- JiaThis Button BEGIN -->
+                            <div class='feixiangjia'>
+                                <div id="ckepop" class='feixiangjias'>
+                                    <a href="http://www.mobantianxia.cn/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">分享到：</a>
+                                    <a class="jiathis_button_qzone">QQ空间</a>
+                                    <a class="jiathis_button_tsina">新浪微博</a>
+                                    <a class="jiathis_button_kaixin001">开心网</a>
+                                    <a class="jiathis_button_renren">人人网</a>
+                                    <a class="jiathis_button_baidu">百度搜藏</a>
+                                    <a class="jiathis_button_douban">豆瓣</a>
+                                    <a class="jiathis_button_tqq">腾讯微博</a>
+                                </div>
+                            </div>
+                            <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                            <!-- //分享代码结束 -->
+                            <div class="boxoff">
+                                <strong>------分隔线----------------------------</strong>
+                            </div>
+                            <div class="handle">
+                                <div class="context">
+                                    <ul>
+                                        <li>上一篇：<a href='http://www.yizuocity.com/admin/article/a/ecovit360/20159101.html'>农业管理信息化是农业农村信息化的重要组成部分</a> </li>
+                                        <li>下一篇：<a href='http://www.yizuocity.com/admin/article/a/ecovit360/20159505.html'>中国论文网致力于学术杂志信息整理收录和投稿</a> </li></ul>
+                                </div>
+                                <!-- /context -->
+                                <div class="actbox">
+                                    <ul>
+                                        <li id="act-fav">
+                                            <a href="/plus/stow.php?aid=9472" target="_blank">收藏</a>
+                                        </li>
+                                        <li id="act-err"><a href="/plus/erraddsave.php?aid=9472&title=由于权力客体的客观存在" target="_blank">挑错</a>
+                                        </li>
+                                        <li id="act-pus"><a href="/plus/recommend.php?aid=9472" target="_blank">推荐</a>
+                                        </li>
+                                        <li id="act-pnt">
+                                            <a href="#" onClick="window.print();">打印</a>
+                                        </li></ul>
+                                </div>
+                                <!-- /actbox -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                    <!--百度谷歌广告 开始-->
+                    <div class="soft_teb_sm">
+                        <h6 class="biaoti">
+                            <ins>特别说明</ins>
+                        </h6>
+                      
+                    </div>
+                    <!--百度谷歌广告 结束-->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="down_r_cent">
+                <a name="xiazai_dizhi" id="xiazai_dizhi"></a>
+                <h3 class="down_rurl_title"><span id="myip"></span>◎ 广告赞助</h3>
+                <div class="down_url_box">
+                    <div id="mbtx64060"></div>
+                </div>
+            </div>
+            <!-- //AJAX评论区 开始-->
+                        <div id="down_comment">
+                <!-- //主模板必须要引入/include/dedeajax2.js -->
+                <a name='postform'></a>
+                <div id="comment_left">
+                    <div class="title">
+                        <span id="downComment1" class="hover">◎最新评论</span>
+                    </div>
+                    <div class="comment_left_box">
+                        <a name='commettop'></a>
+                        <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+                        <ul class="comment_list" id='commetcontentNew'></ul>
+                        <ul class="comment_list" id='commetcontent'></ul>
+                        <div class="comment_ckall">
+                            <a href="/plus/feedback.php?aid=9472" target="_blank" style="color:red;">查看全部评论 >></a>
+                        </div>
+                        <!--评论输入信息区域 开始-->
+                        <div class="comment_info">
+                            <h6 class="comment_kanfa">谈谈您对该文章的看</h6>
+                            <form action="#" method="post" name="feedback">
+                                <input type="hidden" name="dopost" value="send" />
+                                <input type="hidden" name="comtype" value="comments">
+                                <input type="hidden" name="aid" value="9472" />
+                                <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                                <dl>
+                                    <dd><span> 表　　情：</span></dd>
+                                    <dt>
+                                           
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dd>评论内容：</dd>
+                                    <dt>
+                                        <textarea cols="60" name="msg" rows="5" class="comm_info_sr"></textarea>
+                                    </dt>
+                                </dl>
+                                <dl>                                    
+                                    <dt id="_ajax_feedback">
+                                        <!--未登陆-->                                      
+
+								                                    
+                                        <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+                                        <label for="dcmp-submit-guest" /> 匿名?</label>
+                                          
+                                        <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" /><label for="dcmp-stand-neu"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-neu.gif" />中立</label>
+                                        <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" /><label for="dcmp-stand-good"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-good.gif" />好评</label>
+                                        <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" /><label for="dcmp-stand-bad"><img src="http://www.yizuocity.com/admin/article/a/templets/default/images/cmt-bad.gif" />差评</label>
+                                           
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dd></dd>
+                                    <dt>
+                                        <button type="button" class="comment_but" value="发表评论" onClick='PostComment()'>发表评论</button>
+                                        <span class="comemnt_sm">* 请注意用语文明且合法，谢谢合作 审核后才会显示！ Ctrl+回车 可以直接发表</span>
+                                    </dt>
+                                </dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax_mbtx.php?dopost=getlist&aid=9472&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '9472');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax_mbtx.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+            <!-- //AJAX评论区 结束-->
+            <div class="down_r_cent">
+                <h3 class="down_r_title">◎ 阅读说明<span>READ EXPLANATION</span></h3>
+                <div class="down_about_box">
+                    <p>☉推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+☉如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+☉如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+☉本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- /footer -->
+        <!-- /footer -->
+    <div class="clear">
+    </div>
+    <!-- //二级子类下拉菜单，考虑SEO原因放置于底部 -->
+    <script type='text/javascript' src='/images/js/dropdown.js'></script>
+    
+    <script type="text/javascript">cssdropdown.startchrome("navMenu")</script>
+    <div class="footer mt8">
+        <div class="link mt8">
+            <a onclick="jscript:window.external.AddFavorite(document.location.href,document.title);" href="javascript:;">加入收藏</a>|
+            <a href="/tags.html" target="_blank">TAG标签</a>|
+            <a href="/data/rssmap.html" target="_blank">RSS订阅</a>|
+			<a href="http://www.bbscms.net" target="_blank">技术支持</a>|
+            <a href="/rss.php" target="_blank">全站RSS</a>|
+            <a href="/data/sitemap.html" target="_blank">网站地图</a>|统计代码
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  
+            <br />
+        
+<script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/mobantx/js/footer.js"></script>
+            <br />
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="http://www.yizuocity.com/admin/article/a/templets/default/js/common.js">
+    </script>
+    <div id="mbtx96060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg96060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx").innerHTML = document.getElementById("mbtx96060").innerHTML;
+        document.getElementById("mbtx96060").innerHTML = "";
+    </script>
+    <!-- /footer -->
+    <!-- /footer --> 
+    <div id="gg64060" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg64060.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx64060").innerHTML = document.getElementById("gg64060").innerHTML;
+        document.getElementById("gg64060").innerHTML = "";
+    </script>
+    <div id="gg300250" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg300250.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx300250").innerHTML = document.getElementById("gg300250").innerHTML;
+        document.getElementById("gg300250").innerHTML = "";
+    </script>
+    <div id="gg250220" style="display:none">
+        <div style="margin-top:2px; margin-bottom:1px;">
+            <script language='javascript' src='http://www.yizuocity.com/admin/article/a/templets/default/js/gg250220.js'>
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("mbtx250220").innerHTML = document.getElementById("gg250220").innerHTML;
+        document.getElementById("gg250220").innerHTML = "";
+    </script>
+</div>
+</body>
+</html>
