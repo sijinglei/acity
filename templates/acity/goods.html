@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美食 - {config.webname}</title>
+<link media="screen" type="text/css" href="<%templateskin%>/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/base.js"></script>
+ <script type="text/javascript" src="<%templateskin%>/js/style.js"></script>
+</head>
+
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+<!--网站位置-->
+<div class="crumbs-wrap">
+  <div class="wrapper"> 
+    <!-- 面包屑 -->
+    <div class="crumbs left">当前位置 - <a title="返回首页" href="/">首页</a> -
+      <a href="<%linkurl("goods")%>" title="查看美食" rel="category tag">美食</a></div>
+    <!-- 面包屑end --> 
+  </div>
+</div>  
+
+<div class="container wrapper">
+  <div class="wrap">
+    <div class="content-wrap left">
+      <div class="content" id="main">
+        <ul id="foods">
+        <%set DataTable goods_list=get_article_list("goods", 0, 40, "status=0 and is_red=1")%>
+          <%foreach(DataRow dr in goods_list.Rows)%>
+            <li><a href="<%linkurl("goods_show",{dr[id]})%>"><img src="{dr[img_url]}"></a><p>{dr[title]}</p></li>
+            <%/loop%>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar right">
+  <div class="sidebar-widget widget_calendar">
+  <h3>日历</h3><div id="calendar_wrap">
+
+    </div>
+    </div>
+             <div class="it-list">
+        <h3 class="h3">美食</h3>
+     	<div class="redfood">
+            <ul>
+                  <%set DataTable category_list1=get_category_child_list("goods", 0)%>
+            <%loop cdr1 category_list1%>
+            <li><a href="<%linkurl("goods_show",{cdr1[id]})%>">{cdr1[title]}</a></li>
+            <%/loop%>
+            </ul>
+        </div>
+        </div>
+        <div class="focus_list">
+        <h3 class="h3">美食推荐</h3>
+        <ul>
+          <%set DataTable redfoods=get_article_list("goods", 0, 6, "is_red=1 and img_url<>''")%>
+          <%foreach(DataRow dr in redfoods.Rows)%>
+          <li>
+            <a title="{dr[title]}" href="<%linkurl("photo_show",{dr[id]})%>">
+              <img src="{dr[img_url]}" alt="{dr[title]}" />
+              <span>{dr[title]}</span>
+            </a>
+          </li>
+          <%/foreach%>
+        </ul>
+      </div>
+      <div class="focus_list">
+        <h3 class="h3">友情链接</h3>
+        <ul>
+           <%set DataTable linkList1=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=0 and is_red=1")%>
+      <%foreach(DataRow dr in linkList1.Rows)%>
+      <li><a target="_blank" href="{dr[site_url]}" rel="nofollow">{dr[title]}</a></li>
+      <%/foreach%>
+        </ul>
+      </div>
+    </div>
+      </div>
+    </div>
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>

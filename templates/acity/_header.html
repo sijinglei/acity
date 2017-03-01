@@ -1,0 +1,62 @@
+<script type="text/javascript">
+    $(function () {
+        $("#menu > li").hover(function () { $(this).children(".sub-menu").fadeIn('slow'); }, function () { $(this).children(".sub-menu").fadeOut('slow'); });
+    })
+</script>
+<div class="header">
+<div class="header-content wrapper">
+	 <div class="hgroup">
+      <h1 class="left"><a href="http://www.yizuocity.com/" title="一座城池"> 一座城池 </a></h1>
+      <span class="blog-title left">成功就是不懈的努力加上一点点机会，努力是加法，机会是乘法，两者兼备才会得到最大的结果！</span></div>
+    <!-- logoend --> 
+    <!-- 搜索 -->
+    <div class="search-form right">
+      <input class="search-input" id="keywords" name="keywords" type="text" placeholder="站内搜索…" onkeydown="if(event.keyCode==13){SiteSearch('<%linkurl("search")%>', '#keywords');return false};" >
+      <span class="search-submit right">
+      <input title="站内搜索" type="submit" value="" onclick="SiteSearch('<%linkurl("search")%>', '#keywords');">
+      </span>
+        </div>
+</div>
+
+  <div class="clearfix"></div>
+  <div class="header-nav">
+    <div class="header-menu">
+      <ul id="menu" class="menu">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/">首页</a></li>
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children"> <a href="<%linkurl("news")%>">编程开发</a>
+          <ul class="sub-menu">
+              <%set DataTable dtNew=get_category_child_list("news", 0)%>
+<%foreach(DataRow dr in dtNew.Rows)%>
+            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<%linkurl("news_list",{dr[id]})%>">{dr[title]}</a></li>
+              <%/foreach%>
+          </ul>
+        </li>
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<%linkurl("down")%>">资源下载</a>
+             <ul class="sub-menu">
+                <%set DataTable dtdown=get_category_child_list("down", 0)%>
+<%foreach(DataRow dr in dtdown.Rows)%>
+            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<%linkurl("down_list",{dr[id]})%>">{dr[title]}</a></li>
+              <%/foreach%>
+                 </ul>
+        </li>
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children"><a href="<%linkurl("goods")%>">美食</a>
+          <ul class="sub-menu">
+                    <%set DataTable dtFood=get_category_child_list("goods", 0)%>
+<%foreach(DataRow dr1 in dtFood.Rows)%>
+            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<%linkurl("goods_list",{dr1[id]})%>">{dr1[title]}</a></li>
+              <%/foreach%>
+          </ul>
+        </li>
+        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children"><a href="<%linkurl("photo")%>">影音娱乐</a> 
+          <ul class="sub-menu">
+                 <%set DataTable dtphoto=get_category_child_list("photo", 0)%>
+<%foreach(DataRow dr2 in dtphoto.Rows)%>
+            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<%linkurl("photo_list",{dr2[id]})%>">{dr2[title]}</a></li>
+  <%/foreach%>
+          </ul>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%linkurl("content","about")%>">关于博主</a></li>
+      </ul>
+    </div>
+  </div>
+ </div> 

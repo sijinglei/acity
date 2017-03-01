@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>影音娱乐 - {config.webname}</title>
+<link media="screen" type="text/css" href="<%templateskin%>/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/base.js"></script>
+ <script type="text/javascript" src="<%templateskin%>/js/style.js"></script>
+</head>
+
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+<!--网站位置-->
+<div class="crumbs-wrap">
+  <div class="wrapper"> 
+    <!-- 面包屑 -->
+    <div class="crumbs left">当前位置 - <a title="返回首页" href="/">首页</a> -
+      <a href="<%linkurl("photo")%>" title="查看影音娱乐" rel="category tag">影音娱乐</a></div>
+    <!-- 面包屑end --> 
+  </div>
+</div>  
+    
+<div class="container wrapper">
+  <div class="wrap">
+    <div class="content-wrap left">
+      <div class="content main-media" id="main">
+          <%set DataTable goods_list=get_article_list("photo", 0, 18, "status=0 and is_red=1")%>
+          <%foreach(DataRow dr in goods_list.Rows)%>
+      <%set string category_nav=get_category_menu("photo_list",{strtoint({dr[category_id]})} )%>
+          <%set string cateName=get_category_title({strtoint({dr[category_id]})} , "影音娱乐")%>
+          <%set string author=get_article_field({strtoint({dr[id]})},"author" )%>
+          <%set string mp3=get_article_field({strtoint({dr[id]})},"mp3_url" )%>
+           <%if {strtoint({dr[category_id]})}!=41%>
+         <div class="post-list">
+          <div class="post-content">
+              <h2><a href="<%linkurl("photo_show",{dr[id]})%>">{dr[title]}</a></h2>
+              <div class="postlist-info">
+                  <div class="postlist-info">
+                  <a class="fn" href="<%linkurl("photo_show",{dr[id]})%>">{author}</a> / 
+                  <time datetime="2014-05-15"><%datetostr({dr[add_time]},yyyy年MM月dd日)%></time> / 
+                  <a href="<%linkurl("photo_list",{dr[id]})%>" title="查看{cateName}中的全部文章" rel="category tag">{cateName}</a> /
+                   </div>
+              </div>
+              <div class="thumbnail_box bd">
+                  <div class="thumbnail"><a href="<%linkurl("photo_show",{dr[id]})%>" title="{dr[title]}">
+                      <img src="{dr[img_url]}" class="attachment-full wp-post-image" alt="{dr[title]}" /></a>
+                  </div></div>
+              <%if {strtoint({dr[category_id]})}==25%>
+              <audio src="{mp3}" controls="controls"></audio>
+              <%/if%>
+             <span class="entry-content"><%cutstring({dr[zhaiyao]},200)%></span>
+              <div class="clear"></div>
+              <%if {dr[seo_keywords]}!=""%>
+              <div class="tags">
+                  <a class="bg" style="background:#6C9" href="#" rel="tag">{dr[seo_keywords]}</a>
+           </div>
+              <%/if%>
+          </div></div>
+          <%/if%>
+            <%/loop%>
+      
+      </div>
+    </div>
+    <div class="sidebar right">
+  <div class="sidebar-widget widget_calendar">
+  <h3>日历</h3><div id="calendar_wrap">
+
+    </div>
+    </div>
+             <div class="it-list">
+        <h3 class="h3">影音娱乐</h3>
+     	<div class="redfood">
+            <ul>
+                  <%set DataTable category_list1=get_category_child_list("photo", 0)%>
+            <%loop cdr1 category_list1%>
+            <li><a href="<%linkurl("photo_list",{cdr1[id]})%>">{cdr1[title]}</a></li>
+            <%/loop%>
+            </ul>
+        </div>
+        </div>
+      <div class="focus_list">
+        <h3 class="h3">小编推荐</h3>
+        <ul>
+          <%set DataTable redphoto=get_article_list("photo", 0, 6, "is_red=1 and img_url<>''")%>
+          <%foreach(DataRow dr in redphoto.Rows)%>
+          <li>
+            <a title="{dr[title]}" href="<%linkurl("photo_show",{dr[id]})%>">
+              <img src="{dr[img_url]}" alt="{dr[title]}" />
+              <span>{dr[title]}</span>
+            </a>
+          </li>
+          <%/foreach%>
+        </ul>
+      </div>
+          <div class="focus_list">
+        <h3 class="h3">友情链接</h3>
+        <ul>
+           <%set DataTable linkList1=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=0 and is_red=1")%>
+      <%foreach(DataRow dr in linkList1.Rows)%>
+      <li><a target="_blank" href="{dr[site_url]}" rel="nofollow">{dr[title]}</a></li>
+      <%/foreach%>
+        </ul>
+      </div>
+    </div>
+      </div>
+    </div>
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>

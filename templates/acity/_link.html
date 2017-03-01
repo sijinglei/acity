@@ -1,0 +1,20 @@
+﻿  <!--Links-->
+  <div class="ilink_list">
+    <h3><!--<span class="graylink"><a href="<%linkurl("link")%>" target="_blank">更多...</a></span>-->友情链接</h3>
+    <p class="txt">
+      <%set DataTable linkList1=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=0 and is_red=1")%>
+      <%foreach(DataRow dr in linkList1.Rows)%>
+      <a target="_blank" href="{dr[site_url]}" rel="nofollow">{dr[title]}</a> | 
+      <%/foreach%>
+    </p>
+<!--    <div class="img">
+      <ul>
+        <%set DataTable linkList2=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 9, "is_lock=0 and is_image=1 and is_red=1")%>
+        <%foreach(DataRow dr in linkList2.Rows)%>
+        <li><a target="_blank" href="{dr[site_url]}" title="{dr[title]}"><img src="{dr[img_url]}" width="88" height="31" /></a></li>
+        <%/foreach%>
+      </ul>
+      <div class="clear"></div>
+    </div>-->
+  </div>
+  <!--/Links-->

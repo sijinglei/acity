@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>站内搜索 - {config.webname}</title>
+<meta content="{config.webkeyword}" name="keywords" />
+<meta content="{config.webdescription}" name="description" />
+<link rel="stylesheet" href="{config.webpath}css/pagination.css" />
+<link media="screen" type="text/css" href="<%templateskin%>/css/index.css" rel="stylesheet">
+<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/base.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/style.js"></script>
+</head>
+
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+
+
+<div class="crumbs-wrap">
+  <div class="wrapper"> 
+    <!-- 面包屑 -->
+    <div class="crumbs left">当前位置 - <a title="返回首页" href="/">首页</a> -
+      搜索结果 </div>
+    <!-- 面包屑end --> 
+  </div>
+</div> 
+
+<div class="container wrapper">
+  <div class="wrap">
+    <div class="content-wrap left">
+      <div class="content">
+      <%set DataTable list=get_search_list(15, out totalcount)%> <!--取得一个DataTable-->
+	  <%set string pagelist=get_page_link(15, page, totalcount, linkurl("search","?channel_name="+channel_name+"&keyword=" + Server.UrlEncode(keyword) + "&page=__id__"))%> <!--取得分页页码列表-->
+      
+          <h1 class="main_tit">
+          站内搜索<strong>Search</strong>
+         <i>搜索关健字： <b class="blue">{keyword}</b> ，共有 <b class="red">{totalcount}</b> 条记录</i>
+          </h1> 
+           <ul class="search_list">
+               <%loop dr list%>
+                <li>
+                    <a target="_blank" href="{dr[link_url]}">{dr[title]}</a><span>( <%datetostr({dr[add_time]},yyyy-MM-dd)%> )</span>
+                    <p>{dr[remark]}</p>
+                </li>
+               <%/loop%>
+            </ul>
+          <div class="flickr">{pagelist}</div><!--放置页码列表-->
+      </div>
+    </div>
+    <div class="sidebar right">
+       <div class="sidebar-widget widget_calendar">
+  <h3>日历</h3><div id="calendar_wrap">
+
+    </div>
+    </div>
+                <div class="sidebar-widget widget_sl_hotpost">
+        <h3>编程开发</h3>
+     	<div class="redfood">
+            <ul>
+               <%set DataTable contentlist=get_category_child_list("news", 0)%>
+        <%foreach(DataRow dr in contentlist.Rows)%>
+        <li><a title="{dr[title]}" href="<%linkurl("news_list",{dr[id]})%>">{dr[title]}</a></li>
+        <%/foreach%>
+            </ul>
+        </div>
+        </div>
+      <div class="sidebar-widget widget_sl_hotpost">
+            <h3>热门文章</h3>
+            <ul  class="ds-top-threads" data-range="weekly" data-num-items="15"></ul>
+      </div>
+            <h3 class="h3">最新评论</h3>
+          <!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+           <div class="focus_list">
+        <h3 class="h3">友情链接</h3>
+        <ul>
+           <%set DataTable linkList1=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=0 and is_red=1")%>
+      <%foreach(DataRow dr in linkList1.Rows)%>
+      <li><a target="_blank" href="{dr[site_url]}" rel="nofollow">{dr[title]}</a></li>
+      <%/foreach%>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript">
+      // 图片延迟加载
+      $(function () {
+          $(".content img").lazyload({
+              effect: "fadeIn",
+              failurelimit: 4
+          });
+      });
+</script>
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>

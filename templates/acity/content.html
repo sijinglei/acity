@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{model.title} - {config.webname}</title>
+     <link media="screen" type="text/css" href="<%templateskin%>/css/index.css" rel="stylesheet">
+    <link media="screen" type="text/css" href="<%templateskin%>/css/slider.css" rel="stylesheet">
+<script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/base.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/style.js"></script>
+</head>
+
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+    <!--网站位置-->
+<div class="crumbs-wrap">
+  <div class="wrapper"> 
+    <!-- 面包屑 -->
+    <div class="crumbs left">当前位置 - <a title="返回首页" href="/">首页</a> -{model.title} </div>
+    <!-- 面包屑end --> 
+  </div>
+</div>
+<div class="container wrapper">
+  <div class="wrap">
+    <div class="content-wrap left">
+      <div class="content">
+       <div class="post-head">
+        <h2>
+                    <a href="http://www.yizuocity.com/693.html" rel="bookmark" target="_blank" title="详细阅读 {model.title}">
+          {model.title}          </a></h2>
+          <div class="info left">
+          <a href="http://www.yizuocity.com" title="一座城池博客">{model.add_time}</a>&nbsp;发表于：{model.add_time}&nbsp;
+              <a href="<%linkurl("news_list",{model.category_id})%>" title="查看{model.title}中的全部文章" rel="category tag">{model.title}</a>&nbsp;
+              <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&id={model.id}&click=1"></script>次浏览&nbsp;
+               <span class="ds-thread-count" data-thread-key="{model.id}" data-count-type="comments"></span>&nbsp;                                      </div>
+        <!-- 字体大小切换 -->
+          <div id="font-change" class="right">
+<span class="left">字体大小切换：</span>
+<span id="font-dec"><a href="#" title="减小字体">小</a></span>
+<span id="font-n"><a href="#" title="默认大小">中</a></span>
+<span id="font-inc"><a href="#" title="增大字体">大</a></span>
+</div>
+
+          </div>
+          <div class="entry">
+        {model.content}
+          </div>
+          <div class="tags">
+        关键字：<a href="#" rel="tag">{model.seo_keywords}</a>      </div>
+ <!--详细页分享-->
+         <%template src="_share3.html"%>
+      </div>
+                <!--评论-->
+      <%template src="_duoshuo.html"%>
+      <!--/评论-->
+    </div>
+    <div class="sidebar right">
+  <div class="sidebar-widget widget_calendar">
+  <h3>日历</h3><div id="calendar_wrap">
+
+    </div>
+    </div>
+                    <div class="sidebar-widget widget_sl_hotpost">
+            <h3>热门文章</h3>
+            <ul  class="ds-top-threads" data-range="weekly" data-num-items="15"></ul>
+      </div>
+            <h3 class="h3">最新评论</h3>
+          <!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+          <div class="focus_list">
+        <h3 class="h3">友情链接</h3>
+        <ul>
+           <%set DataTable linkList1=get_plugin_method("DTcms.Web.Plugin.Link", "link", "get_link_list", 0, "is_lock=0 and is_image=0 and is_red=1")%>
+      <%foreach(DataRow dr in linkList1.Rows)%>
+      <li><a target="_blank" href="{dr[site_url]}" rel="nofollow">{dr[title]}</a></li>
+      <%/foreach%>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>
